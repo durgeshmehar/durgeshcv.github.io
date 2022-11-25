@@ -1,0 +1,236 @@
+*{  padding: 0px;
+    margin: 0px;
+}
+body {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: 0.5px; 
+}
+/* Navigation */
+.navigation{
+    background-color:rgba(184, 255, 249, 0.8);
+    text-align: left;
+    box-shadow:0px 1.3px 2px rgb(155 203 254 / 95%);
+}
+.navigation ul li{
+    display:inline-block;
+    padding:0.7vw 3vw 0.7vw 1vw;
+    font-size: 1.6vw;
+}
+.navigation ul li a{
+    text-decoration:none;   
+}
+
+.navigation ul li i{
+   color:rgb(148, 77, 215);
+   /* color:rgb(185, 147, 220); */
+}
+.navigation ul li:hover{
+    font-size:1.7vw;
+    text-shadow: 0.5px 1px 2px rgb(148, 77, 215);  
+}
+
+
+/* Top Container */
+.top-container{
+    font-size: 2vw;
+    position: relative;
+    padding:70px 0px 0px 0px;
+    line-height: 1.5;
+    color: #5cdddd;
+    background-color:rgba(184, 255, 249, 0.8);
+  
+}
+.top-container .bird{
+    width:9vw;
+    position:absolute;
+    top:11%;
+    left:5%;
+}
+.top-container .upper-cloud{
+    width:14vw;
+    position:absolute;
+    top:10%;
+    right:18%;
+}
+.top-container .bottom-cloud{
+    width:14vw;
+    position:relative;
+    right:20%;
+}
+.top-container h1{
+    font-family: 'Dancing Script', cursive;
+}
+.top-container p{
+    font-size:12px;
+    margin-bottom: 30px;
+    font-family: 'Montserrat', sans-serif;
+}
+.top-container .mountain{
+  
+    padding: 0px;
+    margin:0px;
+}
+.top-container .mountain img{
+
+ margin-bottom: -14px;
+ height:100%;
+ width: 100%;
+}
+
+/* middle-container */
+.middle-container, .bottom-container{
+    padding:40px 20vw;
+}
+.middle-container img{
+    height:20vw;
+}
+/* middle-container -> intro */
+.middle-container .intro p{
+    padding:0px 18vw;
+    font-size: 1.5vw;
+ 
+    line-height: 1.5;
+}
+.middle-container .intro p#hi{
+    padding:7px 0px 3px 0px;
+    font-size:2.1vw;
+}
+hr {
+    margin:35px auto;
+    clear:right;
+    width:10vw;
+    border:6px dotted rgba(144, 195, 191, 0.3);
+    border-bottom: none;
+ 
+}
+
+
+/* middle-container -> education */
+.middle-container h4{
+    padding: 0px 3px 4px;
+}
+.education img{
+    height:15vw;
+    float: left;
+}
+.education .detail{
+    /* background-color: rgb(85, 61, 28); */
+    margin-left:20vw;
+    line-height: 1.1;
+    text-align: left;
+    padding:0vw 5vw;
+}
+/* education & skill common */
+.education .detail p,span ,.skill p ,.bottom-container p{
+    font-size:1.7vw;
+    letter-spacing: 0.5px;
+}
+.education .detail h4 ,.skill h4{
+    font-size:2.0vw;
+    color: #5cdddd;
+}
+.education h3, .skill h3 , .bottom-container h3{
+    font-size:2.5vw;
+    color: #5cdddd;
+    margin-bottom: 9px;
+}
+/*  middle-container ->skill*/
+.skill{
+    text-align: left;
+}
+.skill h3{
+    text-align: center;
+}
+.skill .detail{
+    margin-right:25vw;
+    padding:0vw 5vw;
+}
+.skill img{
+    height: 15vw;
+    float:right;
+}
+/* bottom-container */
+.bottom-container{
+    margin-top:15vh;
+    line-height: 1.5;
+}
+.bottom-container .link{
+    margin: 30px 0px 0px 0px;
+    font-size: 2.5vw;
+}
+.bottom-container .link .linkedin{
+    color:	#0077b5;
+}
+.bottom-container .link .insta{
+    color:rgb(216, 24, 101);
+}
+.bottom-container .link .twitter{
+    color:#00acee;
+}
+.bottom-container .link .facebook{
+    color:	#3b5998;
+}
+.bottom-container .link a .fa-brands:hover{
+    /* box-shadow:1px 1px  #00acee; */
+    box-shadow: 2px 2px 3px #35525f;
+    font-size: 2.7vw;
+    border:1px solid #35525f;
+    border-top:none;
+    border-left:none;
+}
+
+.bottom-container .button ,.bottom-container .button:visited{
+    font-family: "Times New Roman", Times, serif;
+    padding:0.3vw 1.2vw;
+    letter-spacing: normal;
+    font-size: 1.7vw;
+    color:#136198;
+    font-weight:700;
+    border-radius: 3px;
+    background-color:rgba(94, 194, 186, 0.7);
+    border:2px inset #3ca7cb;
+  
+}
+.bottom-container .button:hover{
+    padding:0.3vw 1.2vw;
+    font-size: 1.8vw;
+    color:#48a9c9;
+    border:2px solid #48a9c9;
+    background-color:rgba(92, 192, 184, 0.6);
+    box-shadow: 1.5px 1.5px 2.7px #35525f;
+}
+
+/* footer */
+.footer{
+    margin-top: 10vh;
+    padding:5px;
+    font-family: monospace;
+    font-size: 1.4vw;
+    color:rgb(6, 137, 245);
+    background-color:rgba(116, 238, 228,0.7);
+
+}
+@media screen and (max-width:601px){
+    .navigation ul li{
+        font-size: 8px;
+    } 
+    .navigation ul li a:hover{
+        font-size: 9.5px;
+    } 
+   .top-container p{
+    font-size:1.5vw;
+   }
+   .middle-container img{
+    height:20vh;
+}
+.footer{
+    margin-top:0vh;
+}
+.bottom-container{
+    margin-top:10vh;
+}
+}
+
+
+
