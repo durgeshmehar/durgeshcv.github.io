@@ -118,7 +118,6 @@ hr {
     padding: 0px 3px 4px 0px;
 }
 .education img{
-    height:15vw;
     float: left;
 }
 .education .detail{
@@ -157,7 +156,6 @@ hr {
     padding:0vw 5vw;
 }
 .skill img{
-    height: 15vw;
     float:right;
 }
 /* bottom-container */
@@ -245,11 +243,11 @@ hr {
     .middle-container h4{
         padding: 0px 0vw 1vw 0vw;
     }
-    .middle-container img{
-        height: 13vh;
-        }
+
     .middle-container .intro p ,.education .detail p, span ,.skill p ,.bottom-container p{
-        font-size:1vw;}
+        font-size:1.2vw;
+        color:red;
+    }
     .middle-container .intro p#hi{
         font-size:1.5vw;
     }
