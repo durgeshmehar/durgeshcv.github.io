@@ -86,8 +86,6 @@ body {
  width: 100%;
 }
 
-
-
 /* middle-container */
 .middle-container, .bottom-container{
     padding:40px 20vw;
@@ -149,6 +147,7 @@ hr {
 /*  middle-container ->skill*/
 .skill{
     text-align: left;
+    display: inline-block;
 }
 .skill h3{
     text-align: center;
@@ -229,6 +228,7 @@ hr {
     } 
     .middle-container{
         background-color: #d793b6;
+        padding:3vh 10vw;
     }
     .top-container p{
         font-size: 1.6vw;
@@ -246,9 +246,13 @@ hr {
         padding: 0px 0vw 1vw 0vw;
     }
     .middle-container img{
-        height: 10vh;
+        height: 13vh;
         }
-    
+    .middle-container .intro p ,.education .detail p, span ,.skill p ,.bottom-container p{
+        font-size:1vw;}
+    .middle-container .intro p#hi{
+        font-size:1.5vw;
+    }
   
 
 }
