@@ -220,7 +220,7 @@ hr {
     background-color:rgba(143, 215, 209, 0.7);
 
 }
-@media only screen and ( max-width: 480px){
+@media screen and ( max-width: 480px){
     .navigation ul li a ,.navigation ul li a i {
         font-size: 2.2vw;
     } 
