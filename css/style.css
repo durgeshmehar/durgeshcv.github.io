@@ -7,14 +7,13 @@ body {
     letter-spacing: 0.5px; 
 }
 
-
-
-
 /* Navigation */
 .navigation{
     background-color:rgb(182,247,245);
     text-align: left;
-    box-shadow:4px 1.3px 2px rgb(15, 17, 17);
+    box-shadow:0.2px 0.1px 2.5px rgb(165, 205, 205);
+    position: relative;
+    z-index: 10;
 }
 .navigation ul li{
     display:inline-block;
@@ -31,12 +30,9 @@ body {
 }
 
 .navigation ul li a:hover ,.navigation ul li a i:hover{
-    text-shadow: 0.5px 1px 2px rgb(148, 77, 215);  
+    text-shadow: 1px 1px 2px rgb(143, 59, 220);
+    font-size: 1.6vw;  
 }
-
-
-
-
 
 /* Top Container */
 .top-container{
@@ -169,6 +165,7 @@ hr {
 .bottom-container .link{
     margin: 20px 0px 0px 0px;
     font-size: 3vw;
+
 }
 .bottom-container .link .linkedin{
     color:	#0077b5;
@@ -184,11 +181,12 @@ hr {
 }
 .bottom-container .link a .fa-brands:hover{
     /* box-shadow:1px 1px  #00acee; */
-    box-shadow: 4px 3px 4px #35525f;
-    font-size: 2.7vw;
-    border:1px solid #35525f;
-    border-top:none;
-    border-left:none;
+    box-shadow: 4px 3px 4px #488093;
+    font-size: 3vw;
+    padding:2px;
+    border:1.1px solid #48a9c9;
+    border-radius: 2px;
+    
 }
 
 .bottom-container .button ,.bottom-container .button:visited{
@@ -209,7 +207,7 @@ hr {
     font-weight:bold;
     border:3px solid #48a9c9;
     background-color:rgba(214, 146, 218, 0.6);
-    box-shadow: 4px 4px 7px #35525f;
+    box-shadow: 4px 3px 4px #488093;
 }
 
 
@@ -225,8 +223,11 @@ hr {
 }
 @media screen and ( max-width: 480px){
     .navigation ul li a ,.navigation ul li a i {
-        font-size: 1.5vh;
+        font-size: 2.5vw;
     } 
+    .navigation ul li a:hover ,.navigation ul li a i:hover{
+        font-size: 2.6vw;  
+    }
     .top-container p ,.top-container{
         font-size: 3.2vw;
     }
