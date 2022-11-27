@@ -34,6 +34,10 @@ body {
     text-shadow: 0.5px 1px 2px rgb(148, 77, 215);  
 }
 
+
+
+
+
 /* Top Container */
 .top-container{
     font-size: 2vw;
@@ -87,7 +91,7 @@ body {
     padding:40px 20vw;
 }
 .middle-container{
-   background-color: rgba(218, 83, 151, 0.5);   
+    background-color: rgba(218, 83, 151, 0.5);
 }
 .middle-container img{
     height:20vw;
@@ -224,48 +228,63 @@ hr {
         font-size: 1.5vh;
     } 
     .top-container p ,.top-container{
-        font-size: 2.4vw;
+        font-size: 3.2vw;
     }
     .middle-container{
-        padding:3vh 15vw;
+        padding:4vh 13vw;
     }
     .middle-container img{
-        height: 23vw;
-    }
-    .middle-container h4{
-        padding: 0px 0vw 1vw 0vw;
+        height: 24vw;
     }
     .middle-container .intro p#hi{
-        font-size:3vw;
+        font-size:4vw;
     }
     .middle-container .intro p{
-      font-size: 2.1vw;
+      font-size: 3vw;
       font-weight: 500;
     }
     .education .detail{
         margin-left:24vw;
     }
+    .skill .detail{
+        margin-right:30vw;
+        padding:0vw 0vw;
+    }
     .education h3, .skill h3 , .bottom-container h3{
-        margin-bottom: 3.4vw;
-        font-size: 3.6vw;
+        margin-bottom: 2.8vw;
+        font-size: 4vw;
     }
 
     .education .detail p, span ,.skill p ,.bottom-container p{
-        font-size:2.5vw;
+        font-size:3.3vw;
         letter-spacing: 0.3px;
     }
-    
     .education .detail h4 ,.skill h4{
-        font-size:2.6vw;
+        font-size:3.2vw;
     }
 
     .bottom-container{
-        margin-top:3vh;
+        margin-top:2.5vh;
     }
+    .bottom-container .link{
+        margin: 15px 0px 0px 0px;
+        font-size: 4.4vw;
+    }
+    .bottom-container .button ,.bottom-container .button:visited{
+        font-size: 3vw;
+    }
+
     .footer{
-        margin-top: 1vh;
+        margin-top: 0.8vh;
+        font-size: 2.2vw;
     }
-  
+    hr {
+        margin:30px auto;
+        width:15vw;
+        border:7px dotted rgba(163, 213, 209, 0.23);
+        border-bottom: none;
+     
+    }
 
 }
 
