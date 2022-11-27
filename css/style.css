@@ -7,9 +7,6 @@ body {
     letter-spacing: 0.5px; 
 }
 
-
-
-
 /* Navigation */
 .navigation{
     background-color:rgb(182,247,245);
@@ -111,7 +108,6 @@ hr {
     border-bottom: none;
  
 }
-
 
 /* middle-container -> education */
 .middle-container h4{
@@ -222,7 +218,7 @@ hr {
 }
 @media screen and ( max-width: 480px){
     .navigation ul li a ,.navigation ul li a i {
-        font-size: 2.2vw;
+        font-size: 1.5vh;
     } 
     .middle-container{
         background-color: #d793b6;
@@ -243,14 +239,26 @@ hr {
     .middle-container h4{
         padding: 0px 0vw 1vw 0vw;
     }
-
-    .middle-container .intro p ,.education .detail p, span ,.skill p ,.bottom-container p{
-        font-size:1.2vw;
-        color:red;
+    .education .detail p, span ,.skill p ,.bottom-container p{
+        font-size:1.1vw;
+        letter-spacing: 0.4px;
     }
+    
     .middle-container .intro p#hi{
         font-size:1.5vw;
     }
-  
-
+    .middle-container .intro p{
+        font-size: 1.1vw;
+    }
+    .middle-container .intro p#hi{
+        font-size:1.4vw;
+    }
+    .education .detail h4 ,.skill h4{
+        font-size:1.5vw;
+    }
+    .education h3, .skill h3 , .bottom-container h3{
+        font-size:2vw;
+    }
 }
+
+
