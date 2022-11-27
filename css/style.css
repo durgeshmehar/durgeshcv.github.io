@@ -34,10 +34,6 @@ body {
     text-shadow: 0.5px 1px 2px rgb(148, 77, 215);  
 }
 
-
-
-
-
 /* Top Container */
 .top-container{
     font-size: 2vw;
@@ -89,6 +85,9 @@ body {
 /* middle-container */
 .middle-container, .bottom-container{
     padding:40px 20vw;
+}
+.middle-container{
+   background-color: rgba(218, 83, 151, 0.5);   
 }
 .middle-container img{
     height:20vw;
@@ -228,7 +227,6 @@ hr {
         font-size: 2.4vw;
     }
     .middle-container{
-        background-color: rgba(218, 83, 151, 0.5);
         padding:3vh 15vw;
     }
     .middle-container img{
