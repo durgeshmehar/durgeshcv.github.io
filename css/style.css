@@ -92,7 +92,7 @@ body {
     height:fit-content;
     display: inline-flex;
     align-items: center;
-    border-radius: 20px; 
+    border-radius: 4vw; 
     overflow: hidden;
     border:1px solid rgb(67, 148, 156);
     margin: auto;
@@ -135,7 +135,7 @@ body {
     font-family: 'Dancing Script', cursive;
 }
 .top-container p{
-    font-size:12px;
+    font-size:1.6vw;
     color:var(--bigParaColor);
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
@@ -147,14 +147,15 @@ body {
 }
 .top-container .mountain img{
 
- margin-bottom: -14px;
+ margin-bottom: -37px;
  height:100%;
  width: 100%;
 }
 
 /* middle-container */
 .middle-container, .bottom-container{
-    padding:40px 15vw;
+    padding:2.5vw 15vw;
+   
 }
 .middle-container{
     background-color: var(--middleColor);
@@ -162,6 +163,9 @@ body {
 .middle-container img{
     height:18vw;
     width:18vw;
+}
+.middle-container .intro img{
+    padding:25px;
 }
 /* middle-container -> intro */
 .middle-container .intro p{
@@ -175,10 +179,10 @@ body {
     font-size:2.1vw;
 }
 hr {
-    margin:35px auto;
+    margin:3.5vw auto;
     clear:right;
     width:10vw;
-    border:6px dotted rgba(144, 195, 191, 0.3);
+    border:1vw dotted rgba(144, 195, 191, 0.3);
     border-bottom: none;
  
 }
@@ -206,6 +210,7 @@ hr {
     padding: 0;
     letter-spacing: 0.5px;
 }
+
 
 .education .detail h4 ,.skill h4 ,.project h4{
     font-size:1.85vw;
