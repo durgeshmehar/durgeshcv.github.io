@@ -6,21 +6,30 @@
     <title>Durgesh Website</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="icon" href="favicon.ico" />
+   
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9ddc6a281f.js" crossorigin="anonymous"></script>
     <!-- Google font -->
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Inconsolata:wght@100&family=Montserrat:wght@700&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
   </head>
   <body>
-    <nav class="navigation">
-      <ul>
-        <li><a href="#"><i class="fa-solid fa-circle-user fa-lg fa-common"></i></i></a></li>
+    
+    <div class="bar">
+      <i class="fa fa-bars" id="bar"></i>
+    </div>
+
+    <nav class="navigation"><ul>
+        <li id="user"><a href="#"><i class="fa-solid fa-circle-user fa-lg fa-common"></i></i></a></li>
         <li><a href="#top-container">Home</a></li>
         <li><a href="#middle-container">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#certificate">Certificate</a></li>
+        
         <li><a href="https://durgeshmehar.blogspot.com/2022/10/play-with-git-its-command.html" target="_blanck">Blog</a></li>
-        <li><a href="#bottom-container">Contact</a></li>
+        
         <li><a href="Images/durgeshresume.pdf" target="_blank">Resume</a></li>
-        <li id ="light"><a href="#" ><i class="fa-solid fa-moon icon-color fa-common" id="moon"></i></a>
+        <li id ="light"><a href="#" ><i class="fa-solid fa-moon icon-moon fa-common" id="moon"></i></a>
                         <a href="#" ><i class="fa-solid fa-sun" id="sun"></i></a>
         
         </li>
@@ -35,7 +44,9 @@
       <p>a programmer & web designer.</p>
       <img src="Images/cloud.png" alt="Cloud" class="bottom-cloud" />
       <div class="mountain">
-        <img src="Images/moun.png" alt="Mountain" class="mountain_img"/></div></div>
+        <img src="Images/moun.png" alt="Mountain" class="mountain_img"/>
+      </div>
+     </div>
     <div class="middle-container" id="middle-container">
       <div class="intro">
         <img src="Images/Best durgesh.png" alt="Durgesh" />
@@ -44,9 +55,21 @@
           I am student of DYPCOE Akurdi,Pune. I love to learn and develop new
           technology.
         </p>
+        <button>
+
+          <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230">
+          <i class="fa-brands fa-linkedin-in linkedin"></i>
+         </a>
+        </button>
+        <button >
+          <a href="https://durgeshmehar.github.io/">
+          <i class="fa-brands fa-github github"></i>
+          </a>
+
+        </button>
+       
       </div>
-      <!-- <p style="color:rgba(11, 8, 12, 0.527)"></p> -->
-      <hr />
+
       <div class="education">
         <h3>Education</h3>
    
@@ -61,65 +84,145 @@
         </div>
       </div>
     
-      <hr >
 
-      <div class="skill">
+
+      <div class="skill" id="skill">
         <h3>My Skills</h3>
-     
-        <img src="Images/computer.png" alt="skills" />
+         
         <div class="detail">
-         <h4>Technical</h4>
 
-         <table cellspacing="5">
-         <ul>
-          <tr>
-            <td><li> DSA</li></td>
-            <td>&#11088;⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><li> Web-development </li></td>
-            <td>&#11088;⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td> <li>C, C++ </li></td>
-            <td>⭐⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><li>Python </li></td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td><li>Java </li></td>
-            <td>⭐⭐⭐</td>
-          </tr>
+        
+         <h3 class="tech">Technical</h3>
+         <div class="item">
+           <h4>Language & Databases</h4>
+           <hr>
+          
+            <div class="row justify-content-center"> 
+               <div class="col"><img src="Images/language/c.png" alt=""> <p class="caption">C</p></div>
+               <div class="col "><img src="Images/language/c++.png" alt=""><p class="caption">C++</p></div>
+               <div class="col"><img src="Images/language/python.png" alt=""><p class="caption">Python</p></div>
+               <div class="col"><img src="Images/language/java.png" alt=""><p class="caption">Java</p></div>
 
-        </ul>
-         </table>
+               <div class="col"><img src="Images/language/html.png" alt=""> <p class="caption">HTML</p></div>
+               <div class="col "><img src="Images/language/css.png" alt=""><p class="caption">CSS</p></div>
+               <div class="col"><img src="Images/language/javaScript.png" alt=""><p class="caption">JavaScript</p></div>
+               <div class="col"><img src="Images/language/nodejs.png" alt=""><p class="caption">Node JS</p></div>
+               
+            </div>
+            
+          </div>
+         <div class="item">
+           <h4>Frameworks</h4>
+          <hr>
+            <div class="row justify-content-center"> 
+               
+               <div class="col "><img src="Images/language/Bootstrap4.png" alt=""><p class="caption">Bootstrap</p></div>
+               <div class="col"><img src="Images/language/express js.png" alt=""><p class="caption">Express JS</p></div>
+               
+               
+            </div>
 
-         <h4>Non-Technical</h4>
-         <ul><li>Technical content writer</li></ul>
-       </div>
+          </div>
+
+         <div class="item">
+           <h4>Technology</h4>
+          <hr>
+            <div class="row justify-content-center"> 
+               
+               <div class="col "><img src="Images/language/gitAndGithub.png" alt=""><p class="caption">Git & Github</p></div>
+                
+           
+            </div>
+
+          </div>
+    
+         
+
+         <h3 class="non-tech">Non-Technical</h3>
+           <div class="item">
+    
+          
+            <div class="row justify-content-center"> 
+               
+               <div class="col "><img src="Images/language/content writer.jpg" alt=""><p class="caption">Technical Content Writer</p></div>
+                
+               
+            </div>
+
+           </div>
+        </div>
       </div>
-      <hr>
+      <!-- <hr> -->
       <div class="project">
         <h3>My Projects</h3>
      
         <img src="Images/project.jpg" alt="skills" />
         <div class="detail">
           <ul>
-            <h4><li>Clone responsive website of flipkart.</li></h4>
-            <h4><li>Frontend design of dating website.</li></h4>
-            <h4><li>Create simple game using javascript.</li></h4>
+            <h4><li><a href="https://github.com/durgeshmehar/Facebook-Clone-with-responsive-Design.git" target="_blank">Clone responsive website of flipkart.</a></li></h4>
+            <h4><li><a href="https://github.com/durgeshmehar/Dating-Website-Fronted-.git" target="_blank">Frontend design of dating website.</a></li></h4>
+            <h4><li><a href="https://github.com/durgeshmehar/Javascript-game.git" target="_blank">Create simple game using javascript.</a></li></h4>
           </ul>
          
-       </div>
+         </div>
+      </div>
+      <div class="certificate" id="certificate">
+        <h3>Certificate</h3>
+        <img src="Images/Hacker-certificate.png" alt="HackerRank-Certificate">
+      </div>
+
+      <div class="contact" id="contact">
+
+        <h3>Contact</h3>
+        <div class="detail">
+        
+          <span id="fa-phone-id"><p>Call Durgesh</p></span>
+          <p>
+            <a area-label="Call Durgesh">
+            <i class="fa fa-phone" ></i></a>
+            <a id="mobile-no">+91 9359230721 , +91 8446537613 </a>
+          </p>
+
+          
+          <span id="fa-envelope-id"><p>Email Durgesh</p></span>
+           <p>
+            <a  area-label="Email Durgesh" href="mailto:durgeshmehar2002@gmai.com" target="_blank">
+            <i class="fa fa-envelope"></i></a>
+            <a href="mailto:durgeshmehar2002@gmai.com" target="_blank">DURGESHMEHAR@GMAIL.COM</a>
+            
+         </p>
+         <span id="fa-github-id"><p>View Durgesh on Github</p></span>
+         <p>
+            <a  area-label="View Durgesh on Github" href="https://durgeshmehar.github.io/" target="_blank">
+            <i class="fa fa-github"></i></a>
+            <a href="https://durgeshmehar.github.io/" target="_blank">GITHUB.COM/DURGESHMEHAR</a>
+          
+         </p>
+         <span id="fa-linkedin-id"><p>View Durgesh on Linkedin</p></span>
+         <p>
+            <a  area-label="View Durgesh on Linkedin" href="https://www.linkedin.com/in/durgesh-mehar-82955b230" target="_blank">
+            <i class="fa fa-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230" target="_blank">LINKEDIN/DURGESHMEHAR</a>
+            
+         </p>
+         <span id="fa-coding-id"><p>View profile on Codestudio</p></span>
+         <p>
+            <a area-label="View profile on Codestudio" href="https://www.codingninjas.com/codestudio/profile/7bfafe16-9b71-4957-9175-4b77489f7745" target="_blank">
+            <i class="fa fa-coding"><img src="/Portfolio/Images/coding.png" alt=""></i></a>
+            <a href="https://www.codingninjas.com/codestudio/profile/7bfafe16-9b71-4957-9175-4b77489f7745" target="_blank">CODINGNINJAS/DURGESHMEHAR
+            </a>
+         </p>
+        
+        </div>
+        
       </div>
 
     </div>
-    <hr >
+    <!-- <hr > -->
     <div class="bottom-container" id="bottom-container">
-      <h3>Get In Touch</h3>
-      <h3>If Have Any Problem Lets Discuss With Me.</h3>
+      <h3>LET'S BUILD SOMETHING </h3>
+      <h3 id="mar-bottom">AMAZING TOGETHER</h3>
+     
       <p>
         Love to develop website or want to be best website develop for your
         need.
@@ -129,20 +232,14 @@
       <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230"><i class="linkedin fa-brands fa-linkedin-in"></i></a>
       &emsp;<a href="https://twitter.com/Durgeshmehar77"><i class="twitter fa-brands fa-square-twitter"></i></a>&emsp;<a href="https://www.instagram.com/durgeshmehar77?r=nametag" ><i class="insta fa-brands fa-instagram" ></i></a>&emsp;<a href="https://www.facebook.com/ku.durgesh"><i class="facebook fa-brands fa-square-facebook" ></i></a>
      </div>
-  
-      <br>
-      <input type="button" class="button" onclick="window.location.href='mailto:durgeshmehar2002@gmail.com'" value="Contact" >
-      <!-- <a href="mailto:durgeshmehar2002@gmail.com">contact me</a> -->
-      <br />
-      <br>
-
     </div>
     <div class="footer">
-      <p class="copy">&copy; Durgesh Mehar 2022</p>
+      <img src="/Portfolio/Images/copyright.png" alt=""><p class="copy">Copyright 2023 Durgesh Mehar. All Rights Reserved.</p>
     </div>
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- javascript -->
     <script src="javascript/index.js"> </script>
+    
   </body>
 </html>

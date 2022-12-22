@@ -1,90 +1,95 @@
 *{  padding: 0px;
     margin: 0px;
-    background-color: var(--backgroundColor);
+    
 }
+body {
+    text-align: center;
+    font-family: 'Source Serif Pro', serif;
+    letter-spacing: 0.6px;
+    background-color: var(--backgroundColor);
+
+}
+
+/*   ## Dark Mode Mechanism  ## */
 :root {
     --opacity:1;
     --backgroundColor: transparent;
     --smallColor:black;
+    --white:white;
     --top-containerColor:rgb(182,247,245);
     --bigParaColor: #5cdddd;
-    --middleColor:rgba(218, 83, 151, 0.5);
+    --middleColor:rgba(233, 162, 197, 0.5);
     --navColor:rgb(148, 77, 215);
+    --boxShadow:#122e37;
+    --navHead:rgb(167, 249, 247);
 }
 
-body {
-    text-align: center;
-    font-family: 'Source Serif Pro', serif;
-    letter-spacing: 0.5px;
-}
 .dark-mode{
     --opacity:0.2;
     --backgroundColor: rgb(40,39,50);
     --top-containerColor:rgb(40,39,50);
     --smallColor:white;
-    --bigParaColor: white;
+    --white:rgb(40,39,50);
+    --bigParaColor: #5cdddd;
     --middleColor:var(--top-containerColor);
     --navColor:rgb(185, 147, 220);
     --skillUl:white;
+    --boxShadow:white;
+    --navHead: var(--backgroundColor);
 }
 
-/* skill ul li setting  */
 
-.middle-container ul li{
-    padding: 0;
-    margin: 0;
-    list-style-position: inside;
-}
-.middle-container td {
-    font-size:1.7vw;
-    letter-spacing: 0.2px;
-    color:var(--skillUl);
-}
-.skill .detail ul li{
-    font-size:1.7vw;
-    margin-left: 0.75vw;
-    color:var(--smallColor);
-}
- 
-
-/* Navigation */
-.navigation{
-    background-color:rgb(182,247,245);
+/*  ##  Navigation  ## */
+.navigation {
+    background-color:var(--navHead);
     text-align: left;
-    box-shadow:0.2px 0.1px 2.5px rgb(165, 205, 205);
+    box-shadow:0.2px 0.1px 2.5px rgb(148, 211, 211);
     position: relative;
     z-index: 10;
 }
+div.bar{
+    display: none;
+    box-shadow:0.2px 0.1px 2.5px rgb(148, 211, 211);
+    background-color:var(--navHead);
+    width:100%;
+    padding:3px;
+    position: relative;
+    z-index: 10;
+}
+
 .navigation ul li{
     display:inline-block;
     padding:0.5vw 3.5vw 0.5vw 1vw;    
     box-sizing: border-box;
 }
 .navigation ul li a {
-    font-size: 1.5vw;
+    font-size: 1.7vw;
     text-decoration:none;
     color:var(--navColor);
 
 }
-.navigation ul li i#moon{
-    margin:0.6vw 0 0vw 0.2vw;
-    position: relative;
-    color:var(--navColor);
-    
-}
+
 .navigation ul li i#sun{
     margin-left: 1vw;
+
 }
 
 .navigation ul li i.fa-solid{
    font-size:1.5vw ;
 }
 
+.navigation ul li i#moon{
+    margin:0.6vw 0 0vw 0.2vw;
+    position: relative;
+    left:0vw;
+    color:var(--navColor);
+   
+    
+}
 .navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover{
     text-shadow: 1px 1px 2px rgb(143, 59, 220);
     font-size: 1.6vw;  
 }
-
 
 .navigation ul li#light{
     padding:0px ;
@@ -94,19 +99,15 @@ body {
     align-items: center;
     border-radius: 4vw; 
     overflow: hidden;
-    border:1px solid rgb(67, 148, 156);
+    border:1px solid rgb(133, 160, 163); 
     margin: auto;
-
-}
-.navigation ul li a .icon-color{
-      position:relative;
 }
 
 /* Top Container */
 .top-container{
     font-size: 2vw;
+    padding: 5vw 0px 0px 0px;
     position: relative;
-    padding:70px 0px 0px 0px;
     line-height: 1.5;
     color: #5cdddd;
     background-color:var(--top-containerColor);
@@ -121,7 +122,7 @@ body {
 .top-container .upper-cloud{
     width:14vw;
     position:absolute;
-    top:10%;
+    top:6%;
     right:18%;
     opacity: var(--opacity); 
 }
@@ -140,109 +141,162 @@ body {
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
 }
-.top-container .mountain{
-  
-    padding: 0px;
-    margin:0px;
-}
+
 .top-container .mountain img{
 
  margin-bottom: -37px;
  height:100%;
  width: 100%;
 }
-
 /* middle-container */
-.middle-container, .bottom-container{
-    padding:2.5vw 15vw;
-   
-}
+
 .middle-container{
-    background-color: var(--middleColor);
+    /* background-color: var(--top-containerColor); */
+    /* background-color: var(--middleColor); */
+    background-color: var(--white);
 }
+
 .middle-container img{
     height:18vw;
     width:18vw;
+    background: none;
 }
-.middle-container .intro img{
-    padding:25px;
+.middle-container, .bottom-container{
+    padding:2.5vw 12vw; 
 }
 /* middle-container -> intro */
-.middle-container .intro p{
+.intro{
+    background:  linear-gradient(to bottom, #5c61ae80, rgba(219, 228, 236, 0.5))
+     ,url("/Portfolio/Images/bg-intro-img.png") no-repeat ;
+    background-size: cover; 
+}
+.intro img{
+    padding:0vw 0vw 0.5vw 0vw;
+}
+
+.intro p{
     color:var(--smallColor);
     padding:0px 18vw;
-    font-size: 1.5vw;
+    font-size: 1.6vw;
     line-height: 1.5;
-}
-.middle-container .intro p#hi{
-    padding:7px 0px 3px 0px;
-    font-size:2.1vw;
-}
-hr {
-    margin:3.5vw auto;
-    clear:right;
-    width:10vw;
-    border:1vw dotted rgba(144, 195, 191, 0.3);
-    border-bottom: none;
- 
+    font-weight: 600;
+    background: none;
 }
 
+
+.intro i.fa-brands{
+    font-size: 2.3vw;
+    background-color: white;
+    border-radius: 50%;
+    padding:0.9vw;
+    margin-right:0vw; 
+}
+.intro i.linkedin{
+   
+    color: #0077b5;
+}
+.intro i.linkedin:hover{
+    color: white;
+    background-color: #0077b5;
+}
+
+.intro i.github{
+
+    color:black;
+}
+.intro i.github:hover{
+    color:white;
+    background-color:black;
+}
+.intro button{
+    border-style: none;
+    padding:0.6vw;
+    background: none;
+   
+}
+.intro button a{
+  background:none;
+   
+}
 
 /* middle-container -> education */
-.middle-container h4{
-    padding: 0px 3px 4px 0px;
-}
-
 .education img{
     float: left;   
 }
-.education .detail ,.project .detail{
-    margin-left:20vw;
-    line-height: 1.1;
-    text-align: left;
-    padding:0vw 4vw;
-}
-/* education & skill common */
-.education .detail p, span ,.skill p ,.project .detail p,.bottom-container p{
-    font-size:1.7vw;
-    color:var(--smallColor);
-    margin: 0;
-    padding: 0;
-    letter-spacing: 0.5px;
+
+/*  middle-container ->skill  */
+hr {   
+    width:90%;
+    margin:1vw auto 0vw;
+    border:1px solid rgba(144, 195, 191, 0.3);
 }
 
-
-.education .detail h4 ,.skill h4 ,.project h4{
-    font-size:1.85vw;
-    color: hsl(247, 64%, 52%,60%);
-}
-.education h3, .skill h3 , .bottom-container h3 ,.project h3{
-    font-size:2.5vw;
-    color: #5cdddd;
-    margin-bottom: 4vw;
-}
-.bottom-container h3{
-    margin-bottom: 1vw;
-}
-/*  middle-container ->skill*/
 .skill{
     text-align: left;
 }
-.skill h3{
-    text-align: center;
-}
+/*middle-container-> skill ->detail
+  middle-container-> project ->detail
+*/
+.detail{
+    
+    margin-left:20vw;
+     text-align: left; 
+     padding:0vw 4vw;
+     line-height: 1.4;
+} 
+
 .skill .detail{
-    margin-right:25vw;
-    padding:0vw 5vw;
+    width: 60vw;
+    margin:0px auto; 
+   
 }
-.skill .detail p{
-    font-size: 1.7vw;
+.skill .detail h3{
+    font-size: 2.3vw;
+    color: #1824c780;
+    background-color: rgb(151, 222, 125);
+
 }
-.skill img{
-    float:right;
+.detail h3.tech ,.detail h3.non-tech{
+    font-size: 2vw;
+    width: 85%;
+    margin:0vw auto;
+    box-shadow: 2px 2px 8px var(--boxShadow);
+}
+.detail .item h4{
+       margin:0vw 0vw 0vw 2.5vw;
+       padding-top:1vw;
 }
 
-/* project */
+/* .middle-container -> .skill -> .detail -> .items */
+.detail .item{
+    width:55vw;
+    margin:5vw auto;
+    border-radius: 6px;
+    /* background-color:  var(--top-containerColor); */
+    background-color:  var(--white);
+    box-shadow: 1px 1px 15px var(--boxShadow);
+}
+.skill .detail .item img{
+    height:7vw;
+    width: 7vw;
+    margin-bottom: 0vw;
+    clear: left;
+
+}
+.skill .detail .item .caption{
+    width:10vw;
+}
+.detail .item p{
+  font-size: 1.5vw;
+  margin-top:0.2vw;
+  clear: both;
+}
+.detail .item .col{
+    display: inline-block;
+    padding:2vw;
+    text-align: center;
+}
+/* .middle-container -> .project */
 
 .project h3{
     text-align: center;
@@ -250,15 +304,135 @@ hr {
 .project img{
     float: left;
 }
-/* Triple common */
-.education ,.skill ,.project{
-    display: inline-block;
+/*  .middle-container -> .certificate  */
+.certificate img{
+    height:50vw;
+    width:50vw;
 }
 
+/*  .middle-container -> .contact  */
+.contact .detail{
+   margin:0vw auto;
+}
+.contact .detail i.fa{
+
+         font-size: 2.2vw;
+         margin:1vw 3.5vw 1vw 0vw;
+         border:1px solid grey;
+         padding:1vw;
+         background-color: rgb(179, 177, 177);
+         border-radius:50%;
+}
+.contact .detail i.fa:hover{
+       /* padding: 0.8vw; */
+       box-shadow: 2px 2px 6px grey;
+}
+
+.contact .detail a:nth-child(2){
+    font-size: 1.8vw; 
+    color:var(--navColor);
+    text-decoration: none;
+}
+.contact .detail a:nth-child(2):hover {
+    text-decoration:underline var(--navColor);
+    padding:2px;
+    
+}
+.contact .detail p img{
+    height: 2vw;
+    width: 2vw;
+}
+
+/* Label designing //  .contact ->.detail -> span */
+.contact .detail span {
+     color:rgb(219, 211, 211);
+     font-size: 1.5vw;
+     font-weight: 600;
+     border-radius: 1vw;
+     border:1px solid black;
+     padding:0.3vw 0.8vw;
+     background-color: rgb(107, 125, 120);
+     
+}
+.contact .detail span p{
+    display: inline-block;
+    background: none;
+}
+
+/* common box of skill  */
+.intro , .education ,.skill ,.project ,.certificate ,.contact{
+    /* background-color: var(--middleColor); */
+    background-color: var(--top-containerColor);
+    border-radius:10px;
+    width: 70vw;
+    display: inline-block;
+    padding:2vw;
+    box-shadow: 1px 1px 15px var(--boxShadow) ;
+    margin: 4vw 0vw;    
+}   
+
+
+/* Common of h3 ,h4 & p */
+.education h3,.skill h3, .bottom-container h3 ,.project h3 , .certificate h3, .contact h3{
+    font-size:2.8vw;
+    padding:10px;
+    color: #5cdddd;
+    background-color: #136198;   
+    margin-bottom: 5.5vw;
+    text-align: center;
+}
+.skill h3{
+   margin:1vw 0vw 2vw 0vw;
+}
+.bottom-container h3{
+    margin-bottom: 2vw;
+    letter-spacing: 3px;
+   
+}
+
+.education .detail h4 ,.skill h4 ,.project h4 ,.certificate h4{
+    font-size:1.85vw;
+    color: rgba(35, 129, 191, 0.7);
+
+}
+.project h4{
+    /* color: rgba(95, 78, 217, 0.7); */
+    color: var(--navColor);
+    font-weight: 800;
+    margin-bottom: 1vw;
+}
+
+.education .detail p, span ,.skill p ,.project .detail p,.bottom-container p{
+    font-size:2vw;
+    margin: 0.2vh;
+    letter-spacing: 0.5px;
+    color:var(--smallColor);
+}
+.bottom-container p{
+    width:50vw;
+    font-weight: 600;
+    margin:1vw auto;
+}
+
+
 /* bottom-container */
+.bottom-container h3#mar-bottom{
+    margin-bottom: 1.2vw;
+}
+.bottom-container h3{
+    background-color: transparent;
+    word-spacing: 10px;
+    letter-spacing: 1px;
+    margin: 1vw;
+    padding:0;
+    border:1px solid blue;
+    box-shadow: 1px 1px 5px rgb(118, 118, 189);
+
+}
 .bottom-container{
-    margin-top:12vh;
-    line-height: 1.5;
+
+    padding:8vw 12vw 4vw 12vw;
+    line-height: 1.6;
 }
 .bottom-container .link{
     margin: 20px 0px 0px 0px;
@@ -286,52 +460,48 @@ hr {
     border-radius: 2px;
     
 }
-
-.bottom-container .button ,.bottom-container .button:visited{
-    font-family: "Times New Roman", Times, serif;
-    padding:0.35vw 1.2vw;
-    letter-spacing: normal;
-    font-size: 1.9vw;
-    color:#136198;
-    font-weight:700;
-    border-radius: 3px;
-    background-color:rgba(94, 194, 186, 0.7);
-    border:2px inset #48a9c9;
-}
-.bottom-container .button:hover{
-    padding:0.3vw 1.2vw;
-    color:#a468f1;
-    font-weight:bold;
-    border:3px solid #48a9c9;
-    background-color:rgba(214, 146, 218, 0.6);
-    box-shadow: 4px 3px 4px #488093;
+.bottom-container p{
+    padding:4vw 2vw 2vw 2vw;
 }
 
 /* footer */
 .footer{
     margin-top: 10vh;
-    padding:5px;
+    padding:8px;
     font-family: monospace;
-    font-size: 1.4vw;
-    color:rgb(6, 137, 245);
-    background-color:var(--top-containerColor);
-    box-shadow:0.2px 0.1px 2.5px rgb(165, 205, 205);
+    font-size: 1.5vw;
+    color:rgb(188, 215, 236);
+    /* background-color:var(--top-containerColor); */
+    background:  linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5))
+     ,url("/Portfolio/Images/bg-intro-img.png") no-repeat ;
+    background-size: cover; 
+    box-shadow:inset 0.3px 0.4px 10px rgb(39, 52, 52);
+
 }
 
+.footer img{
+    margin-top:15px;
+    position: relative;
+    bottom: 0px;
+    height:2vw;
+    width:2vw;
+    background: none;
+}
+.footer p{
+    margin-bottom: 1.5vw;
+    background: none;
+}
+/* other code from getbutton */
+#gb-widget-6051 ,.sc-1s18q3d-0{
+    background: none;
+}
+
+
+/*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
 @media screen and ( max-width: 480px){
-    .navigation ul li a ,.navigation ul li a .fa-solid {
-        font-size: 2.3vw;
-    } 
-    .navigation ul li i#sun{
-        font-size: 1.9vw;
-    }
-    .navigation ul li a:hover ,.navigation ul li i.fa-lg:hover {
-        font-size: 2.5vw;
-    } 
-    .navigation ul li#light{
-        width:5.5vw;
-        height: fit-content;
-    }
+
+  
+    
     
     .top-container p ,.top-container{
         font-size: 3.2vw;
@@ -340,43 +510,79 @@ hr {
         padding:4vh 13vw;
     }
     .middle-container img{
-        height: 24vw;
-        width: 24vw;
+        height: 30vw;
+        width: 30vw;
     }
     .middle-container .intro p#hi{
         font-size:4vw;
     }
     .middle-container .intro p{
       font-size: 3vw;
-      font-weight: 500;
+      font-weight: bolder;
     }
+    
+    .middle-container i.fa-brands{
+        font-size: 4.2vw;
+    }
+    .skill .detail ul li{
+        font-size:2.2vw;
+    }
+    
     .education .detail ,.project .detail{
         margin-left:30vw;
+      
+        /* line-height: 1.1; */
+    }
+    .education .detail p,.project .detail p{
+        line-height: 1.1;
     }
     .skill .detail{
-        margin-right:33vw;
-        padding:0vw 0vw;
+        margin-right:0vw;
+       
     }
-    .education h3, .skill h3 ,.project h3,.bottom-container h3 ,.project h3 {
-        margin-bottom: 2.8vw;
+    .education h3, .skill h3 ,.project h3,.bottom-container h3,.certificate h3,.contact h3{
+        margin-bottom: 1vw;
+        letter-spacing: 3px;
         font-size: 4vw;
+        padding:1vw;
+    }
+    .bottom-container h3 {
+        letter-spacing: 2px;
+        font-size: 3vw;
+        /* border:1px solid blue; */
     }
 
     .education .detail p, span ,.skill p ,.project .detail p ,.bottom-container p{
-        font-size:3.3vw;
+        margin-top: 0vh;
+        font-size:3.5vw;
         letter-spacing: 0.3px;
+    }
+
+    .intro , .education ,.skill ,.project ,.certificate{
+       
+        box-shadow: 1px 1px 6px var(--boxShadow);
+    }
+    .certificate img{
+        height :60vw;
+        width: 50vw;
     }
     .middle-container li:nth-child() {
         font-size:3.3vw;
      
     }
-    .education .detail h4 ,.skill h4 ,.project h4{
+    .education .detail h4 ,.skill h4 {
         font-size:3.2vw;
     }
-
+    .project h4{
+        font-size:2.8vw;
+    }
     .bottom-container{
         margin-top:2.5vh;
     }
+    .bottom-container h3{
+        width:70vw;
+    }
+
     .bottom-container .link{
         margin: 15px 0px 0px 0px;
         font-size: 4.4vw;
@@ -389,16 +595,69 @@ hr {
         margin-top: 0.8vh;
         font-size: 2.2vw;
     }
-    hr {
-        margin:12vw auto;
-        width:15vw;
-        border:7px dotted rgba(163, 213, 209, 0.23);
-        border-bottom: none;
-     
-    }
+    
 
 }
+/* .fa-bars{
+    display:none;
+} */
 
+@media screen and ( max-width: 600px){
+   
+    .fa-bars{
+        width:fit-content;
+        margin:0.5vw 0vw 0.5vw 0.5vw;
+        color:var(--navColor);
+        font-size: 3.5vw;
+        position: relative;
+        left:-46vw;
+               
+    } 
+    div.bar{
+        display: block;
+        position:relative; 
+    }
 
+    .navigation{
+        display: none;
+        width:35vw;
+        float: left;
+        height:100vh;
+        overflow: hidden;
+        position:absolute;
+    }
+   
+    .navigation ul li a ,.navigation ul li a .fa-solid {
+        font-size: 2.3vw;
+    } 
+    .navigation ul #user {
+        display: none;
+     }
+    .navigation ul li i#sun{
+        font-size: 1.9vw;
+    }
+    .navigation ul li a:hover ,.navigation ul li i.fa-lg:hover {
+        font-size: 2.5vw;
+    } 
+    .navigation ul li#light{
+        width:5.7vw;
+        height: fit-content;
+        margin-left: 2.4vw;
+        
+    }
+
+    .skill .detail .item img{
+        height: 12vw;
+        width: 12vw;
+    }
+   
+    .navigation ul li{
+       display: block;
+       padding:1vw 1vw 1vw 3vw;
+    }
+    
+    
+
+}
 
 
