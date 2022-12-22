@@ -1,15 +1,12 @@
 *{  padding: 0px;
-    margin: 0px;
-    
+    margin: 0px;  
 }
 body {
     text-align: center;
     font-family: 'Source Serif Pro', serif;
     letter-spacing: 0.6px;
     background-color: var(--backgroundColor);
-
 }
-
 /*   ## Dark Mode Mechanism  ## */
 :root {
     --opacity:1;
@@ -19,11 +16,10 @@ body {
     --top-containerColor:rgb(182,247,245);
     --bigParaColor: #5cdddd;
     --middleColor:rgba(233, 162, 197, 0.5);
-    --navColor:rgb(148, 77, 215);
+    --navColor:rgb(89, 35, 141);
     --boxShadow:#122e37;
     --navHead:rgb(167, 249, 247);
 }
-
 .dark-mode{
     --opacity:0.2;
     --backgroundColor: rgb(40,39,50);
@@ -32,13 +28,11 @@ body {
     --white:rgb(40,39,50);
     --bigParaColor: #5cdddd;
     --middleColor:var(--top-containerColor);
-    --navColor:rgb(185, 147, 220);
+    --navColor:rgb(185, 142, 225);
     --skillUl:white;
     --boxShadow:white;
     --navHead: var(--backgroundColor);
 }
-
-
 /*  ##  Navigation  ## */
 .navigation {
     background-color:var(--navHead);
@@ -56,7 +50,6 @@ div.bar{
     position: relative;
     z-index: 10;
 }
-
 .navigation ul li{
     display:inline-block;
     padding:0.5vw 3.5vw 0.5vw 1vw;    
@@ -66,31 +59,24 @@ div.bar{
     font-size: 1.7vw;
     text-decoration:none;
     color:var(--navColor);
-
 }
-
 .navigation ul li i#sun{
     margin-left: 1vw;
 
 }
-
 .navigation ul li i.fa-solid{
    font-size:1.5vw ;
 }
-
 .navigation ul li i#moon{
     margin:0.6vw 0 0vw 0.2vw;
     position: relative;
     left:0vw;
-    color:var(--navColor);
-   
-    
+    color:var(--navColor);   
 }
 .navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover{
     text-shadow: 1px 1px 2px rgb(143, 59, 220);
     font-size: 1.6vw;  
 }
-
 .navigation ul li#light{
     padding:0px ;
     width:4.3vw;
@@ -141,21 +127,16 @@ div.bar{
     margin-bottom: 30px;
     font-family: 'Montserrat', sans-serif;
 }
-
 .top-container .mountain img{
-
  margin-bottom: -37px;
  height:100%;
  width: 100%;
 }
-/* middle-container */
 
+/* middle-container */
 .middle-container{
-    /* background-color: var(--top-containerColor); */
-    /* background-color: var(--middleColor); */
     background-color: var(--white);
 }
-
 .middle-container img{
     height:18vw;
     width:18vw;
@@ -167,13 +148,12 @@ div.bar{
 /* middle-container -> intro */
 .intro{
     background:  linear-gradient(to bottom, #5c61ae80, rgba(219, 228, 236, 0.5))
-     ,url("/Portfolio/Images/bg-intro-img.png") no-repeat ;
+     ,url("/Images/bg-intro-img.png") no-repeat ;
     background-size: cover; 
 }
 .intro img{
     padding:0vw 0vw 0.5vw 0vw;
 }
-
 .intro p{
     color:var(--smallColor);
     padding:0px 18vw;
@@ -182,8 +162,6 @@ div.bar{
     font-weight: 600;
     background: none;
 }
-
-
 .intro i.fa-brands{
     font-size: 2.3vw;
     background-color: white;
@@ -191,17 +169,14 @@ div.bar{
     padding:0.9vw;
     margin-right:0vw; 
 }
-.intro i.linkedin{
-   
+.intro i.linkedin{  
     color: #0077b5;
 }
 .intro i.linkedin:hover{
     color: white;
     background-color: #0077b5;
 }
-
 .intro i.github{
-
     color:black;
 }
 .intro i.github:hover{
@@ -211,12 +186,10 @@ div.bar{
 .intro button{
     border-style: none;
     padding:0.6vw;
-    background: none;
-   
+    background: none; 
 }
 .intro button a{
-  background:none;
-   
+  background:none; 
 }
 
 /* middle-container -> education */
@@ -231,24 +204,18 @@ hr {
     border:1px solid rgba(144, 195, 191, 0.3);
 }
 
-.skill{
-    text-align: left;
-}
 /*middle-container-> skill ->detail
   middle-container-> project ->detail
 */
-.detail{
-    
-    margin-left:20vw;
+.detail{   
+     margin-left:22vw;
      text-align: left; 
      padding:0vw 4vw;
      line-height: 1.4;
 } 
 
 .skill .detail{
-    width: 60vw;
-    margin:0px auto; 
-   
+    margin:0px auto;   
 }
 .skill .detail h3{
     font-size: 2.3vw;
@@ -257,8 +224,9 @@ hr {
 
 }
 .detail h3.tech ,.detail h3.non-tech{
-    font-size: 2vw;
+    font-size: 3.1vw;
     width: 85%;
+    font-weight: 900;
     margin:0vw auto;
     box-shadow: 2px 2px 8px var(--boxShadow);
 }
@@ -270,9 +238,8 @@ hr {
 /* .middle-container -> .skill -> .detail -> .items */
 .detail .item{
     width:55vw;
-    margin:5vw auto;
+    margin:5vw 0vw;
     border-radius: 6px;
-    /* background-color:  var(--top-containerColor); */
     background-color:  var(--white);
     box-shadow: 1px 1px 15px var(--boxShadow);
 }
@@ -284,16 +251,17 @@ hr {
 
 }
 .skill .detail .item .caption{
-    width:10vw;
+    width:12vw;
 }
 .detail .item p{
+  font-weight: 500;
   font-size: 1.5vw;
   margin-top:0.2vw;
   clear: both;
 }
 .detail .item .col{
     display: inline-block;
-    padding:2vw;
+    padding:1.5vw 1.5vw;
     text-align: center;
 }
 /* .middle-container -> .project */
@@ -304,6 +272,7 @@ hr {
 .project img{
     float: left;
 }
+
 /*  .middle-container -> .certificate  */
 .certificate img{
     height:50vw;
@@ -316,7 +285,7 @@ hr {
 }
 .contact .detail i.fa{
 
-         font-size: 2.2vw;
+         font-size: 2.7vw;
          margin:1vw 3.5vw 1vw 0vw;
          border:1px solid grey;
          padding:1vw;
@@ -324,12 +293,13 @@ hr {
          border-radius:50%;
 }
 .contact .detail i.fa:hover{
-       /* padding: 0.8vw; */
+     
        box-shadow: 2px 2px 6px grey;
 }
 
 .contact .detail a:nth-child(2){
-    font-size: 1.8vw; 
+    font-size: 1.9vw; 
+    font-weight: 600;
     color:var(--navColor);
     text-decoration: none;
 }
@@ -339,8 +309,8 @@ hr {
     
 }
 .contact .detail p img{
-    height: 2vw;
-    width: 2vw;
+    height: 2.8vw;
+    width: 2.8vw;
 }
 
 /* Label designing //  .contact ->.detail -> span */
@@ -359,9 +329,10 @@ hr {
     background: none;
 }
 
+
 /* common box of skill  */
 .intro , .education ,.skill ,.project ,.certificate ,.contact{
-    /* background-color: var(--middleColor); */
+
     background-color: var(--top-containerColor);
     border-radius:10px;
     width: 70vw;
@@ -385,32 +356,45 @@ hr {
    margin:1vw 0vw 2vw 0vw;
 }
 .bottom-container h3{
+    color:#1279c3;
     margin-bottom: 2vw;
     letter-spacing: 3px;
    
 }
 
 .education .detail h4 ,.skill h4 ,.project h4 ,.certificate h4{
-    font-size:1.85vw;
+    font-size:1.90vw;
     color: rgba(35, 129, 191, 0.7);
 
 }
+
 .project h4{
     /* color: rgba(95, 78, 217, 0.7); */
     color: var(--navColor);
     font-weight: 800;
     margin-bottom: 1vw;
 }
-
+.project h4 a{
+    color:var(--navColor);
+    text-decoration: none;
+}
+.project h4 a:hover{
+    text-decoration: underline;
+}
 .education .detail p, span ,.skill p ,.project .detail p,.bottom-container p{
     font-size:2vw;
     margin: 0.2vh;
     letter-spacing: 0.5px;
     color:var(--smallColor);
+    
+}
+.bottom-container p{
+    font-size:2.2vw;
+    font-family:  cursive;
+
 }
 .bottom-container p{
     width:50vw;
-    font-weight: 600;
     margin:1vw auto;
 }
 
@@ -426,7 +410,7 @@ hr {
     margin: 1vw;
     padding:0;
     border:1px solid blue;
-    box-shadow: 1px 1px 5px rgb(118, 118, 189);
+    box-shadow: 2px 2px 6px rgb(118, 118, 189);
 
 }
 .bottom-container{
@@ -469,11 +453,11 @@ hr {
     margin-top: 10vh;
     padding:8px;
     font-family: monospace;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color:rgb(188, 215, 236);
     /* background-color:var(--top-containerColor); */
     background:  linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5))
-     ,url("/Portfolio/Images/bg-intro-img.png") no-repeat ;
+     ,url("/Images/bg-intro-img.png") no-repeat ;
     background-size: cover; 
     box-shadow:inset 0.3px 0.4px 10px rgb(39, 52, 52);
 
@@ -483,8 +467,8 @@ hr {
     margin-top:15px;
     position: relative;
     bottom: 0px;
-    height:2vw;
-    width:2vw;
+    height:2.6vw;
+    width:2.6vw;
     background: none;
 }
 .footer p{
@@ -500,14 +484,11 @@ hr {
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
 @media screen and ( max-width: 480px){
 
-  
-    
-    
     .top-container p ,.top-container{
         font-size: 3.2vw;
     }
     .middle-container{
-        padding:4vh 13vw;
+        padding:4vh 4vw;
     }
     .middle-container img{
         height: 30vw;
@@ -522,23 +503,15 @@ hr {
     }
     
     .middle-container i.fa-brands{
-        font-size: 4.2vw;
-    }
-    .skill .detail ul li{
-        font-size:2.2vw;
+        font-size: 4.4vw;
     }
     
     .education .detail ,.project .detail{
         margin-left:30vw;
-      
-        /* line-height: 1.1; */
+    
     }
     .education .detail p,.project .detail p{
         line-height: 1.1;
-    }
-    .skill .detail{
-        margin-right:0vw;
-       
     }
     .education h3, .skill h3 ,.project h3,.bottom-container h3,.certificate h3,.contact h3{
         margin-bottom: 1vw;
@@ -546,10 +519,12 @@ hr {
         font-size: 4vw;
         padding:1vw;
     }
+    .detail .item{
+        width:72vw;
+    }
     .bottom-container h3 {
         letter-spacing: 2px;
         font-size: 3vw;
-        /* border:1px solid blue; */
     }
 
     .education .detail p, span ,.skill p ,.project .detail p ,.bottom-container p{
@@ -557,14 +532,18 @@ hr {
         font-size:3.5vw;
         letter-spacing: 0.3px;
     }
-
-    .intro , .education ,.skill ,.project ,.certificate{
+    .bottom-container p{
+        font-size:3.6vw;
+    }
+    .intro , .education ,.skill ,.project ,.certificate ,.contact{
        
         box-shadow: 1px 1px 6px var(--boxShadow);
+        width:80vw;
+        
     }
     .certificate img{
-        height :60vw;
-        width: 50vw;
+        height :85vw;
+        width: 60vw;
     }
     .middle-container li:nth-child() {
         font-size:3.3vw;
@@ -580,27 +559,38 @@ hr {
         margin-top:2.5vh;
     }
     .bottom-container h3{
-        width:70vw;
+        padding:0vw 5vw;
+        margin:2vw;
     }
-
+    .bottom-container p{
+        width:75vw;
+    }
     .bottom-container .link{
         margin: 15px 0px 0px 0px;
-        font-size: 4.4vw;
+        font-size: 5.4vw;
     }
     .bottom-container .button ,.bottom-container .button:visited{
         font-size: 3vw;
     }
-
+    .contact .detail i.fa{
+        font-size: 3.8vw;
+        padding:1.2vw;
+    }
+    .contact .detail p img{
+        height:3.5vw;
+        width:3.5vw;
+        /* padding:1.2vw; */
+    }
+    .contact .detail a:nth-child(2){
+        font-size: 2.8vw; 
+    }
     .footer{
         margin-top: 0.8vh;
-        font-size: 2.2vw;
+        font-size: 3vw;
     }
     
 
 }
-/* .fa-bars{
-    display:none;
-} */
 
 @media screen and ( max-width: 600px){
    
@@ -625,10 +615,11 @@ hr {
         height:100vh;
         overflow: hidden;
         position:absolute;
+        padding-top:3vw;
     }
    
     .navigation ul li a ,.navigation ul li a .fa-solid {
-        font-size: 2.3vw;
+        font-size: 3.2vw;
     } 
     .navigation ul #user {
         display: none;
@@ -640,20 +631,24 @@ hr {
         font-size: 2.5vw;
     } 
     .navigation ul li#light{
-        width:5.7vw;
+        width:7vw;
         height: fit-content;
         margin-left: 2.4vw;
         
     }
 
     .skill .detail .item img{
-        height: 12vw;
-        width: 12vw;
+        height: 12.5vw;
+        width: 12.5vw;
     }
    
     .navigation ul li{
        display: block;
-       padding:1vw 1vw 1vw 3vw;
+       padding:2vw 2vw 2vw 3vw;
+    }
+    .detail .item p{
+       font-size: 2.2vw;
+       font-weight: 600;
     }
     
     
