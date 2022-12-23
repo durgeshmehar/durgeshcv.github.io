@@ -46,7 +46,7 @@ div.bar{
     box-shadow:0.2px 0.1px 2.5px rgb(148, 211, 211);
     background-color:var(--navHead);
     width:100%;
-    padding:3px;
+    padding:6px;
     position: relative;
     z-index: 10;
 }
@@ -57,15 +57,21 @@ div.bar{
 }
 .navigation ul li a {
     font-size: 1.7vw;
+    font-weight:600;
     text-decoration:none;
     color:var(--navColor);
+}
+.navigation .nav-icon{
+    margin-right:15px;
+    display:none;
+    color: #008073;
 }
 .navigation ul li i#sun{
     margin-left: 1vw;
 
 }
 .navigation ul li i.fa-solid{
-   font-size:1.5vw ;
+   font-size:1.7vw ;
 }
 .navigation ul li i#moon{
     margin:0.6vw 0 0vw 0.2vw;
@@ -73,13 +79,18 @@ div.bar{
     left:0vw;
     color:var(--navColor);   
 }
-.navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover{
-    text-shadow: 1px 1px 2px rgb(143, 59, 220);
-    font-size: 1.6vw;  
+.navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover ,.navigation ul li i#moon:hover {
+    /* text-shadow: 1px 1px 2px rgb(143, 59, 220); */
+    font-size: 1.65vw;  
+    background: linear-gradient(to right,#f32170,
+					#ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
 }
 .navigation ul li#light{
     padding:0px ;
-    width:4.3vw;
+    width:4.5vw;
     height:fit-content;
     display: inline-flex;
     align-items: center;
@@ -390,14 +401,14 @@ hr {
 }
 .bottom-container p{
     font-size:2.2vw;
-    font-family:  cursive;
-
+    color:var(--navColor);
+    font-family: monospace;
+    letter-spacing: -1px;
 }
 .bottom-container p{
     width:50vw;
     margin:1vw auto;
 }
-
 
 /* bottom-container */
 .bottom-container h3#mar-bottom{
@@ -411,7 +422,6 @@ hr {
     padding:0;
     border:1px solid blue;
     box-shadow: 2px 2px 6px rgb(118, 118, 189);
-
 }
 .bottom-container{
 
@@ -460,7 +470,6 @@ hr {
      ,url("/Images/bg-intro-img.png") no-repeat ;
     background-size: cover; 
     box-shadow:inset 0.3px 0.4px 10px rgb(39, 52, 52);
-
 }
 
 .footer img{
@@ -479,7 +488,6 @@ hr {
 #gb-widget-6051 ,.sc-1s18q3d-0{
     background: none;
 }
-
 
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
 @media screen and ( max-width: 480px){
@@ -588,17 +596,16 @@ hr {
         margin-top: 0.8vh;
         font-size: 3vw;
     }
-    
-
 }
 
 @media screen and ( max-width: 600px){
-   
+
+     /* <i class="mdi-social-person small"></i> */
     .fa-bars{
         width:fit-content;
         margin:0.5vw 0vw 0.5vw 0.5vw;
         color:var(--navColor);
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         position: relative;
         left:-46vw;
                
@@ -619,8 +626,13 @@ hr {
     }
    
     .navigation ul li a ,.navigation ul li a .fa-solid {
-        font-size: 3.2vw;
+        font-size: 3.5vw;
+        font-weight: 600;
     } 
+    .navigation .nav-icon{
+        display:inline;
+    }
+    
     .navigation ul #user {
         display: none;
      }
@@ -644,7 +656,7 @@ hr {
    
     .navigation ul li{
        display: block;
-       padding:2vw 2vw 2vw 3vw;
+       padding:2vw 2vw 5.2vw 3vw;
     }
     .detail .item p{
        font-size: 2.2vw;

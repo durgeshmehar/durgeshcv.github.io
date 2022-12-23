@@ -83,8 +83,11 @@ $(".contact .detail i").hover(function () {
 // Creating navigation for mobile
 
 var nav_width=$('.navigation').width();
- if( nav_width > 150){
-   nav_width =100;
+ if( nav_width > 200){
+   nav_width =170;
+ }
+ else if( nav_width < 150 ){
+   nav_width =170;
  }
 var check =0;
 $(document).ready(function(){
@@ -104,15 +107,10 @@ $(document).ready(function(){
       
    });
 });
+// <i class="mdi-social-person "></i>
+$("#home")
 
-// $("document").click(function(event1){
-//    if( check == 1){ 
-//       //   $('div.bar').css("display","block");
-//       //   $('.navigation').css("display","none");
-//       alert("How are you");
-//       check--;
-//     }
-// });
+
 
 
 
