@@ -37,7 +37,7 @@ body {
 .navigation {
     background-color:var(--navHead);
     text-align: left;
-    box-shadow:0.2px 0.1px 2.5px rgb(148, 211, 211);
+    box-shadow:0.3px 0.3px 6px rgb(148, 211, 211);
     position: relative;
     z-index: 10;
 }
@@ -52,14 +52,15 @@ div.bar{
 }
 .navigation ul li{
     display:inline-block;
-    padding:0.5vw 3.5vw 0.5vw 1vw;    
+    padding:1vw 3.5vw 1vw 1vw;    
     box-sizing: border-box;
 }
 .navigation ul li a {
     font-size: 1.7vw;
-    font-weight:600;
+    font-weight:500;
     text-decoration:none;
     color:var(--navColor);
+    
 }
 .navigation .nav-icon{
     margin-right:15px;
@@ -87,6 +88,7 @@ div.bar{
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    font-weight: 600;
 }
 .navigation ul li#light{
     padding:0px ;
