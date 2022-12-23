@@ -403,7 +403,13 @@ hr {
 }
 .bottom-container p{
     font-size:2.2vw;
-    color:var(--navColor);
+    /* color:var(--navColor); */
+    background: linear-gradient(to right,#f32170,
+					#ff6b08, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-weight: 600;
     font-family: monospace;
     letter-spacing: -1px;
 }
