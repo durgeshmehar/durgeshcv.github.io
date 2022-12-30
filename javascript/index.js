@@ -82,33 +82,32 @@ $(".contact .detail i").hover(function () {
 
 // Creating navigation for mobile
 
-var nav_width=$('.navigation').width();
- if( nav_width > 200){
-   nav_width =170;
+
+ if (window.matchMedia("(max-width: 600px)").matches) {
+              nav_width =280;
  }
- else if( nav_width < 150 ){
-   nav_width =170;
- }
+ if(window.matchMedia("(max-width: 480px)").matches) {
+   nav_width =190;
+}
+
+
 var check =0;
 $(document).ready(function(){
 
    $("#bar").click(function(e){
-   
-      $('div.bar').css("display","none");
+  
       $('.navigation').css("width","0px");
-      $('.navigation').css("display","block").animate({ width:nav_width},300);
+      $('.navigation').css("visibility","visible").animate({ width:nav_width},300);
    
      e.stopPropagation();
      $(document).on('click', function(e) {
       $('.navigation').css("display","block").animate({ width:-50 },300);
-      $('div.bar').css("display","block");
 
      });
       
    });
 });
-// <i class="mdi-social-person "></i>
-$("#home")
+
 
 
 
