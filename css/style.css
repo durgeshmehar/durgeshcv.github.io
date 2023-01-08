@@ -50,7 +50,7 @@ body {
     position: sticky;
     top:0vh;
     padding:0.2vw;
-    z-index: 10;
+    z-index: 9;
 }
 /* hide started */
 .hide_div{
@@ -94,8 +94,8 @@ body {
     left:0vw;
     color:var(--navText);   
 }
-.navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover,.navigation ul li i#moon:hover {
-    font-size: 1.7vw;  
+.navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover ,.navigation ul li i#moon:hover{
+    font-size: 1vw;  
     background: linear-gradient(to right,#f32170,
 					#ff6b08, #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
@@ -514,7 +514,7 @@ hr {
    
     padding:8px;
     font-family: monospace;
-    font-size: 1.5vw;
+    font-size: 2vw;
     color:rgb(188, 215, 236);
     /* background-color:var(--top-containerColor); */
     background:  linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5))
@@ -524,7 +524,7 @@ hr {
 }
 
 .footer img{
-    margin-top:15px;
+    margin:12px 0 0 5px;
     position: relative;
     bottom: 0px;
     height:2.4vw;
@@ -540,16 +540,20 @@ hr {
     background: none;
 }
 
+#cross{
+    display: none;
+}
+
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
 @media screen and ( max-width: 480px){
 
     .top-container p {
-        font-size: 2.8vw;
+        font-size: 3.2vw;
       
 
     }
     .top-container h1{
-        font-size: 6vw;
+        font-size: 7vw;
     }
     .middle-container{
         padding:4vh 4vw;
@@ -571,8 +575,9 @@ hr {
         font-size:4vw;
     }
     .middle-container .intro p{
-      font-size: 3vw;
+      font-size: 3.2vw;
       font-weight: bolder;
+      margin-bottom: 1vw;
     }
     
     .middle-container i.fa-brands{
@@ -666,19 +671,28 @@ hr {
 }
 
 @media screen and ( max-width: 600px){
+    .navigation ul li a ,.navigation ul li a .fa-solid {
+        font-size: 3.4vw;
+        color: #0ca091;
+        font-weight: 600;
+    } 
+    .navigation ul li i#moon ,.navigation ul li i#sun{
+        color:var(--navText);
+    }
     .hide_div{
         display: block;
         background-color:var(--navColor);
         width:100%;
         padding:1vw 1vw 1vw 1vw ;
         position:sticky;
-        z-index: 10;
+        z-index: 9;
         top:0px;
     
   
     }
     .hide_div #bar-head{
-        font-size: 4.2vw;
+        font-size: 4.4vw;
+        padding-top:0.2vw;
         color:#363a3c;
         letter-spacing: 0.2;
         
@@ -688,18 +702,30 @@ hr {
         font-family: 'Alegreya', serif;
         display: block;
         letter-spacing: 0.2;
-        font-size: 3.1vw;
+        font-size: 3.3vw;
     }
     .fa-bars{
         width:fit-content;
         margin:0.5vw 0vw 0.5vw 0.5vw;
         color:var(--navText);
-        font-size: 4.5vw;
+        font-size: 4.7vw;
         position: absolute;
-        left:2vw;
-        top:2vw;
+        left:3vw;
+        top:3vw;
                
     } 
+    #cross{
+        width:fit-content;
+        color:var(--navText);
+        font-size: 4.7vw;
+        margin:0.5vw 0vw 0.5vw 0.5vw;
+        left:4vw;
+        text-shadow: 0.4px 0.4px #0ca091;
+        z-index: 40;
+        top:2vw;
+        position: fixed;
+        display: none;
+    }
     
     .navigation{
         /* display: none; */
@@ -710,9 +736,10 @@ hr {
         float: left;
         height:100vh;
         overflow: hidden;
-        position: fixed;
-        padding-top:10vw;
+        position:fixed;
+        padding-top:8vw;
         margin-right: 1vw;
+
     }
    
     
@@ -722,11 +749,8 @@ hr {
         margin: 1vw;
         
      }
-    .navigation ul li a ,.navigation ul li a .fa-solid {
-        font-size: 4vw;
-        color: #0ca091;
-        font-weight: 600;
-    } 
+    
+    
     .navigation .nav-icon{
         display:inline;
     }
@@ -734,19 +758,17 @@ hr {
     .navigation ul #user {
         display: none;
      }
-    li i#sun{
-        font-size: 3vw;
-    }
+  
     .navigation ul li a:hover ,.navigation ul li i.fa-lg:hover {
-        font-size: 2.5vw;
+        font-size: 3.5vw;
     } 
 
     .navigation ul li#light{
         display: block;
         visibility: visible;
         list-style: none;
-        padding:0px ;
-        width:6vw;
+        padding:1px 2px ;
+        width:9vw;
         height:fit-content;
         display: inline-flex;
         align-items: center;
@@ -756,10 +778,9 @@ hr {
         outline: var(--navText);
         margin: auto;
         /* width:10vw; */
-        width:fit-content;
         position :fixed;
         top:2vw;
-        right:3vw;  
+        right:4vw;
 
     }
     .hide_div .button{

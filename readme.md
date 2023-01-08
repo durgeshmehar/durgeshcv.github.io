@@ -46,7 +46,7 @@
 <hr>
 
 ### Home Page
-![Home page](https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/1%20navabr.jpg?raw=true)
+<img src="Images/readme photo/home.jpg">
 
 There are many great Portfolio Website available on Google; however, I find many portfolio website, using that knowledge I created this enhanced one. I want to create the best portfolio that satisfied my need .
 
@@ -61,17 +61,23 @@ Here's why:
 <hr>
 
 ### About & Education 
-![About & Education](https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/2%20about%20,education.jpg?raw=true)
+<img src="Images/readme photo/about_education.jpg">
+
 ### My Skill 
-![My Skill ](https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/3%20my%20skill.jpg?raw=true)
+<img src="Images/readme photo/skill.jpg">
+
 ### Projects 
-![Projects]( https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/4%20project.jpg?raw=true)
+<img src="Images/readme photo/project.jpg">
+
 ### Certificate
-![Certificate](https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/5%20cetificate.jpg?raw=true)
+<img src="Images/readme photo/certificate.jpg">
+
 ### Contact
-![Contact](https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/6%20contact.jpg?raw=true )
+<img src="Images/readme photo/contact.jpg">
+
 ### Footer
-![Footer]( https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/7%20footer.jpg?raw=true)
+<img src="Images/readme photo/footer.jpg">
+
 
 <p align="right">(<a href="#">back to top</a>)</p>
 
@@ -110,7 +116,7 @@ I have added dark mode functionality & It seems goood ,resposive in mobile also 
 
 _For examples, please refer to the_
 #### Mobile View
-![Mobile View]( https://github.com/durgeshmehar/durgeshmehar.github.io/blob/main/Images/portfolio/8%20mobile%20view.jpg?raw=true)
+<img src="./Images/readme photo/mobileview.jpg">
 
 
 <p align="right">(<a href="#">back to top</a>)</p>

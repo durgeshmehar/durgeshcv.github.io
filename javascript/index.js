@@ -90,6 +90,11 @@ $(".contact .detail i").hover(function () {
    nav_width =190;
 }
 
+function callCross(){
+   $('#bar').css("display","none");
+   $('#cross').css("display","block");
+   $('#cross').css("visibility","visible");
+};
 
 var check =0;
 $(document).ready(function(){
@@ -98,12 +103,15 @@ $(document).ready(function(){
   
       $('.navigation').css("width","0px");
       $('.navigation').css("visibility","visible").animate({ width:nav_width},300);
+      setTimeout( callCross, 100);
    
      e.stopPropagation();
-     $(document).on('click', function(e) {
-      $('.navigation').css("display","block").animate({ width:-50 },300);
+        $("#cross").on('click', function(e) {
+           $('.navigation').css("display","block").animate({ width:-50 },300);
+           $('#cross').css("display","none");
+           $('#bar').css("display","block");
 
-     });
+         });
       
    });
 });
