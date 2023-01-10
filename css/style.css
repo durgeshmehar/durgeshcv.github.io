@@ -24,10 +24,7 @@ body {
     --navHead:rgb(167, 249, 247);
     --navText:rgb(0,0,0);
     --gradientColor:linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5));
-    --navColor:rgb(109, 168, 216);
-   
-    
-    
+    --navColor:rgb(109, 168, 216);  
 }
 .dark-mode{
     --opacity:0.2;
@@ -41,7 +38,6 @@ body {
     --boxShadow:white;
     --navHead: var(--backgroundColor);
     --gradientColor: var(--backgroundColor);
-
 }
 /*  ##  Navigation  ## */
 .navigation {
@@ -57,8 +53,7 @@ body {
     display: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.hide_div span{
-    
+.hide_div span{    
     color:var(--navText);
 }
 .hide_div a{
@@ -95,13 +90,14 @@ body {
     color:var(--navText);   
 }
 .navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover ,.navigation ul li i#moon:hover{
-    font-size: 1vw;  
+    
+    
     background: linear-gradient(to right,#f32170,
 					#ff6b08, #cf23cf, #eedd44);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-weight: 600;
+    font-weight: 900;
 }
 
 .navigation ul li#light{
@@ -716,11 +712,11 @@ hr {
     } 
     #cross{
         width:fit-content;
-        color:var(--navText);
-        font-size: 4.7vw;
+        color: #0ca091;
+        font-size: 3.7vw;
         margin:0.5vw 0vw 0.5vw 0.5vw;
         left:4vw;
-        text-shadow: 0.4px 0.4px #0ca091;
+        text-shadow: 2px 2px 2px var(--navText);
         z-index: 40;
         top:2vw;
         position: fixed;
@@ -742,7 +738,6 @@ hr {
 
     }
    
-    
     .navigation ul li{
         display: block;
         padding:2vw 0vw 5.2vw 3vw;
