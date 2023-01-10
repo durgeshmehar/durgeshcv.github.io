@@ -713,7 +713,7 @@ hr {
     #cross{
         width:fit-content;
         color: #0ca091;
-        font-size: 3.7vw;
+        font-size: 4.7vw;
         margin:0.5vw 0vw 0.5vw 0.5vw;
         left:4vw;
         text-shadow: 2px 2px 2px var(--navText);
