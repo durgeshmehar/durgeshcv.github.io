@@ -106,7 +106,7 @@ $(document).ready(function(){
       setTimeout( callCross, 100);
    
      e.stopPropagation();
-        $("#cross").on('click', function(e) {
+        $("body").on('click', function(e) {
            $('.navigation').css("display","block").animate({ width:-50 },300);
            $('#cross').css("display","none");
            $('#bar').css("display","block");
