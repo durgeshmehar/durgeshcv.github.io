@@ -29,7 +29,8 @@ body {
 .dark-mode{
     --opacity:0.2;
     --backgroundColor: rgb(40,39,50);
-    --navColor:rgb(112, 151, 171);
+    --navColor:#412a4c;
+    /* --navColor:rgb(112, 151, 171); */
     --top-containerColor:rgb(40,39,50);
     --smallColor:white;
     --white:rgb(40,39,50);
