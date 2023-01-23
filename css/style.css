@@ -29,7 +29,7 @@ body {
 .dark-mode{
     --opacity:0.2;
     --backgroundColor: rgb(40,39,50);
-    --navColor:#493f6e;
+    --navColor:#543153;
     --top-containerColor:rgb(40,39,50);
     --smallColor:white;
     --white:rgb(40,39,50);
@@ -670,7 +670,7 @@ hr {
 
 @media screen and ( max-width: 600px){
     .navigation ul li a ,.navigation ul li a .fa-solid {
-        font-size: 3.3vw;
+        font-size: 3.8vw;
         color: #0ca091;
         font-weight: 600;
     } 
@@ -693,10 +693,10 @@ hr {
         width:fit-content;
         margin:0.5vw 0vw 0.5vw 0.5vw;
         color:var(--navText);
-        font-size: 4.7vw;
+        font-size: 5vw;
         position: absolute;
-        left:3vw;
-        top:3vw;
+        left:3.2vw;
+        top:3.2vw;
                
     } 
     .hide_div #bar-head{
@@ -717,10 +717,10 @@ hr {
     #cross{
         width:fit-content;
         color: #0ca091;
-        font-size: 5.5vw;
-        margin:1vw 0vw 2vw 0.5vw;
+        font-size: 5.8vw;
+        margin:1vw 0vw 4vw 0.5vw;
         left:4vw;
-        text-shadow: 2.5px 2.5px 2.5px var(--navText);
+        text-shadow: 2.5px 2.5px 2.5px #000;
         z-index: 40;
         top:2.2vw;
         position: fixed;
@@ -736,7 +736,7 @@ hr {
         height:100vh;
         overflow: hidden;
         position:fixed;
-        padding-top:10vw;
+        padding-top:11vw;
         margin-right: 1vw;
 
     }
@@ -765,8 +765,8 @@ hr {
         display: block;
         visibility: visible;
         list-style: none;
-        padding:1px 2px ;
-        width:9vw;
+        padding:2px 4px ;
+        width:10.2vw;
         height:fit-content;
         display: inline-flex;
         align-items: center;
