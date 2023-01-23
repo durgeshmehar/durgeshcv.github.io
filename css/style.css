@@ -23,6 +23,8 @@ body {
     --boxShadow:#122e37;
     --navHead:rgb(167, 249, 247);
     --navText:rgb(0,0,0);
+    --barColor:#363a3c;
+    --linkColor:#0077b5  ;
     --gradientColor:linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5));
     --navColor:rgb(109, 168, 216);  
 }
@@ -37,8 +39,11 @@ body {
     --skillUl:white;
     --boxShadow:white;
     --navHead: var(--backgroundColor);
+    --linkColor: var(--bigParaColor);
     --gradientColor: var(--backgroundColor);
+    --barColor:#ffffff;
     --navText:#fff;
+
 }
 /*  ##  Navigation  ## */
 .navigation {
@@ -419,13 +424,11 @@ hr {
 }
 
 .project h4{
-    /* color: rgba(95, 78, 217, 0.7); */
-    color: var(--navColor);
     font-weight: 800;
     margin-bottom: 1vw;
 }
 .project h4 a{
-    color:var(--navColor);
+    color:rgba(35, 129, 191, 0.7);
     text-decoration: none;
 }
 .project h4 a:hover{
@@ -702,7 +705,7 @@ hr {
     .hide_div #bar-head{
         font-size: 4.4vw;
         padding-top:0.2vw;
-        color:#363a3c;
+        color:var(--barColor);
         letter-spacing: 0.2;
         
     }
@@ -713,6 +716,10 @@ hr {
         display: block;
         letter-spacing: 0.2;
         font-size: 3.3vw;
+    }
+    .hide_div #bar-small a{
+        color:var(--linkColor);
+
     }
     #cross{
         width:fit-content;
