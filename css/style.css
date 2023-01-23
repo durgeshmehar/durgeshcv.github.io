@@ -29,8 +29,7 @@ body {
 .dark-mode{
     --opacity:0.2;
     --backgroundColor: rgb(40,39,50);
-    --navColor:#412a4c;
-    /* --navColor:rgb(112, 151, 171); */
+    --navColor:#493f6e;
     --top-containerColor:rgb(40,39,50);
     --smallColor:white;
     --white:rgb(40,39,50);
@@ -39,6 +38,7 @@ body {
     --boxShadow:white;
     --navHead: var(--backgroundColor);
     --gradientColor: var(--backgroundColor);
+    --navText:#fff;
 }
 /*  ##  Navigation  ## */
 .navigation {
@@ -343,7 +343,8 @@ hr {
 .contact .detail a:nth-child(2){
     font-size: 1.9vw; 
     font-weight: 600;
-    color:var(--navColor);
+    /* color:var(--navColor); */
+    color:#534197;
     text-decoration: none;
 }
 .contact .detail a:nth-child(2):hover {
@@ -543,7 +544,7 @@ hr {
 
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
 @media screen and ( max-width: 480px){
-
+   
     .top-container p {
         font-size: 3.2vw;
       
@@ -669,7 +670,7 @@ hr {
 
 @media screen and ( max-width: 600px){
     .navigation ul li a ,.navigation ul li a .fa-solid {
-        font-size: 4vw;
+        font-size: 3.3vw;
         color: #0ca091;
         font-weight: 600;
     } 
@@ -687,20 +688,7 @@ hr {
     
   
     }
-    .hide_div #bar-head{
-        font-size: 4.4vw;
-        padding-top:0.2vw;
-        color:#363a3c;
-        letter-spacing: 0.2;
-        
-    }
-    .hide_div #bar-small{
-        color:#363a3c;
-        font-family: 'Alegreya', serif;
-        display: block;
-        letter-spacing: 0.2;
-        font-size: 3.3vw;
-    }
+  
     .fa-bars{
         width:fit-content;
         margin:0.5vw 0vw 0.5vw 0.5vw;
@@ -711,6 +699,21 @@ hr {
         top:3vw;
                
     } 
+    .hide_div #bar-head{
+        font-size: 4.4vw;
+        padding-top:0.2vw;
+        color:#363a3c;
+        letter-spacing: 0.2;
+        
+    }
+    .hide_div #bar-small{
+        color:#152127;
+        /* color:#1bc258; */
+        font-family: 'Alegreya', serif;
+        display: block;
+        letter-spacing: 0.2;
+        font-size: 3.3vw;
+    }
     #cross{
         width:fit-content;
         color: #0ca091;
