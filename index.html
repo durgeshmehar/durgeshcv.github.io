@@ -10,6 +10,9 @@
     <!-- Font awesome -->
     <script src="https://kit.fontawesome.com/9ddc6a281f.js" crossorigin="anonymous"></script>
     <!-- Google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Dancing+Script&family=Inconsolata:wght@200&family=Montserrat:wght@200&family=Source+Serif+Pro:wght@300&display=swap" rel="stylesheet">
   </head>
   <body> 
@@ -41,33 +44,51 @@
           </li>
       </ul>
     </nav>
-    <div class="top-container" id="top-container">
+    <div class="top-container " id="top-container">
       <img src="./Images/bird.png" alt="Birds" class="bird" />
       <img src="Images/cloud.png" alt="Cloud" class="upper-cloud" />
+       <section class="hidden1">
+         <h1>Hello</h1>
+         <h1>I'm Durgesh</h1>
+      </section>
+      <section class="hidden2">
+        <p>a programmer & web designer.</p>
 
-      <h1>Hello</h1>
-      <h1>I'm Durgesh</h1>
-      <p>a programmer & web designer.</p>
+      </section>
+
+      
       <img src="Images/cloud.png" alt="Cloud" class="bottom-cloud" />
       <div class="mountain">
         <img src="Images/moun.png" alt="Mountain" class="mountain_img"/>
       </div>
      </div>
+
     <div class="middle-container" id="middle-container">
-      <div class="intro">
-        <img src="Images/Best durgesh.png" alt="Durgesh" />
+      
+      <div class="intro hidden1">
+
+        <img src="Images/Best durgesh.png" alt="Durgesh" class="hidden1"/>
         
-        <p>
-          I am a student of DYPCOE Akurdi,Pune. I love to learn and develop new
-          technologies.
+        <p class="hidden1">
+          Hi , I am Durgesh, a fronted & Backend developer . I am currently pursuing my Bachelor's degree in Information Technology from DY Patil College of Engineering, Pune . I love to learn and develop new
+          technologies & share my knowledge as blogger .
+          <br><br>
+
+ I am constantly pushing myself to improve and grow as a developer and work on open source project.
+ I dedicated to continuously improving my skills and learning new technologies, which fuels my enthusiasm for coding.
+ <br>
+
+
+          <!-- I am a student of DYPCOE Akurdi,Pune. I love to learn and develop new
+          technologies. -->
         </p>
-        <button>
+        <button class="hidden1">
 
           <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230">
           <i class="fa-brands fa-linkedin-in linkedin"></i>
          </a>
         </button>
-        <button >
+        <button class="hidden1" >
           <a href="https://durgeshmehar.github.io/">
           <i class="fa-brands fa-github github"></i>
           </a>
@@ -76,11 +97,12 @@
        
       </div>
 
-      <div class="education" id="education">
+      <div class="education hidden2" id="education">
+        
         <h3>Education</h3>
-   
+        <section class="hidden3">
         <img src="Images/studying.png" alt="Durgesh" />
-        <div class="detail">
+        <div class="detail ">
             <h4>10 th</h4>
             <p>Score: 91.80 %</p>
             <h4>12 th</h4>
@@ -88,22 +110,23 @@
             <h4>Engineering (Pursing)</h4>
             <p>1st year(SGPA) : 9.59</p>
         </div>
+      </section>
       </div>
     
 
 
-      <div class="skill" id="skill">
+      <div class="skill hidden1" id="skill">
         <h3>My Skills</h3>
          
         <div class="detail">
 
         
          <h3 class="tech">Technical</h3>
-         <div class="item">
+         <div class="item hidden2">
            <h4>Language & Databases</h4>
            <hr>
-          
-            <div class="row justify-content-center"> 
+             
+            <div class="row justify-content-center hidden3"> 
                <div class="col"><img src="Images/language/c.png" alt=""> <p class="caption">C</p></div>
                <div class="col "><img src="Images/language/C++.png" alt=""><p class="caption">C++</p></div>
                <div class="col"><img src="Images/language/python.png" alt=""><p class="caption">Python</p></div>
@@ -117,10 +140,10 @@
             </div>
             
           </div>
-         <div class="item">
+         <div class="item hidden2">
            <h4>Frameworks</h4>
           <hr>
-            <div class="row justify-content-center"> 
+            <div class="row justify-content-center hidden3"> 
                
                <div class="col "><img src="Images/language/Bootstrap4.png" alt=""><p class="caption">Bootstrap</p></div>
                <div class="col"><img src="Images/language/express js.png" alt=""><p class="caption">Express JS</p></div>
@@ -130,10 +153,10 @@
 
           </div>
 
-         <div class="item">
+         <div class="item hidden2">
            <h4>Technology</h4>
           <hr>
-            <div class="row justify-content-center"> 
+            <div class="row justify-content-center hidden3"> 
                
                <div class="col "><img src="Images/language/gitAndGithub.png" alt=""><p class="caption">Git & Github</p></div>
                 
@@ -144,24 +167,25 @@
     
          
 
-         <h3 class="non-tech">Non-Technical</h3>
-           <div class="item">
+         <h3 class="non-tech ">Non-Technical</h3>
+           <div class="item hidden2">
     
           
-            <div class="row justify-content-center"> 
+            <div class="row justify-content-center hidden3"> 
                
                <div class="col "><img src="Images/language/content writer.png" alt=""><p class="caption">Technical Content Writer</p></div>        
             </div>
 
            </div>
         </div>
+
       </div>
       <!-- <hr> -->
-      <div class="project">
+      <div class="project hidden1">
         <h3>My Projects</h3>
      
-        <img src="Images/project.png" alt="skills" class="project"/>
-        <div class="detail">
+        <img src="Images/project.png" alt="skills" class="project hidden3"/>
+        <div class="detail hidden3">
           <ul>
             <h4><li>👉&nbsp;<a href="https://github.com/durgeshmehar/Facebook-Clone-with-responsive-Design.git" target="_blank">Cloning responsive website of flipkart.</a></li></h4>
             <h4><li>👉&nbsp;<a href="https://github.com/durgeshmehar/Dating-Website-Fronted-.git" target="_blank">Frontend design of a dating website.</a></li></h4>
@@ -170,15 +194,15 @@
          
          </div>
       </div>
-      <div class="certificate" id="certificate">
+      <div class="certificate hidden2" id="certificate">
         <h3>Certificate</h3>
-        <img src="Images/Hacker-certificate.png" alt="HackerRank-Certificate">
+        <img src="Images/Hacker-certificate.png" alt="HackerRank-Certificate" class="hidden3">
       </div>
 
-      <div class="contact" id="contact">
+      <div class="contact hidden1" id="contact">
 
         <h3>Contacts</h3>
-        <div class="detail">
+        <div class="detail hidden3">
         
           <span id="fa-phone-id"><p>Call Me</p></span>
           <p>
@@ -223,26 +247,32 @@
 
     </div>
     <!-- <hr > -->
-    <div class="bottom-container" id="bottom-container">
-      <h3>LET'S BUILD SOMETHING </h3>
-      <h3 id="mar-bottom">AMAZING TOGETHER</h3>
+    <div class="bottom-container " id="bottom-container">
+
+    
+    
+      <h3 class="hidden3">LET'S BUILD SOMETHING </h3>
+      <h3 id="mar-bottom" class="hidden3">AMAZING TOGETHER</h3>
      
-      <p>
+      <p class="hidden2">
         I Love to develop websites & I would love to design the best websites for you.
       </p>
 
-      <div class="link">
-      <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230"><i class="linkedin fa-brands fa-linkedin-in"></i></a>
-      &emsp;<a href="https://twitter.com/Durgeshmehar77"><i class="twitter fa-brands fa-square-twitter"></i></a>&emsp;<a href="https://www.instagram.com/durgeshmehar77?r=nametag" ><i class="insta fa-brands fa-instagram" ></i></a>&emsp;<a href="https://www.facebook.com/ku.durgesh"><i class="facebook fa-brands fa-square-facebook" ></i></a>
-     </div>
+       <div class="link hidden3" >
+        <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230"><i class="linkedin fa-brands fa-linkedin-in"></i></a>
+        &emsp;<a href="https://twitter.com/Durgeshmehar77"><i class="twitter fa-brands fa-square-twitter"></i></a>&emsp;<a href="https://www.instagram.com/durgeshmehar77?r=nametag" ><i class="insta fa-brands fa-instagram" ></i></a>&emsp;<a href="https://www.facebook.com/ku.durgesh"><i class="facebook fa-brands fa-square-facebook" ></i></a>
+      </div>
+
     </div>
     <div class="footer">
       <img src="Images/copyright.png" alt=""><p class="copy">Copyright 2023 Durgesh Mehar. All Rights Reserved.</p>
     </div>
+
     <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <!-- javascript -->
     <script src="javascript/index.js"> </script>
+    <script src="javascript/move.js"> </script>
     
   </body>
 </html>
