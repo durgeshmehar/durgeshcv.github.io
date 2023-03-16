@@ -6,6 +6,7 @@ html{
 }
 body {
     text-align: center;
+    width:100vw;
     font-family: 'Open Sans', 'Inter', sans-serif;
     font-weight:lighter;
     background-color: var(--backgroundColor);
@@ -618,7 +619,7 @@ hr {
         font-size:4vw;
     }
     .middle-container .intro p{
-      font-size: 3.2vw;
+      font-size: 3.5vw;
       font-weight: bolder;
       margin-bottom: 1vw;
     }
@@ -654,7 +655,8 @@ hr {
 
     .education .detail p, span ,.skill p ,.project .detail p ,.bottom-container p{
         margin-top: 0vh;
-        font-size:3.5vw;
+        font-size:3.3vw;
+        font-weight: 500;
         letter-spacing: 0.3px;
     }
     .bottom-container p{
@@ -747,7 +749,7 @@ hr {
     .hide_div #bar-head{
         font-size: 4.4vw;
         padding-top:0.2vw;
-        color:var(--barColor);
+        color:var(--navText);
         letter-spacing: 0.2;
         
     }
@@ -842,8 +844,8 @@ hr {
     }
    
     .detail .item p{
-       font-size: 2.2vw;
-       font-weight: 600;
+       font-size: 2.4vw;
+       font-weight: 500;
     }
     .footer{
         padding:6px;
