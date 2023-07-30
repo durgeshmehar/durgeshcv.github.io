@@ -1,10 +1,8 @@
 *{  padding: 0px;
     margin: 0px;  
 }
-html{
-    scroll-behavior:unset;
-}
 body {
+    overflow-x: hidden;
     text-align: center;
     width:100vw;
     font-family: 'Open Sans', 'Inter', sans-serif;
@@ -47,21 +45,22 @@ body {
 
 }
 
+/* left come = hidden1*/
 .hidden1{
-    opacity: 0;
-    filter: blur(6px);
+    opacity: 0.2;
+    filter: blur(5px);
     transform :translate(-30%);
     transition :all 1.4s;
 }
 .hidden2{
-    opacity: 0;
-    filter: blur(6px);
-    transform :translate(30%);
+    opacity: 0.2;
+    filter: blur(5px);
+    transform :translate(20%);
     transition :all 1.4s;
 }
 .hidden3{
-    opacity: 0;
-    filter: blur(6px);
+    opacity: 0.2;
+    filter: blur(5px);
     transform :translate(-15%);
     transition :all 1.4s;
 }
@@ -114,8 +113,7 @@ body {
     font-weight: 600;
     font-stretch: expanded;
     text-decoration:none;
-    color:var(--navText);
-    
+    color:var(--navText);  
 }
 .navigation .nav-icon{
     margin-right:15px;
@@ -137,7 +135,7 @@ body {
 }
 
 /* */
-.navigation ul li a:hover ,.navigation ul li a i.fa-lg:hover ,.navigation ul li i#moon:hover{
+.navigation ul li a:hover ,.navigation ul li#light i:hover {
     
     
     background: linear-gradient(to right,#ce47b8,
@@ -145,12 +143,14 @@ body {
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    cursor: pointer;
 }
 
 
 .navigation ul li#light{
     padding:3px 0px;
     width:5.3vw;
+    color:var(--navText);
     height: fit-content;
     overflow: hidden;
     display: inline-flex;
@@ -237,7 +237,7 @@ body {
     padding:0vw 0vw 0.5vw 0vw;
 }
 .intro p{
-    color:var(--smallColor);
+    color:#f5f5f5bb;
     font-family:  'Murecho','Nunito Sans','Open Sans' ,sans-serif;
     padding:1vw 5vw;
     font-size: 1.6vw;
@@ -304,7 +304,6 @@ hr {
     font-size: 8.3vw;
     color:  rgb(76, 109, 110);
     background-color: #35a1c380;
-    
 }
 .detail h3.tech ,.detail h3.non-tech{
     font-weight: 600;
@@ -465,6 +464,9 @@ hr {
     color: rgba(35, 129, 191, 0.7);
 
 }
+.education .detail .percentage{
+	margin-left: 1vw;
+}
 
 .project h4{
     font-weight: 800;
@@ -589,69 +591,70 @@ hr {
 }
 
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
-@media screen and ( max-width: 480px){
+@media screen and ( max-width: 600px){
    
+	.top-container h1{
+		font-size: 7.4vw;
+	}
     .top-container p {
-        font-size: 3.2vw;
-      
-
+        font-size: 3.7vw;
     }
-    .top-container h1{
-        font-size: 7vw;
-    }
+	.middle-container img{
+		height: 30vw;
+		padding:1.5vw;
+		width: 30vw;
+	}
+	.middle-container .intro p{
+	  font-size: 4vw;
+	  padding:2.5vw 2.5vw;
+	  font-weight: bolder;
+	  margin-bottom: 1vw;
+	}
+	.middle-container i.fa-brands{
+		font-size: 5.4vw;
+	}
     .middle-container{
-        padding:4vh 4vw;
-    }
-    .middle-container img{
-        height: 24.5vw;
-        padding:1.5vw;
-        width: 24.5vw;
+        padding:4.2vh 4.2vw;
     }
     .project img {
-        height: 14.5vw;
+        height: 15vw;
         margin-left: 5vw;
         width: 5vw;
     }
     .middle-container img.coding {
         padding:0;
     }
-    .middle-container .intro p#hi{
-        font-size:4vw;
-    }
-    .middle-container .intro p{
-      font-size: 3.5vw;
-      font-weight: bolder;
-      margin-bottom: 1vw;
-    }
-    
-    .middle-container i.fa-brands{
-        font-size: 4.4vw;
-    }
-    
     .education .detail {
         margin-left:30vw;
     
     }
     .project .detail{
-        margin-left:21vw;
+        margin-left: 17vw;
     }
     .education .detail p,.project .detail p{
         line-height: 1.1;
     }
+	.detail h3.tech{
+		font-weight: 600;
+		font-size:3.6vw;
+	}
     .education h3, .skill h3 ,.project h3,.bottom-container h3,.certificate h3,.contact h3{
+        font-size: 5vw;
         margin-bottom: 4.5vw;
         letter-spacing: 3px;
-        font-size: 4vw;
         padding:1vw;
     }
     .detail .item{
         padding:3vw;
-        margin:7vw auto;
+        margin:5vw auto;
     }
     .bottom-container h3 {
         letter-spacing: 2px;
-        font-size: 3vw;
+        font-size: 3.8vw;
+		padding:0vw 5vw;
+		margin:2vw;
     }
+
 
     .education .detail p, span ,.skill p ,.project .detail p ,.bottom-container p{
         margin-top: 0vh;
@@ -660,7 +663,7 @@ hr {
         letter-spacing: 0.3px;
     }
     .bottom-container p{
-        font-size:3.6vw;
+        font-size:3.8vw;
     }
     .intro , .education ,.skill  ,.certificate ,.contact ,.project{
        
@@ -671,38 +674,40 @@ hr {
 
     .certificate img{
         height :85vw;
-        width: 60vw;
+        width: 70vw;
     }
     .middle-container li:nth-child() {
         font-size:3.3vw;
-     
     }
     .education .detail h4 ,.skill h4 {
-        font-size:3.2vw;
+        font-size:3.6vw;
     }
     .project h4{
-        font-size:2.8vw;
+        font-size:3.5vw;
     }
+	.middle-container .project img {
+       height:12vw;
+	   width:12vw;
+	   margin-left: 4vw;
+	}
     .bottom-container{
         margin-top:2.5vh;
     }
-    .bottom-container h3{
-        padding:0vw 5vw;
-        margin:2vw;
-    }
+    
     .bottom-container p{
         width:75vw;
     }
     .bottom-container .link{
         margin: 15px 0px 0px 0px;
-        font-size: 5.4vw;
+        font-size: 6.4vw;
     }
     .bottom-container .button ,.bottom-container .button:visited{
         font-size: 3vw;
     }
     .contact .detail i.fa{
-        font-size: 3.8vw;
-        padding:1.2vw;
+        font-size: 4.2vw;
+        padding:1.5vw;
+		margin: 2vw;
     }
     .contact .detail p img{
         height:3.5vw;
@@ -710,20 +715,18 @@ hr {
         /* padding:1.2vw; */
     }
     .contact .detail a:nth-child(2){
-        font-size: 2.8vw; 
+        font-size: 3.5vw; 
     }
     
 }
 
 @media screen and ( max-width: 600px){
-    .navigation ul li a ,.navigation ul li a .fa-solid {
+    .navigation ul li a ,.navigation ul li i.fa-solid {
         font-size: 3.8vw;
         color: #0ca091;
         font-weight: 600;
     } 
-    .navigation ul li i#moon ,.navigation ul li i#sun{
-        color:var(--navText);
-    }
+
     .hide_div{
         display: block;
         background-color:var(--navColor);
@@ -732,8 +735,6 @@ hr {
         position:sticky;
         z-index: 9;
         top:0px;
-    
-  
     }
   
     .fa-bars{
@@ -748,10 +749,9 @@ hr {
     } 
     .hide_div #bar-head{
         font-size: 4.4vw;
-        padding-top:0.2vw;
+        padding-top:0.5vw;
         color:var(--navText);
         letter-spacing: 0.2;
-        
     }
     .hide_div #bar-small{
         color:#152127;
@@ -759,7 +759,7 @@ hr {
         font-family: 'Alegreya', serif;
         display: block;
         letter-spacing: 0.2;
-        font-size: 3.3vw;
+        font-size: 3.7vw;
     }
     .hide_div #bar-small a{
         color:var(--linkColor);
@@ -807,10 +807,6 @@ hr {
     .navigation ul #user {
         display: none;
      }
-  
-    .navigation ul li a:hover ,.navigation ul li i.fa-lg:hover {
-        font-size: 3.5vw;
-    } 
 
     .navigation ul li#light{
         display: block;
@@ -834,25 +830,26 @@ hr {
     }
     .hide_div .button{
         width:fit-content;
-        
     }
 
 
     .skill .detail .item img{
-        height: 12.5vw;
-        width: 12.5vw;
+        height: 13vw;
+        width: 13vw;
     }
    
     .detail .item p{
-       font-size: 2.4vw;
+       font-size: 2.8vw;
        font-weight: 500;
     }
     .footer{
         padding:6px;
-        font-size: 2vw;
+        font-size: 3vw;
     }
-    
-
+	.footer img{
+		height: 4vw;
+		width: 4vw;
+	}
 }
 
 

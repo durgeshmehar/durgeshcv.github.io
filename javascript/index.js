@@ -1,4 +1,3 @@
-
 (function () {
    var options = {
       telegram: "Durgeshmehar", // Telegram bot username
@@ -18,7 +17,7 @@
 visibilitySun();
 var clicks = 0;
 $(document).ready(function(){
-$(".navigation ul li#light").click(function () {
+$("#light").click(function () {
 
    if (clicks == 0) {
       callSun();
@@ -36,14 +35,14 @@ $(".navigation ul li#light").click(function () {
 
 
 function callSun() {
-   $(".navigation ul li a i.icon-moon").animate({ left: "3.2vw" }, 300);  
+   $(".icon-moon").animate({ left: "3.2vw" }, 300);  
    setTimeout(visibilityMoon, 300);
    $("body").toggleClass("dark-mode");
    setTimeout(SunBright, 300);
 }
 function callMoon() {
-   $(".navigation ul li a i.icon-moon").css("translate", "-3.2vw");
-   $(".navigation ul li a i#sun").animate({ right: "3.2vw" }, 300);
+   $(".icon-moon").css("translate", "-3.2vw");
+   $("#sun").animate({ right: "3.2vw" }, 300);
    setTimeout(visibilitySun, 300);
    setTimeout(MoonBright, 300);
    $("body").toggleClass("dark-mode");
@@ -52,16 +51,16 @@ function callMoon() {
 
 
 function SunBright() {
-   $(".navigation ul li a i#sun").css("visibility", "visible");
+   $("#sun").css("visibility", "visible");
 }
 function MoonBright() {
-   $(".navigation ul li a i.icon-moon").css("visibility", "visible");
+   $(".icon-moon").css("visibility", "visible");
 }
 function visibilityMoon() {
-   $(".navigation ul li a i.icon-moon").css("visibility", "hidden");
+   $(".icon-moon").css("visibility", "hidden");
 }
 function visibilitySun() {
-   $(".navigation ul li a i#sun").css("visibility", "hidden");
+   $("#sun").css("visibility", "hidden");
 }
 
 
