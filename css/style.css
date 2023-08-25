@@ -44,36 +44,30 @@ body {
 
 /* left come = hidden1*/
 .hidden1{
-    opacity: 0.2;
-    filter: blur(5px);
-    transform :translate(-30%);
-    transition :all 1.4s;
+    filter: blur(2px);
+    transform :translate(-22%);
+    transition :all 1.2s;
 }
 .hidden2{
-    opacity: 0.2;
-    filter: blur(5px);
+    filter: blur(2px);
     transform :translate(20%);
-    transition :all 1.4s;
+    transition :all 1.2s;
 }
 .hidden3{
-    opacity: 0.2;
-    filter: blur(5px);
-    transform :translate(-15%);
-    transition :all 1.4s;
+    filter: blur(2px);
+    transform :translate(-12%);
+    transition :all 1.2s;
 }
 
 .show1{
-    opacity: 1;
     filter: blur(0);
     transform :translate(0);
 }
 .show2{
-    opacity: 1;
     filter: blur(0);
     transform :translate(0) ;
 }
 .show3{
-    opacity: 1;
     filter: blur(0);
     transform :translate(0) ;
 }
@@ -581,8 +575,8 @@ hr {
         font-size: 3.7vw;
     }
 	.certificate .container img{
-		height: 35vh;
-		width : 55vw;
+		height: 32vh;
+		width : 65vw;
 		margin: 1vw;
 	}
 	.middle-container img{
