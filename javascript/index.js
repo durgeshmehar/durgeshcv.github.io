@@ -16,21 +16,20 @@
 
 visibilitySun();
 var clicks = 0;
+
 $(document).ready(function(){
-$("#light").click(function () {
+	$("#light").click(function () {
+		if (clicks === 0) {
+			callSun();
+			clicks=1;
 
-   if (clicks == 0) {
-      callSun();
-      clicks++;
-
-   }
-   else if (clicks === 1) {
-      callMoon();
-      clicks--;
-
-   }
-}
-);
+		}
+		else if (clicks === 1) {
+			callMoon();
+			clicks=0;
+		}
+	}
+	);
 });
 
 
@@ -46,7 +45,6 @@ function callMoon() {
    setTimeout(visibilitySun, 300);
    setTimeout(MoonBright, 300);
    $("body").toggleClass("dark-mode");
-
 }
 
 
@@ -62,8 +60,6 @@ function visibilityMoon() {
 function visibilitySun() {
    $("#sun").css("visibility", "hidden");
 }
-
-
 
 $(".contact .detail span").hide();
 
@@ -81,7 +77,6 @@ $(".contact .detail i").hover(function () {
 
 // Creating navigation for mobile
 
-
  if (window.matchMedia("(max-width: 600px)").matches) {
               nav_width =280;
  }
@@ -95,26 +90,41 @@ function callCross(){
    $('#cross').css("visibility","visible");
 };
 
-var check =0;
 $(document).ready(function(){
 
    $("#bar").click(function(e){
-  
       $('.navigation').css("width","0px");
       $('.navigation').css("visibility","visible").animate({ width:nav_width},300);
       setTimeout( callCross, 100);
    
-     e.stopPropagation();
+        e.stopPropagation();
         $("body").on('click', function(e) {
            $('.navigation').css("display","block").animate({ width:-50 },300);
            $('#cross').css("display","none");
            $('#bar').css("display","block");
-
          });
-      
    });
 });
 
+function throttle(func, delay) {
+	var timer = null;
+	return function() {
+	  var context = this;
+	  var args = arguments;
+	  clearTimeout(timer);
+	  timer = setTimeout(function() {
+		func.apply(context, args);
+	  }, delay);
+	};
+  }
+// Auto typing feature
+
+var typed = new Typed(".auto-type", {
+	strings : ["MERN Developer" ,"Programmer","Blogger" ,"Tech Passionate"],
+	typeSpeed : 70,
+	backSpeed : 40,
+	loop : true
+});
 
 
 

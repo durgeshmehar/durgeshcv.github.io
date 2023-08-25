@@ -11,7 +11,6 @@ body {
 }
 /*   ## Dark Mode Mechanism  ## */
 :root {
-    --opacity:1;
     --backgroundColor: transparent;
     --smallColor:#1b1b1b;
     --white:white;
@@ -28,7 +27,6 @@ body {
     --navColor:#2C2A59;  
 }
 .dark-mode{
-    --opacity:0.2;
     --backgroundColor: rgb(40,39,50);
     --navColor:#543153;
     --top-containerColor:rgb(40,39,50);
@@ -42,7 +40,6 @@ body {
     --gradientColor: var(--backgroundColor);
     --barColor:#ffffff;
     --navText:#fff;
-
 }
 
 /* left come = hidden1*/
@@ -84,7 +81,7 @@ body {
 
 /*  ##  Navigation  ## */
 .navigation {
-    background-color:var(--navColor);
+    background-color:#2C2A59;
     text-align: left;
     position: sticky;
     top:0vh;
@@ -163,56 +160,28 @@ body {
 
 /* Top Container */
 .top-container{
-    font-size: 2.4vw;
+    font-size: 2.6vw;
     padding: 5vw 0px 0px 0px;
-    position: relative;
-    line-height: 1.5;
-    color: #d8756e;
-    background-color:var(--top-containerColor);
-  
-}
-.top-container .bird{
-    width:9vw;
-    position:absolute;
-    top:11%;
-    left:5%;
-}
-.top-container .upper-cloud{
-    width:14vw;
-    position:absolute;
-    top:6%;
-    right:18%;
-    opacity: var(--opacity); 
-}
-.top-container .bottom-cloud{
-    width:14vw;
-    position:relative;
-    right:20%;
-    opacity: var(--opacity);
+	background: url('../Images/background.png');
+	background-size: 100%;
+	min-height: 50vw ;
+	font-family: 'Open Sans', sans-serif;
+	font-weight:900;
+	color: #a5ffe1;
 }
 .top-container h1{
+	line-height: 1.30;
     font-family: 'Dancing Script', cursive;
- 
-
+	color:#a5ffe1;
 }
-.top-container p{
-    font-size:1.8vw;
-    font-weight: 900;
-    color:var(--bigParaColor);
-    margin-bottom: 30px;
-    font-family: 'Montserrat', sans-serif;
+.auto-type{
+	color:white;
 }
-.top-container .mountain img{
- margin-bottom: -37px;
- height:100%;
- width: 100%;
-}
-
 /* middle-container */
 .middle-container{
     background-color: var(--white);
-  
 }
+
 .middle-container img{
     height:18vw;
     width:18vw;
@@ -354,6 +323,18 @@ hr {
     padding:2vw;
 }
 /* .middle-container -> .project */
+.certificate .container{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+.certificate .container img{
+	height: 35vw;
+	width : 30vw;
+	margin: 20px;
+}
 
 
 
@@ -717,10 +698,7 @@ hr {
     .contact .detail a:nth-child(2){
         font-size: 3.5vw; 
     }
-    
-}
-
-@media screen and ( max-width: 600px){
+    /* Previous was another media query */
     .navigation ul li a ,.navigation ul li i.fa-solid {
         font-size: 3.8vw;
         color: #0ca091;

@@ -46,7 +46,7 @@
 <hr>
 
 ### Home Page
-<img src="Images/readme photo/home.jpg">
+<img src="Images/readme photo/homescreen.png">
 
 There are many great Portfolio Website available on Google; however, I find many portfolio website, using that knowledge I created this enhanced one. I want to create the best portfolio that satisfied my need .
 
@@ -70,7 +70,7 @@ Here's why:
 <img src="Images/readme photo/project.jpg">
 
 ### Certificate
-<img src="Images/readme photo/certificate.jpg">
+<img src="Images/readme photo/certificate.png">
 
 ### Contact
 <img src="Images/readme photo/contact.jpg">
@@ -116,7 +116,7 @@ I have added dark mode functionality & It seems goood ,resposive in mobile also 
 
 _For examples, please refer to the_
 #### Mobile View
-<img src="./Images/readme photo/mobileview.jpg">
+<img src="./Images/readme photo/mobileview.png">
 
 
 <p align="right">(<a href="#">back to top</a>)</p>
