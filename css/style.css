@@ -1,8 +1,10 @@
 *{  padding: 0px;
     margin: 0px;  
 }
+
 body {
     overflow-x: hidden;
+	/* overflow: hidden; */
     text-align: center;
     width:100vw;
     font-family: 'Open Sans', 'Inter', sans-serif;
@@ -43,21 +45,21 @@ body {
 }
 
 /* left come = hidden1*/
-.hidden1{
+ .hidden1{
     filter: blur(2px);
     transform :translate(-22%);
     transition :all 1.2s;
 }
 .hidden2{
     filter: blur(2px);
-    transform :translate(20%);
+    transform :translate(-15%);
     transition :all 1.2s;
-}
+} 
 .hidden3{
-    filter: blur(2px);
+	filter: blur(2px);
     transform :translate(-12%);
     transition :all 1.2s;
-}
+} 
 
 .show1{
     filter: blur(0);
@@ -170,6 +172,7 @@ body {
 }
 .auto-type{
 	color:white;
+	font-size: 2.6vw;
 }
 /* middle-container */
 .middle-container{
@@ -284,6 +287,7 @@ hr {
        padding-top:1vw;
 }
 
+
 /* .middle-container -> .skill -> .detail -> .items */
 .detail .item{
     width:auto;
@@ -323,6 +327,7 @@ hr {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
+	overflow: hidden;
 }
 .certificate .container img{
 	height: 35vw;
@@ -394,6 +399,7 @@ hr {
     display: inline-block;
     background: none;
 }
+
 
 
 /* common box of skill  */
