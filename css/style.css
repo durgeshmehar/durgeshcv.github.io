@@ -580,6 +580,11 @@ hr {
     .top-container p {
         font-size: 3.7vw;
     }
+	.certificate .container img{
+		height: 35vh;
+		width : 55vw;
+		margin: 1vw;
+	}
 	.middle-container img{
 		height: 30vw;
 		padding:1.5vw;
