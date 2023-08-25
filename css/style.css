@@ -569,10 +569,10 @@ hr {
 @media screen and ( max-width: 600px){
    
 	.top-container h1{
-		font-size: 7.4vw;
+		font-size: 7.8vw;
 	}
-    .top-container p {
-        font-size: 3.7vw;
+    .top-container p ,.top-container span {
+        font-size: 5vw;
     }
 	.certificate .container img{
 		height: 32vh;
