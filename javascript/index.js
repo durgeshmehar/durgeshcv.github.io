@@ -1,8 +1,9 @@
+// 1) whatsapp Telegram Feature
 (function () {
    var options = {
       telegram: "Durgeshmehar", // Telegram bot username
       whatsapp: "+91 9359230721", // WhatsApp number
-      call_to_action: "Chat with Durgesh", // Call to action
+      call_to_action: "Chat with Me", // Call to action
       button_color: "#129BF4", // Color of button
       position: "right", // Position may be 'right' or 'left'
       order: "telegram,whatsapp", // Order of buttons
@@ -13,7 +14,7 @@
    var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
 })();
 
-
+// 2) Creating Dark Mode Feature
 visibilitySun();
 var clicks = 0;
 
@@ -61,51 +62,51 @@ function visibilitySun() {
    $("#sun").css("visibility", "hidden");
 }
 
-$(".contact .detail span").hide();
+// 3) Creating Contact label Feature
+$(".contact .detail .contact-item > span").hide();
 
-$(".contact .detail i").hover(function () {
+$(".contact .detail .contact-item i").hover(function () {
    var a = this.getAttribute('class').split(" ");
-
-   $(".contact .detail span#" + a[1] + "-id").slideUp().show();
+   $(".contact .detail .contact-item span#" + a[1] + "-id").slideUp().show();
 
 }, function () {
-   var a = this.getAttribute('class').split(" ");
-   $(".contact .detail span#" +a[1] + "-id").hide();
-
+	var a = this.getAttribute('class').split(" ");
+	$(".contact .detail .contact-item span#" + a[1] + "-id").hide();
 });
 
 
-// Creating navigation for mobile
+// 4) Creating navigation for mobile
 
- if (window.matchMedia("(max-width: 600px)").matches) {
-              nav_width =280;
- }
- if(window.matchMedia("(max-width: 480px)").matches) {
-   nav_width =190;
-}
+//  if (window.matchMedia("(max-width: 600px)").matches) {
+//               nav_width =280;
+//  }
+//  if(window.matchMedia("(max-width: 480px)").matches) {
+//    nav_width =190;
+// }
 
-function callCross(){
-   $('#bar').css("display","none");
-   $('#cross').css("display","block");
-   $('#cross').css("visibility","visible");
-};
+// function callCross(){
+//    $('#bar').css("display","none");
+//    $('#cross').css("display","block");
+//    $('#cross').css("visibility","visible");
+// };
 
-$(document).ready(function(){
+// $(document).ready(function(){
 
-   $("#bar").click(function(e){
-      $('.navigation').css("width","0px");
-      $('.navigation').css("visibility","visible").animate({ width:nav_width},300);
-      setTimeout( callCross, 100);
+//    $("#bar").click(function(e){
+//       $('.navigation').css("width","0px");
+//       $('.navigation').css("visibility","visible").animate({ width:nav_width},300);
+//       setTimeout( callCross, 100);
    
-        e.stopPropagation();
-        $("body").on('click', function(e) {
-           $('.navigation').css("display","block").animate({ width:-50 },300);
-           $('#cross').css("display","none");
-           $('#bar').css("display","block");
-         });
-   });
-});
+//         e.stopPropagation();
+//         $("body").on('click', function(e) {
+//            $('.navigation').css("display","block").animate({ width:-50 },300);
+//            $('#cross').css("display","none");
+//            $('#bar').css("display","block");
+//          });
+//    });
+// });
 
+// 5) Creating autoType Feature
 function throttle(func, delay) {
 	var timer = null;
 	return function() {
@@ -117,11 +118,11 @@ function throttle(func, delay) {
 	  }, delay);
 	};
   }
-// Auto typing feature
+
 
 var typed = new Typed(".auto-type", {
 	strings : ["MERN Developer" ,"Programmer","Blogger" ,"Tech Passionate"],
-	typeSpeed : 70,
+	typeSpeed : 60,
 	backSpeed : 40,
 	loop : true
 });

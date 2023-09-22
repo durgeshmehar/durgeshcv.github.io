@@ -1,0 +1,3 @@
+Improvement wanted
+1) Make fast Animation for page scroll
+2) Make navigation bar very good
