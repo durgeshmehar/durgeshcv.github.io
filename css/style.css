@@ -97,6 +97,7 @@ body {
 .hide_div{
     display: none;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	position:fixed;
 }
 
 .hide_div span{    
@@ -600,9 +601,9 @@ hr {
         font-size: 5vw;
     }
 	.certificate .container img{
-		height: 55vh;
+		height: 35vh;
 		width : 60vw;
-		margin: 1vw;
+		margin: 0.6vw;
 	}
 	.middle-container img ,.middle-container .project img{
 		height: 25vw;
@@ -662,7 +663,7 @@ hr {
         letter-spacing: 0.3px;
     }
 	.name{
-		font-size:3.6vw;
+		font-size:3.8vw;
 		font-weight: bolder;
 
 	}
@@ -811,7 +812,7 @@ hr {
         display: block;
         visibility: visible;
         list-style: none;
-        padding:2px 4px ;
+        padding:3px 5px ;
         width: 9vw;
         border-radius: 4vw; 
 
@@ -821,7 +822,7 @@ hr {
         right:4vw;
 		z-index: 345;
 		height: 4.5vw;
-		font-size: 2.5vw;
+		font-size: 2.8vw;
 		margin-top:10px;
     }
 
