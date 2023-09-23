@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
 *{
 	margin: 0;
 	padding:0;
@@ -12,10 +13,11 @@ body {
 }
 /*   ## Dark Mode Mechanism  ## */
 :root {
+	--makeInvert: invert(0);
     --backgroundColor: transparent;
     --smallColor:#1b1b1b;
     --white:white;
-    --top-containerColor:rgb(200 255 253);
+    --top-containerColor:hsla(203, 49%, 39%, 0.5) ;
     --cloudColor:rgb(211, 247, 245);
     --bigParaColor: #5c8edd;
     --middleColor:rgba(233, 162, 197, 0.5);
@@ -25,7 +27,8 @@ body {
     --barColor:#363a3c;
     --linkColor:#0077b5;
     --gradientColor:linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5));
-    --navColor:#2C2A59;  
+    --navColor:#2C2A59;
+	--itemColor: rgba(255, 255, 255, 0.81);  
 }
 .dark-mode{
     --backgroundColor: rgb(40,39,50);
@@ -33,8 +36,10 @@ body {
     --top-containerColor:rgb(53 51 73);
     --smallColor:white;
     --white:rgb(40,39,50);
+	--itemColor: var(--white);
     --middleColor:var(--top-containerColor);
     --skillUl:white;
+	--makeInvert: invert(1);
     --boxShadow:white;
     --navHead: var(--backgroundColor);
     --linkColor: var(--bigParaColor);
@@ -74,6 +79,25 @@ body {
 }
 
 
+/* Wrapper  */
+.logo-container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin:auto 0vw;
+}
+.wrapper{
+	height: 100vh;
+	overflow-y: auto;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+.logo-container >img {
+	height: 1.4em;
+	padding:3px;
+	filter: var(--makeInvert);
+}
 /*  ##  Navigation  ## */
 .navigation{
 	background: hsl(0 0% 100% /0.1 ) ;
@@ -203,9 +227,13 @@ body {
     height: 13vw;
 }
 .middle-container, .bottom-container{
-    padding:2.5vw 12vw; 
-  
+    padding:2.5vw 12vw;  
 }
+
+.middle-container .intro a{
+	text-decoration: none;
+}
+
 /* middle-container -> intro */
 .intro{
     background:  linear-gradient(to bottom, #5c61ae80, rgba(219, 228, 236, 0.5))
@@ -261,6 +289,10 @@ p.resume{
 .education img{
     float: left;   
 }
+.education-info{
+	display: grid;
+	grid-template-columns: 0.5fr 1fr;
+}
 
 
 /*  middle-container ->skill  */
@@ -304,7 +336,7 @@ hr {
     width:auto;
     margin:1vw auto;
     border-radius: 6px;
-    background-color:  var(--white);
+    background-color:  var(--itemColor);
 	margin-bottom: 3vw;
 }
 .skill .detail .item img{
@@ -349,6 +381,10 @@ hr {
 .project .detail ul {
     list-style-type: none;
     font-family: 'Alegreya', serif;
+}
+.project .project-info{	
+	display: grid;
+	grid-template-columns: 0.3fr 1fr;
 }
 /*  .middle-container -> .certificate  */
 .certificate img{
@@ -405,11 +441,12 @@ hr {
 .intro , .education ,.skill ,.project ,.certificate ,.contact{
 
     background-color: var(--top-containerColor);
+    /* background-color: ; */
+	backdrop-filter: blur(2rem);
     border-radius:10px;
     width: 70vw;
     display: inline-block;
     padding:5vw;
-    /* box-shadow: 1px 1px 15px var(--boxShadow) ; */
     margin: 5vw 0vw;    
 }   
 .project img{
@@ -544,7 +581,6 @@ hr {
     background:  linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5))
     ,url("../Images/bg-intro-img.jpg") no-repeat ;
     background-size: cover; 
-    box-shadow:inset 0.3px 0.4px 10px rgb(39, 52, 52);
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -659,9 +695,7 @@ hr {
         font-size:3.8vw;
     }
     .intro , .education ,.skill  ,.certificate ,.contact ,.project{
-       
-        box-shadow: 1px 1px 6px var(--boxShadow);
-        width:80vw;
+               width:80vw;
         
     }
 
@@ -711,7 +745,7 @@ hr {
         background-color: hsla(251, 82%, 31%, 0.13);
 		backdrop-filter: blur(1rem);
         width:100%;
-		height: 6vh;
+		height: 8vh;
         padding:1vw 1vw 1vw 1vw ;
         position:absolute;
         z-index: 9;
@@ -767,11 +801,13 @@ hr {
 
 	.navigation ul{
 		width:60vw;		
-		height: 94vh;
+		height: 92vh;
 		padding-top: 23vh;
 		padding-left: 3vh;
-		background-color: hsla(210, 28%, 25%, 0.777);
+		background-color: hsla(210, 28%, 25%, 0.8);
 		backdrop-filter: blur(3rem);
+		position: fixed;
+		top:2vh;
 	}
 	.navigation ul li{
 		display: block;
