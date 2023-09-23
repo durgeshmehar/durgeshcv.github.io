@@ -29,8 +29,10 @@ body {
     --gradientColor:linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5));
     --navColor:#2C2A59;
 	--itemColor: rgba(255, 255, 255, 0.81);  
+	--textColor:rgb(23 33 182 / 90%);
 }
 .dark-mode{
+	--textColor:rgb(23 170 182 / 90%);
     --backgroundColor: rgb(40,39,50);
     --navColor:#543153;
     --top-containerColor:rgb(53 51 73);
@@ -489,7 +491,7 @@ hr {
     font-weight: 600;
     text-decoration: none;
 	display: inline;
-	color:rgba(46, 151, 221, 0.7);
+	color: var(--textColor);
 }
 
 .project h4 a:hover{
