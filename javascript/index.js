@@ -1,12 +1,12 @@
 // 1) whatsapp Telegram Feature
 (function () {
    var options = {
-      telegram: "Durgeshmehar", // Telegram bot username
-      whatsapp: "+91 9359230721", // WhatsApp number
-      call_to_action: "Chat with Me", // Call to action
-      button_color: "#129BF4", // Color of button
-      position: "right", // Position may be 'right' or 'left'
-      order: "telegram,whatsapp", // Order of buttons
+      telegram: "Durgeshmehar", 
+      whatsapp: "+91 9359230721", 
+      call_to_action: "Chat with Me", 
+      button_color: "#129BF4", 
+      position: "right", 
+      order: "telegram,whatsapp", 
    };
    var proto = 'https:', host = "getbutton.io", url = proto + '//static.' + host;
    var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
@@ -24,7 +24,6 @@ $(document).ready(function(){
 		if (clicks === 0) {
 			callSun();
 			clicks=1;
-
 		}
 		else if (clicks === 1) {
 			callMoon();
@@ -33,7 +32,6 @@ $(document).ready(function(){
 	}
 	);
 });
-
 
 function callSun() {
    $(".icon-moon").animate({ left: "2.2vw" }, 300);  
@@ -49,7 +47,6 @@ function callMoon() {
    $("body").toggleClass("dark-mode");
 }
 
-
 function SunBright() {
    $("#sun").css("visibility", "visible");
 }
@@ -63,7 +60,6 @@ function visibilitySun() {
    $("#sun").css("visibility", "hidden");
 }
 
-
 // 3) Creating Contact label Feature
 $(".contact .detail .contact-item > span").hide();
 
@@ -76,55 +72,37 @@ $(".contact .detail .contact-item i").hover(function () {
 	$(".contact .detail .contact-item span#" + a[1] + "-id").hide();
 });
 
+// 4) Creating Mobile Navigation Feature
 
-// 4) Creating navigation for mobile
+const primaryNav = document.querySelector('#primary-navigation');
+const navToggle = document.querySelector('.mobile-nav-toggle');
+const bodyToggle = document.querySelector('body');
 
-//  if (window.matchMedia("(max-width: 600px)").matches) {
-//               nav_width =280;
-//  }
-//  if(window.matchMedia("(max-width: 480px)").matches) {
-//    nav_width =190;
-// }
-
-// function callCross(){
-//    $('#bar').css("display","none");
-//    $('#cross').css("display","block");
-//    $('#cross').css("visibility","visible");
-// };
-
-// $(document).ready(function(){
-
-//    $("#bar").click(function(e){
-//       $('.navigation').css("width","0px");
-//       $('.navigation').css("visibility","visible").animate({ width:nav_width},300);
-//       setTimeout( callCross, 100);
-   
-//         e.stopPropagation();
-//         $("body").on('click', function(e) {
-//            $('.navigation').css("display","block").animate({ width:-50 },300);
-//            $('#cross').css("display","none");
-//            $('#bar').css("display","block");
-//          });
-//    });
-// });
+navToggle.addEventListener('click', (event) => {
+    event.stopPropagation(); 
+	const visible = navToggle.getAttribute('aria-expanded');
+	if (visible === "false") {
+		primaryNav.setAttribute("data-visible", "true");
+		navToggle.setAttribute("aria-expanded", "true");
+	} else {
+		primaryNav.setAttribute("data-visible", "false");
+		navToggle.setAttribute("aria-expanded", "false");
+	}
+});
 
 
-	const primaryNav = document.querySelector('#primary-navigation');
-	const navToggle = document.querySelector('.mobile-nav-toggle');
+bodyToggle.addEventListener('click', (event) => {
+    // Check if the navigation slider is open and the click did not occur inside it
+    const isVisible = primaryNav.getAttribute('data-visible') === 'true';
+    if (isVisible && !primaryNav.contains(event.target)) {
+        primaryNav.setAttribute("data-visible", "false");
+		navToggle.setAttribute("aria-expanded", "false");
+    }
+});
 
-	navToggle.addEventListener('click', () => {
-		const visible = navToggle.getAttribute('aria-expanded');
-		console.log(visible);
-		if (visible === "false") {
-				primaryNav.setAttribute("data-visible", "true");
-			navToggle.setAttribute("aria-expanded", "true");
-		} else {
-				primaryNav.setAttribute("data-visible", "false");
-			    navToggle.setAttribute("aria-expanded", "false");
-		}
-	});
 
 // 5) Creating autoType Feature
+
 function throttle(func, delay) {
 	var timer = null;
 	return function() {
@@ -135,8 +113,7 @@ function throttle(func, delay) {
 		func.apply(context, args);
 	  }, delay);
 	};
-  }
-
+}
 
 var typed = new Typed(".auto-type", {
 	strings : ["MERN Stack Developer" ,"Programmer","Blogger" ,"Problem Solver"],
@@ -144,8 +121,3 @@ var typed = new Typed(".auto-type", {
 	backSpeed : 40,
 	loop : true
 });
-
-
-
-
-

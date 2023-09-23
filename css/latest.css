@@ -1,11 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap');
-*{
-	margin: 0;
-	padding:0;
-	box-sizing: border-box;
-	/* font-family: 'Poppins', sans-serif; */
-	font-family: 'Be Vietnam Pro', sans-serif;
-}
 :root{
 	--makeInvert: invert(0);
 }
@@ -46,6 +39,6 @@
 }
 
 .resume{
-	font-size: 1vw;
+	font-size: 1.2vw;
 }
 
