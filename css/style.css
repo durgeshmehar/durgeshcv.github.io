@@ -22,7 +22,7 @@ body {
     --middleColor:rgba(233, 162, 197, 0.5);
     --boxShadow:#122e37;
     --navHead:rgb(167, 249, 247);
-    --navText:#BACBD9;
+    --navText:#060708;
     --barColor:#363a3c;
     --linkColor:#0077b5;
     --gradientColor:linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5));
@@ -76,23 +76,21 @@ body {
 
 
 /*  ##  Navigation  ## */
-.navigation {
+.navigation{
 	background: hsl(0 0% 100% /0.1 ) ;
-	width: 98%;
-	/* background: hsla(152, 60%, 52%, 0.205) ; */
-
+	width: 95%;
+	margin-top: 10px;
+	margin-left: 2%;
 	backdrop-filter: blur(1rem);
     position: absolute;
     top:0vh;
     padding: 0.5vw 2vw;
-	margin-top: 10px;
-	margin-inline: auto;
 	border-radius: 40px;
     z-index: 9;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	/* box-shadow: 0.2px 0.3px 2px var(--navText); */
 }
 
 /* hide started */
@@ -125,17 +123,19 @@ body {
     /* color: #008073; */
 }
 .navigation ul li i#sun{
-    margin-left: 1.1vw;
+    margin-left: 5vw;
+	transition: all 1s ease-in;
 }
 
 .navigation ul li i.fa-solid{
    font-size:1.8vw ;
 }
 .navigation ul li i#moon{
-    margin:0.3vw 0 0.3vw 0.3vw;
+    margin:0.3vw 0 0.3vw 3.6vw;
     position: relative;
-    left:0vw;
+    left:2vw;
     color:var(--navText);   
+	transition: all 1s ease-in;
 }
 
 /* */
@@ -148,26 +148,32 @@ body {
     cursor: pointer;
 }
 
-
-.navigation ul li#light{
-    padding:3px 0px;
-    width:5.3vw;
+.navigation li#light{
+	
+    padding:5px;
+	list-style: none;
+	width : 5.5vw;
     color:var(--navText);
-    height: fit-content;
+    height: 3vw;
     overflow: hidden;
     display: inline-flex;
-    align-items: center;
+	justify-content: space-between;
+    align-content: center;
     border-radius: 35px; 
-    /* overflow: hidden; */
+    overflow: hidden;
     border:1px solid var(--navText); 
     margin: auto;
+	position :relative;
+	right:-8vw;
+	font-size: 2vw;
+	transition: all 1s ease-in;
 }
 
 /* Top Container */
 .top-container{
 	/* margin-top:-8px; */
     font-size: 2.6vw;
-    padding: 5vw 0px 0px 0px;
+    padding: 15vw 0px 0px 0px;
 	background: url('../Images/background.png');
 	filter: blur(0.3px);
 	background-size: 100%;
@@ -582,7 +588,11 @@ hr {
 
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
 @media screen and ( max-width: 600px){
-   
+    .top-container{
+		background-size: cover;
+		padding-top:20vw;
+		min-height: 70vw;
+	}
 	.top-container h1{
 		font-size: 7.8vw;
 	}
@@ -653,6 +663,7 @@ hr {
     }
 	.name{
 		font-size:3.6vw;
+		font-weight: bolder;
 
 	}
     .bottom-container p{
@@ -711,18 +722,14 @@ hr {
         font-size: 2.5vw; 
     }
     /* Previous was another media query */
-    .navigation ul li a ,.navigation ul li i.fa-solid {
-        font-size: 3.8vw;
-        color: #0ca091;
-        font-weight: 600;
-    } 
 
     .hide_div{
-        background-color:var(--navColor);
+        background-color: hsla(251, 82%, 31%, 0.13);
+		backdrop-filter: blur(1rem);
         width:100%;
-		min-height: 10vh;
+		min-height: 6vh;
         padding:1vw 1vw 1vw 1vw ;
-        position:sticky;
+        position:absolute;
         z-index: 9;
         top:0px;
 		
@@ -732,11 +739,7 @@ hr {
 		gap:4vw;
     }
   
-    .fa-bars{
-        margin:0.5vw 0vw 0.5vw 0.5vw;
-        color:var(--navText);
-        font-size: 5vw;         
-    } 
+    
     .hide_div #bar-head{
         font-size: 4.4vw;
         padding-top:1vw;
@@ -757,55 +760,81 @@ hr {
         position: fixed;
         display: none;
     }
+
+	.navigation{
+		background: none;
+		border:0;
+		margin-top: 0px;
+		
+	}
     
-    .navigation{
-        /* display: none; */
-        background-color: #1f2528;
-        visibility: hidden;
-        width:35vw;
-        float: left;
-        height:100vh;
-        overflow: hidden;
-        position:fixed;
-        padding-top:11vw;
-        margin-right: 1vw;
+    .navigation-main{
+		
+        position: absolute;
+		top: 6vh;
+		left:-2vh;
+		transform: translateX(-65vw);
+		transition: transform 350ms ease-in;
     }
-   
-    .navigation ul li{
+	.primary-navigation{
+		transition: transform 300ms ease-in;
+	}
+	.primary-navigation[data-visible='true']{
+		transform: translateX(65vw);
+	}
+
+	.navigation ul{
+		width:60vw;		
+		height: 94vh;
+		padding-top: 23vh;
+		padding-left: 3vh;
+		background-color: hsla(210, 28%, 25%, 0.777);
+		backdrop-filter: blur(3rem);
+	}
+	
+	
+	.navigation ul li{
+		display: block;
+		padding:2vw 1vw 5vw 0vw;
+		margin: 1vw;   
+		margin-left: 3vw;
+		text-align: left;
+		margin-left:4vw;
+	}
+
+	.navigation ul li a ,.navigation ul li i.fa-solid {
+		font-size: 3.8vw;
+        color: #eceaf1;
+        font-weight: 600;
+    } 
+	.navigation  li#light{
         display: block;
-        padding:2vw 0vw 5.2vw 3vw;
-        margin: 1vw;
-        
-     }
+        visibility: visible;
+        list-style: none;
+        padding:2px 4px ;
+        width: 9vw;
+        border-radius: 4vw; 
+
+        outline: var(--navText);
+        position : fixed;
+        top:0vw;
+        right:4vw;
+		z-index: 345;
+		height: 4.5vw;
+		font-size: 2.5vw;
+		margin-top:10px;
+    }
+
     
     
     .navigation .nav-icon{
         display:inline;
     }
     
-    .navigation ul li#light{
-        display: block;
-        visibility: visible;
-        list-style: none;
-        padding:2px 4px ;
-        width:10.2vw;
 
-        display: inline-flex;
-        align-items: center;
-		justify-content: center;
-        border-radius: 4vw; 
-
-        outline: var(--navText);
-        margin: auto;
-        position : fixed;
-        top:2vw;
-        right:4vw;
-
-    }
     .hide_div .button{
         width:fit-content;
     }
-
 
     .skill .detail .item img{
         height: 13vw;
@@ -824,6 +853,26 @@ hr {
 		height: 3.3vw;
 		width: 3.3vw;
 	}
+
+
+	.mobile-nav-toggle{
+
+		background: url(../Images/bar.png);
+		border:0;
+		z-index: 99999;
+		background-size: cover;
+		width: 5vw;
+		aspect-ratio: 1/1;
+		margin:0.5vw 0vw 0.5vw 2vw;
+	}
+	.mobile-nav-toggle[aria-expanded='true']{
+		background: url(../Images/cross.png);
+		background-size: cover;
+	}
+	.fa-bars{
+        color:var(--navText);
+        font-size: 5vw;         
+    } 
 }
 
 

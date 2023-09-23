@@ -6,12 +6,18 @@
 	/* font-family: 'Poppins', sans-serif; */
 	font-family: 'Be Vietnam Pro', sans-serif;
 }
+:root{
+	--makeInvert: invert(0);
+}
+.dark-mode{
+	--makeInvert: invert(1);
+}
 
 .logo-container{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin:auto 0;
+	margin:auto 0vw;
 }
 .wrapper{
 	height: 100vh;
@@ -21,10 +27,11 @@
 }
 
 .logo-container >img {
-	height: 1.2em;
+	height: 1.3em;
 	padding:3px;
-	filter: invert(1);
+	filter: var(--makeInvert);
 }
+
 .middle-container .intro a{
 	text-decoration: none;
 }
@@ -42,6 +49,3 @@
 	font-size: 1vw;
 }
 
-/* .education .detail , .project .detail{
-	margin-left: 3vw;
-} */

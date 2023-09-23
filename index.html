@@ -29,29 +29,38 @@
 
 
 		<div class="hide_div">
-			<i class="fa fa-bars" id="bar"></i>
+			<!-- <i class="fa fa-bars" id="bar"></i> -->
+			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
 			<span id="bar-head">
 				<div class="logo-container">
-					<img src="letterD.png" class="logo">
+					<img src="Images/letterD.png" class="logo">
 					<span class="name"> urgesh Portfolio </span>
 				</div>
 			</span>
 		</div>
 
-		<i class="fa-solid fa-xmark" id="cross"></i>
+        
+		<div class="navigation">
+			
+			<div class="navigation-main" >
+				
+				   <nav >
+					   <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
+						   <li class="active"><a href="#top-container"> <i class="fa-solid fa-circle-user fa-lg fa-common nav-icon"></i>Home</a></li>
+						   <li><a href="#middle-container"><i class="fa-solid fa-user nav-icon"></i>About</a></li>
+						   <li><a href="#contact"><i class="fa-solid fa-id-badge nav-icon"></i>Contact</a></li>
+						   <li><a href="#skill"><i class="fa-solid fa-square-poll-vertical nav-icon"></i>Skill</a></li>
+						   <li><a href="Images/durgeshresume.pdf" target="_blank"><i class="fa-solid fa-address-book nav-icon"></i>Resume</a></li>
+						</ul>
+					</nav>
+			</div>
+					
+			<li id="light">
+				<i class="fa-solid fa-moon icon-moon fa-common" id="moon"></i>
+				<i class="fa-solid fa-sun" id="sun"></i>
+			</li>
 
-		<nav class="navigation">
-			<ul>
-				<li id="user"> <a href="#top-container"> <i class="fa-solid fa-circle-user fa-lg fa-common nav-icon"></i>Home</a></li>
-				<li><a href="#middle-container"><i class="fa-solid fa-user nav-icon"></i>About</a></li>
-				<li><a href="#contact"><i class="fa-solid fa-id-badge nav-icon"></i>Contact</a></li>
-				<li><a href="#skill"><i class="fa-solid fa-square-poll-vertical nav-icon"></i>Skill</a></li>
-				<li id="light">
-					<i class="fa-solid fa-moon icon-moon fa-common" id="moon"></i>
-					<i class="fa-solid fa-sun" id="sun"></i>
-				</li>
-			</ul>
-		</nav>
+		</div>
 
 		<div class="top-container " id="top-container">
 

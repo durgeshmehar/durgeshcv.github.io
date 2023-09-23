@@ -15,6 +15,7 @@
 })();
 
 // 2) Creating Dark Mode Feature
+
 visibilitySun();
 var clicks = 0;
 
@@ -35,14 +36,14 @@ $(document).ready(function(){
 
 
 function callSun() {
-   $(".icon-moon").animate({ left: "3.2vw" }, 300);  
+   $(".icon-moon").animate({ left: "2.2vw" }, 300);  
    setTimeout(visibilityMoon, 300);
    $("body").toggleClass("dark-mode");
    setTimeout(SunBright, 300);
 }
 function callMoon() {
-   $(".icon-moon").css("translate", "-3.2vw");
-   $("#sun").animate({ right: "3.2vw" }, 300);
+   $(".icon-moon").css("translate", "0vw");
+   $("#sun").animate({ right: "5.2vw" }, 300);
    setTimeout(visibilitySun, 300);
    setTimeout(MoonBright, 300);
    $("body").toggleClass("dark-mode");
@@ -61,6 +62,7 @@ function visibilityMoon() {
 function visibilitySun() {
    $("#sun").css("visibility", "hidden");
 }
+
 
 // 3) Creating Contact label Feature
 $(".contact .detail .contact-item > span").hide();
@@ -106,6 +108,22 @@ $(".contact .detail .contact-item i").hover(function () {
 //    });
 // });
 
+
+	const primaryNav = document.querySelector('#primary-navigation');
+	const navToggle = document.querySelector('.mobile-nav-toggle');
+
+	navToggle.addEventListener('click', () => {
+		const visible = navToggle.getAttribute('aria-expanded');
+		console.log(visible);
+		if (visible === "false") {
+				primaryNav.setAttribute("data-visible", "true");
+			navToggle.setAttribute("aria-expanded", "true");
+		} else {
+				primaryNav.setAttribute("data-visible", "false");
+			    navToggle.setAttribute("aria-expanded", "false");
+		}
+	});
+
 // 5) Creating autoType Feature
 function throttle(func, delay) {
 	var timer = null;
@@ -121,7 +139,7 @@ function throttle(func, delay) {
 
 
 var typed = new Typed(".auto-type", {
-	strings : ["MERN Developer" ,"Programmer","Blogger" ,"Tech Passionate"],
+	strings : ["MERN Stack Developer" ,"Programmer","Blogger" ,"Problem Solver"],
 	typeSpeed : 60,
 	backSpeed : 40,
 	loop : true
