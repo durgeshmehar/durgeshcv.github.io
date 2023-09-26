@@ -83,6 +83,9 @@ body {
 
 
 /* Wrapper  */
+.area{
+	display: none;
+}
 .logo-container{
 	display: flex;
 	justify-content: center;
@@ -737,6 +740,12 @@ svg{
 
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
 @media screen and ( max-width: 600px){
+	.area{
+		background-color: #5e7abf;
+		display: block;
+		width: 100vw;
+		height: 8vw;
+	}
     .top-container{
 		background-size: cover;
 		padding-top:20vw;
@@ -804,6 +813,12 @@ svg{
 		margin-bottom: 4vw;
 		width: auto;
     }
+	.project .detail{
+		margin-left: 2vw;
+	}
+	.contact .detail a ,.project h4 a{
+		font-size: 3vw; 
+	}	
     .bottom-container h3 {
         letter-spacing: 2px;
         font-size: 3.8vw;
@@ -820,9 +835,12 @@ svg{
         letter-spacing: 0.3px;
     }
 	.name{
-		font-size:4.4vw;
+		font-size:4.6vw;
 		font-weight: bolder;
 
+	}
+	.hirebtn{
+		font-size: 2.5vw;
 	}
     .bottom-container p{
         font-size:3.8vw;
@@ -874,21 +892,22 @@ svg{
     }
     
 	.skill .detail .item .card img {
-		width: 30vw;
-		height: 30vw;
+		width: 33vw;
+		height: 33vw;
+		padding: 0vw;
 	}
 	.skill .detail .card .card-body{
-		min-height: 17vh;
+		min-height: 22vh;
 	}
     .skill .detail .item .card {
-      width: 30vw;
+      width: 33vw;
 	}
 	.skill .card h3{
-		font-size: 2vw;
+		font-size: 2.4vw;
 		letter-spacing: 0px;
 	}
 	.detail .item .card p{
-		font-size: 2vw;
+		font-size: 2.4vw;
 	}
 	.tag{
 		top:-7vw;
@@ -900,7 +919,10 @@ svg{
 	.skill .card .card-body a >h3{
 		margin-top:-6vw
 	}
-
+    
+	.certificate1, .certificate2, .certificate3 {
+       margin:5px;
+	}
     /* Previous was another media query */
 
     .hide_div{
