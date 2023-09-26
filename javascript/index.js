@@ -116,7 +116,7 @@ function throttle(func, delay) {
 }
 
 var typed = new Typed(".auto-type", {
-	strings : ["MERN Stack Developer" ,"Programmer","Blogger" ,"Problem Solver"],
+	strings : ["MERN Stack Developer","UI-UX designer" ,"Programmer","Blogger" ,"Problem Solver"],
 	typeSpeed : 60,
 	backSpeed : 40,
 	loop : true

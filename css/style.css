@@ -14,9 +14,10 @@ body {
 /*   ## Dark Mode Mechanism  ## */
 :root {
 	--makeInvert: invert(0);
-    --backgroundColor: transparent;
+    --backgroundColor: rgb(223, 222, 222);
+    --cardColor: rgb(229, 230, 232);
     --smallColor:#1b1b1b;
-    --white:white;
+    --white:rgb(231,231,231);;
     --top-containerColor:hsla(203, 49%, 39%, 0.5) ;
     --cloudColor:rgb(211, 247, 245);
     --bigParaColor: #5c8edd;
@@ -29,13 +30,13 @@ body {
     --gradientColor:linear-gradient(to bottom, #5c61ae80, rgba(142, 185, 223, 0.5));
     --navColor:#2C2A59;
 	--itemColor: rgba(255, 255, 255, 0.81);  
-	--textColor:rgb(23 33 182 / 90%);
+	--textColor: #007bff;
 }
 .dark-mode{
-	--textColor:rgb(23 170 182 / 90%);
     --backgroundColor: rgb(40,39,50);
     --navColor:#543153;
     --top-containerColor:rgb(53 51 73);
+	--cardColor: rgb(12 9 49);
     --smallColor:white;
     --white:rgb(40,39,50);
 	--itemColor: var(--white);
@@ -196,7 +197,7 @@ body {
 /* Top Container */
 .top-container{
     font-size: 2.6vw;
-    padding: 15vw 0px 0px 0px;
+    padding: 13vw 0px 0px 0px;
 	background: url('../Images/background.jpg');
 	filter: blur(0.3px);
 	background-size: 100%;
@@ -214,6 +215,20 @@ body {
 	color:white;
 	font-size: 2.6vw;
 }
+/* //Student image added */
+
+.top-container{
+	display: flex;
+}
+.left{
+	min-width: 70vw;
+}
+
+
+
+
+
+
 /* middle-container */
 .middle-container{
     background-color: var(--white);
@@ -235,6 +250,36 @@ body {
 .middle-container .intro a{
 	text-decoration: none;
 }
+.hirebtn{
+	background-color: #e84949;
+	margin-top:2vw;
+	padding:0.8vw 2.1vw;
+	color:white;
+	border: none;
+	font-weight: 500;
+	font-size: 1.7vw;
+	box-shadow: 6px 6px 8px 0px #0000003f;
+	position: relative;
+	cursor: pointer;
+	z-index: 2;
+}
+
+.hirebtn::before{
+	content:'';
+	background-color: #060708;
+	position: absolute;
+	top:0;
+	right:0;
+	left:0;
+	bottom:0;
+	z-index: -1;
+	transform: scaleX(0);
+	transform-origin:left;
+	transition: transform 0.6s;
+}
+.hirebtn:hover::before{
+	transform: scaleX(1);
+}
 
 /* middle-container -> intro */
 .intro{
@@ -251,36 +296,41 @@ body {
     line-height: 1.5;
     font-weight: 600;
     background: none;
+	font-size: 1.6vw;
 }
-p.resume{
+span.resume{
 	font-size: 1.4vw;
 	padding: 0;
+	display: inline;
+	color:var(--textColor);
 }
 
 .intro i.fa-brands{
     font-size: 2.3vw;
-    background-color: white;
     border-radius: 50%;
     padding:0.9vw;
     margin-right:0vw; 
 }
 .intro i.linkedin{  
-    color: #0077b5;
+	background-color: #0077b5;
+	color: white;
 }
 .intro i.linkedin:hover{
-    color: white;
-    background-color: #0077b5;
+	color: #0077b5;
+	background-color: white;
 }
 .intro i.github{
-    color:black;
+	color:white;
+	background-color:black;
 }
 .intro i.github:hover{
-    color:white;
-    background-color:black;
+	color:black;
+	background-color:white;
 }
 .intro button{
     border-style: none;
     padding:0.6vw;
+	margin-top:1.5vw;
     background: none; 
 }
 .intro button a{
@@ -335,7 +385,7 @@ hr {
 
 /* .middle-container -> .skill -> .detail -> .items */
 .detail .item{
-    width:auto;
+    width:60vw;
     margin:1vw auto;
     border-radius: 6px;
     background-color:  var(--itemColor);
@@ -364,7 +414,82 @@ hr {
 }
 .detail .item .row{
     padding:2vw;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
 }
+/* Developing blog card  ---------------------------------------------*/
+.skill .detail .item .card{
+	width: 20vw;
+	margin:0vw 1vw;
+	background-color: var(--cardColor);
+	border-radius: 3px;
+}
+.card-body ,.card-footer{
+	padding:1vw;
+}
+.card-body{
+	min-height: 23vw;
+}
+.skill .card h3{
+	font-size: 1.5vw;
+	margin: 0px 0px;
+}
+.detail .item .card p{
+	font-size: 1.3vw;
+	letter-spacing: 0px;
+}
+.tag{
+	display: flex;
+	text-align: center;
+	margin:0 auto;
+	width: 10vw;
+	background-color: #0077b5;
+	padding: 0.5vw 1vw;
+	border-radius: 4px;
+	justify-content: center;
+	position: relative;
+	top:-3vw;
+}
+.skill .detail .item .card img{
+	width: 20vw;
+	height: 12vw;
+	border-radius: 3px;
+}
+
+.card-footer{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+svg{
+	width: 20px;
+	height: 20px;
+	padding-top:8px;
+	fill:var(--smallColor);
+}
+
+.skill .detail .item .card .card-footer img{
+    height: 4vw;
+	width: 4vw;
+	padding: 0.3vw;
+	border-radius: 50%;
+}
+.photo{
+	display: flex;
+	gap:6px;
+}
+.skill a{
+	text-decoration: none;
+	color:var(--textColor);
+}
+.skill .card-body a >h3{
+	margin:-1vw 0vw 1vw 0vw;
+ }
+
+
+
 /* .middle-container -> .project */
 .certificate .container{
 	display: flex;
@@ -376,10 +501,16 @@ hr {
 }
 .certificate .container img{
 	height: 35vw;
-	width : 30vw;
-	margin: 20px;
+	width : 45vw;
 }
-
+.certificate1 ,.certificate2,.certificate3{
+	overflow: hidden;
+	margin:20px;
+}
+.certificate .container img:hover{
+    scale:1.2;
+	transition: scale 0.4s;
+}
 .project .detail ul {
     list-style-type: none;
     font-family: 'Alegreya', serif;
@@ -441,15 +572,14 @@ hr {
 
 /* common box of skill  */
 .intro , .education ,.skill ,.project ,.certificate ,.contact{
-
     background-color: var(--top-containerColor);
-    /* background-color: ; */
 	backdrop-filter: blur(2rem);
     border-radius:10px;
-    width: 70vw;
+    width: 75vw;
     display: inline-block;
     padding:5vw;
     margin: 5vw 0vw;    
+	overflow: hidden;
 }   
 .project img{
     float: left;
@@ -466,9 +596,7 @@ hr {
     margin-bottom: 3vw;
     text-align: center;
 }
-.skill h3{
-   margin:1vw 0vw 2vw 0vw;
-}
+
 .bottom-container h3{
     color:#1279c3;
     margin-bottom: 2vw;
@@ -487,7 +615,7 @@ hr {
     margin-bottom: 1vw;
 }
 .contact .detail a ,.project h4 a{
-    font-size: 1.9vw; 
+    font-size: 2.4vw; 
     font-weight: 600;
     text-decoration: none;
 	display: inline;
@@ -619,10 +747,11 @@ hr {
 	}
     .top-container p ,.top-container span {
         font-size: 5vw;
+		font-weight: 700;
     }
 	.certificate .container img{
 		height: 35vh;
-		width : 60vw;
+		width : 68vw;
 		margin: 0.6vw;
 	}
 	.middle-container img ,.middle-container .project img{
@@ -630,7 +759,7 @@ hr {
 		padding:2vw;
 		width: 25vw;
 	}
-	.middle-container .intro  p.resume{
+	.middle-container .intro  span.resume{
 		font-size: 3vw;
 		padding:0;
 		margin-bottom: 1vw;
@@ -666,13 +795,14 @@ hr {
     .education h3, .skill h3 ,.project h3,.bottom-container h3,.certificate h3,.contact h3{
         font-size: 5vw;
         margin-bottom: 4.5vw;
-        letter-spacing: 3px;
+        letter-spacing: 1px;
         padding:1vw;
     }
     .detail .item{
         padding:3vw;
         margin:0vw auto;
 		margin-bottom: 4vw;
+		width: auto;
     }
     .bottom-container h3 {
         letter-spacing: 2px;
@@ -680,6 +810,7 @@ hr {
 		padding:0vw 5vw;
 		margin:2vw;
     }
+	
 
 
     .education .detail p, span ,.skill p ,.project .detail p ,.bottom-container p{
@@ -697,7 +828,7 @@ hr {
         font-size:3.8vw;
     }
     .intro , .education ,.skill  ,.certificate ,.contact ,.project{
-               width:80vw;
+               width:90vw;
         
     }
 
@@ -741,6 +872,35 @@ hr {
     .contact .detail .contact-item a{
         font-size: 2.5vw; 
     }
+    
+	.skill .detail .item .card img {
+		width: 30vw;
+		height: 30vw;
+	}
+	.skill .detail .card .card-body{
+		min-height: 17vh;
+	}
+    .skill .detail .item .card {
+      width: 30vw;
+	}
+	.skill .card h3{
+		font-size: 2vw;
+		letter-spacing: 0px;
+	}
+	.detail .item .card p{
+		font-size: 2vw;
+	}
+	.tag{
+		top:-7vw;
+		width: 12vw;
+	}
+	svg{
+		padding-top:0px;
+	}
+	.skill .card .card-body a >h3{
+		margin-top:-6vw
+	}
+
     /* Previous was another media query */
 
     .hide_div{
