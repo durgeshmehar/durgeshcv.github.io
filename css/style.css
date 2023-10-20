@@ -18,7 +18,7 @@ body {
     --cardColor: rgb(229, 230, 232);
     --smallColor:#1b1b1b;
     --white:rgb(231,231,231);;
-    --top-containerColor:hsla(203, 49%, 39%, 0.5) ;
+    --top-containerColor:hsla(203, 90%, 70%, 0.5) ;
     --cloudColor:rgb(211, 247, 245);
     --bigParaColor: #5c8edd;
     --middleColor:rgba(233, 162, 197, 0.5);
@@ -52,7 +52,7 @@ body {
 }
 
 /* left come = hidden1*/
- .hidden1{
+ /* .hidden1{
     filter: blur(2px);
     transform :translate(-30%);
     transition :all 1.1s;
@@ -79,7 +79,7 @@ body {
 .show3{
     filter: blur(0);
     transform :translate(0) ;
-}
+} */
 
 
 /* Wrapper  */
@@ -419,9 +419,13 @@ hr {
     padding:2vw;
 	display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
     align-items: start;
 }
+.detail .item .card-row{
+	justify-content: space-evenly;
+}
+
 /* Developing blog card  ---------------------------------------------*/
 .skill .detail .item .card{
 	width: 20vw;
@@ -432,8 +436,8 @@ hr {
 .card-body ,.card-footer{
 	padding:1vw;
 }
-.card-body{
-	min-height: 23vw;
+.card{
+	min-height: clamp( 35vh,45vw,45vw);
 }
 .skill .card h3{
 	font-size: 1.5vw;
@@ -504,15 +508,15 @@ svg{
 }
 .certificate .container img{
 	height: 35vw;
-	width : 45vw;
+	width : 50vw;
 }
 .certificate1 ,.certificate2,.certificate3{
 	overflow: hidden;
 	margin:20px;
 }
 .certificate .container img:hover{
-    scale:1.2;
-	transition: scale 0.4s;
+	transform: scale(1.1);
+	transition: transform 1s ease;
 }
 .project .detail ul {
     list-style-type: none;
@@ -536,7 +540,7 @@ svg{
 }
 .contact .detail i.fa{
 
-	font-size: 2.7vw;
+	font-size: 2.2vw;
 	margin:1vw 3.5vw 1vw 0vw;
 	border:1px solid grey;
 	padding:1vw;
@@ -551,26 +555,24 @@ svg{
 }
 
 .contact .detail img{
-    height: 2.8vw;
-    width: 2.8vw;
+    height: 2vw;
+    width: 2vw;
 }
 
 /* Label designing //  .contact ->.detail -> span */
-.contact .detail .contact-item > span {
-     color:rgb(219, 211, 211);
-     font-size: 1.5vw;
-     font-weight: 600;
-     border-radius: 1vw;
-     border:1px solid black;
-     padding:0.3vw 0.8vw;
-     background-color: rgb(107, 125, 120);   
+.contact .detail span {
+	color:rgb(219, 211, 211);
+	font-size: 1.5vw;
+	font-weight: 600;
+	border-radius: 1vw;
+	border:1px solid black;
+	padding:0.3vw 0.8vw;
+	background-color: rgb(107, 125, 120);
+	
 }
 .contact .detail span p{
-    display: inline-block;
-    background: none;
-}
-.contact .detail a:hover{
-    color:rgb(193, 95, 60);
+   display: inline-block;
+   background: none;
 }
 
 /* common box of skill  */
@@ -594,8 +596,8 @@ svg{
 .education h3,.skill > h3, .bottom-container h3 ,.project h3 , .certificate h3, .contact h3{
     font-size:2.8vw;
     padding:10px;
-    color: #5cdddd;
-    background-color: hsl(45 3% 10% /0.4 ) ;   
+    color: white;
+    background-color: #43597be3 ;   
     margin-bottom: 3vw;
     text-align: center;
 }
@@ -618,7 +620,7 @@ svg{
     margin-bottom: 1vw;
 }
 .contact .detail a ,.project h4 a{
-    font-size: 2.4vw; 
+    font-size: 1.8vw; 
     font-weight: 600;
     text-decoration: none;
 	display: inline;
@@ -744,7 +746,7 @@ svg{
 		background-color: #5e7abf;
 		display: block;
 		width: 100vw;
-		height: 8vw;
+		height: 9vw;
 	}
     .top-container{
 		background-size: cover;
@@ -896,9 +898,9 @@ svg{
 		height: 33vw;
 		padding: 0vw;
 	}
-	.skill .detail .card .card-body{
-		min-height: 22vh;
-	}
+	/* .skill .detail .card .card-body{
+		min-height:  22vh;
+	} */
     .skill .detail .item .card {
       width: 33vw;
 	}

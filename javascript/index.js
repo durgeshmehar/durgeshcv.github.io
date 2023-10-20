@@ -61,15 +61,17 @@ function visibilitySun() {
 }
 
 // 3) Creating Contact label Feature
-$(".contact .detail .contact-item > span").hide();
+$(".contact .detail span").hide();
 
-$(".contact .detail .contact-item i").hover(function () {
+$(".contact .detail i").hover(function () {
    var a = this.getAttribute('class').split(" ");
-   $(".contact .detail .contact-item span#" + a[1] + "-id").slideUp().show();
+
+   $(".contact .detail span#" + a[1] + "-id").slideUp().show();
 
 }, function () {
-	var a = this.getAttribute('class').split(" ");
-	$(".contact .detail .contact-item span#" + a[1] + "-id").hide();
+   var a = this.getAttribute('class').split(" ");
+   $(".contact .detail span#" +a[1] + "-id").hide();
+
 });
 
 // 4) Creating Mobile Navigation Feature
@@ -125,16 +127,16 @@ var typed = new Typed(".auto-type", {
 
 //6) Moving Animation Feature
 
-const observer = new IntersectionObserver((entries) => {
-	entries.forEach((entry) => {
-	  const target = entry.target;
-	  if (entry.isIntersecting) {
-		target.classList.add('show1', 'show2', 'show3');
-	  } else {
-		target.classList.remove('show1', 'show2', 'show3');
-	  }
-	});
-  });
+// const observer = new IntersectionObserver((entries) => {
+// 	entries.forEach((entry) => {
+// 	  const target = entry.target;
+// 	  if (entry.isIntersecting) {
+// 		target.classList.add('show1', 'show2', 'show3');
+// 	  } else {
+// 		target.classList.remove('show1', 'show2', 'show3');
+// 	  }
+// 	});
+//   });
   
-  const hiddenElements = document.querySelectorAll('.hidden1, .hidden2, .hidden3');
-  hiddenElements.forEach((el) => observer.observe(el));
+//   const hiddenElements = document.querySelectorAll('.hidden1, .hidden2, .hidden3');
+//   hiddenElements.forEach((el) => observer.observe(el));
