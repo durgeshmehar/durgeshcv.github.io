@@ -1,292 +1,451 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, minimum-scale=1"
+    />
+    <title>Durgesh Website</title>
+    <link rel="stylesheet" href="css/style.css" />
 
-<head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-	<title>Durgesh Website</title>
-	<link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <!-- Auto type  -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9ddc6a281f.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-	<link rel="icon" href="favicon.ico" />
-	<!-- Auto type  -->
-	<script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
-	<!-- Font awesome -->
-	<script src="https://kit.fontawesome.com/9ddc6a281f.js" crossorigin="anonymous"></script>
-	<!-- Google font -->
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Dancing+Script&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-	<link href="https://fonts.googleapis.com/css2?family=Alegreya:ital@1&family=Dancing+Script&display=swap"
-		rel="stylesheet">
+  <body>
+    <div class="wrapper">
+      <div class="hide_div">
+        <button
+          class="mobile-nav-toggle"
+          aria-controls="primary-navigation"
+          aria-expanded="false"
+        ></button>
+        <span id="bar-head">
+          <div class="logo-container">
+            <img src="Images/letterD.png" class="logo" />
+            <span class="name"> urgesh Portfolio </span>
+          </div>
+        </span>
+      </div>
+      <div class="area"></div>
+      <div class="navigation">
+        <div class="navigation-main">
+          <nav>
+            <ul
+              id="primary-navigation"
+              class="primary-navigation flex"
+              data-visible="false"
+            >
+              <li class="active">
+                <a href="#top-container">
+                  <i
+                    class="fa-solid fa-circle-user fa-lg fa-common nav-icon"
+                  ></i
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a href="#middle-container"
+                  ><i class="fa-solid fa-user nav-icon"></i>About</a
+                >
+              </li>
+              <li>
+                <a href="#contact">
+                  <i class="fa-solid fa-id-badge nav-icon"></i>Contact</a
+                >
+              </li>
+              <li>
+                <a href="#projects"
+                  ><i class="fa-solid fa-square-poll-vertical nav-icon"></i
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="https://drive.google.com/file/d/1znLobhz79qq0zmj-bWv0NEutAAGRTxCR/view?usp=drive_link"
+                  target="_blank"
+                  ><i class="fa-solid fa-address-book nav-icon"></i>Resume</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <li id="light">
+          <i class="fa-solid fa-moon icon-moon fa-common" id="moon"></i>
+          <i class="fa-solid fa-sun" id="sun"></i>
+        </li>
+      </div>
 
-</head>
+      <div class="top-container" id="top-container">
+        <div class="left">
+          <section class="">
+            <h1>Hello</h1>
+            <h1>I'm Durgesh</h1>
+          </section>
 
-<body>
-	<div class="wrapper">
+          <section class="">
+            <p>I'm <span class="auto-type"> </span></p>
+          </section>
+          <section>
+            <a
+              href="https://www.linkedin.com/in/durgesh-mehar-82955b230"
+              target="_blanck"
+            >
+              <button type="submit" class="hirebtn">Hire Me</button>
+            </a>
+          </section>
+        </div>
+        <div class="right"></div>
+      </div>
 
+      <div class="middle-container" id="middle-container">
+        <div class="intro">
+          <img src="Images/Best durgesh.png" alt="Durgesh" class="" />
 
-		<div class="hide_div">
-			<button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"></button>
-			<span id="bar-head">
-				<div class="logo-container">
-					<img src="Images/letterD.png" class="logo">
-					<span class="name"> urgesh Portfolio </span>
-				</div>
-			</span>
-		</div>
-		<div class="area" ></div>
-		<div class="navigation">
-			
-			<div class="navigation-main" >
-				
-				   <nav >
-					   <ul id="primary-navigation" class="primary-navigation flex" data-visible="false">
-						   <li class="active"><a href="#top-container"> <i class="fa-solid fa-circle-user fa-lg fa-common nav-icon"></i>Home</a></li>
-						   <li><a href="#middle-container"><i class="fa-solid fa-user nav-icon"></i>About</a></li>
-						   <li><a href="#contact"> <i class="fa-solid fa-id-badge nav-icon"></i>Contact</a></li>
-						   <li><a href="#skill"><i class="fa-solid fa-square-poll-vertical nav-icon"></i>Skill</a></li>
-						   <li><a href="Images/durgeshresume.pdf" target="_blank"><i class="fa-solid fa-address-book nav-icon"></i>Resume</a></li>
-						</ul>
-					</nav>
-			</div>			
-			<li id="light">
-				<i class="fa-solid fa-moon icon-moon fa-common" id="moon"></i>
-				<i class="fa-solid fa-sun" id="sun"></i>
-			</li>
-		</div>
+          <p class="">
+            Hi , I am Durgesh, a Full Stack Developer . I am currently pursuing
+            my Bachelor's degree in Information Technology from DY Patil College
+            of Engineering, Pune . I love to learn and develop new technologies
+            & share my knowledge as technical writer.
+            <br /><br />
 
-		<div class="top-container " id="top-container">
-            <div class="left">
-				<section class="">
-					<h1>Hello</h1>
-					<h1>I'm Durgesh</h1>
-				</section>
-				
-				<section class="">
-					<p>I'm <span class="auto-type"> </span> </p>
-				</section>
-				<section >
-					<a href="https://www.linkedin.com/in/durgesh-mehar-82955b230" target="_blanck">
-						<button  type="submit" class="hirebtn" >
-							Hire Me
-						</button> 
-					</a>
-				</section>
-			</div>
-			<div class="right">
-			</div>
+            I am constantly pushing myself to improve and grow as a developer
+            and work on open source project. I dedicated to continuously
+            improving my skills and learning new technologies, which fuels my
+            enthusiasm for coding.
+            <a
+              href="https://drive.google.com/file/d/1wzH8FfuvirL-DfHa3c0cGIOiqZMgIVNg/view?usp=drive_link"
+              target="_blank"
+            >
+              <span class="resume">(Resume👆🏽)</span>
+            </a>
+            <br />
+          </p>
 
-		</div>
+          <button class="">
+            <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230">
+              <i class="fa-brands fa-linkedin-in linkedin"></i>
+            </a>
+          </button>
+          <button class="">
+            <a href="https://durgeshmehar.github.io/">
+              <i class="fa-brands fa-github github"></i>
+            </a>
+          </button>
+        </div>
 
-		<div class="middle-container" id="middle-container">
+        <div class="education" id="education">
+          <h3>Education</h3>
+          <section class="education-info">
+            <img src="Images/studying.png" alt="Durgesh" />
+            <div class="detail">
+              <h4>10 th</h4>
+              <p class="percentage">Score: 91.80 %</p>
+              <h4>12 th</h4>
+              <p class="percentage">Score: 85.30 %</p>
+              <h4>Engineering (Pursing)</h4>
+              <p class="percentage">1st year(SGPA) : 9.59</p>
+            </div>
+          </section>
+        </div>
 
-			<div class="intro ">
+        <div class="skill" id="skill">
+          <h3>My Skills</h3>
 
-				<img src="Images/Best durgesh.png" alt="Durgesh" class="" />
+          <div class="detail">
+            <h3 class="tech">Technical</h3>
+            <div class="item">
+              <h4>Language & Databases</h4>
+              <hr />
 
-				<p class="">
-					Hi , I am Durgesh, a Full Stack Developer . I am currently pursuing my Bachelor's degree in
-					Information Technology from DY Patil College of Engineering, Pune . I love to learn and develop new
-					technologies & share my knowledge as technical writer.
-					<br><br>
+              <div class="row">
+                <div class="col">
+                  <img src="Images/language/c.png" alt="" />
+                  <p class="caption">C</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/C++.png" alt="" />
+                  <p class="caption">C++</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/python.png" alt="" />
+                  <p class="caption">Python</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/java.png" alt="" />
+                  <p class="caption">Java</p>
+                </div>
 
-					I am constantly pushing myself to improve and grow as a developer and work on open source project.
-					I dedicated to continuously improving my skills and learning new technologies, which fuels my
-					enthusiasm for coding.
-					<a href="https://drive.google.com/file/d/1wzH8FfuvirL-DfHa3c0cGIOiqZMgIVNg/view?usp=drive_link"
-						target="_blank"> 
-						<span class="resume">(Resume👆🏽)</span> 
-					</a>
-					<br>
-				</p>
+                <div class="col">
+                  <img src="Images/language/html.png" alt="" />
+                  <p class="caption">HTML</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/css.png" alt="" />
+                  <p class="caption">CSS</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/javaScript.png" alt="" />
+                  <p class="caption">JavaScript</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/nodejs.png" alt="" />
+                  <p class="caption">Node JS</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/mongodb.png" alt="" />
+                  <p class="caption">MongoDB</p>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <h4>Frameworks</h4>
+              <hr />
+              <div class="row">
+                <div class="col">
+                  <img src="Images/language/Bootstrap4.png" alt="" />
+                  <p class="caption">Bootstrap</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/express js.png" alt="" />
+                  <p class="caption">Express JS</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/react.png" alt="" />
+                  <p class="caption">React JS</p>
+                </div>
+              </div>
+            </div>
 
-				<button class="">
+            <div class="item">
+              <h4>Technology</h4>
+              <hr />
+              <div class="row">
+                <div class="col">
+                  <img src="Images/language/gitAndGithub.png" alt="" />
+                  <p class="caption">Git & Github</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/postman.png" alt="" />
+                  <p class="caption">Postman</p>
+                </div>
+                <div class="col">
+                  <img src="Images/language/material-ui.png" alt="" />
+                  <p class="caption">Material UI</p>
+                </div>
+              </div>
+            </div>
 
-					<a href="https://www.linkedin.com/in/durgesh-mehar-82955b230">
-						<i class="fa-brands fa-linkedin-in linkedin"></i>
-					</a>
-				</button>
-				<button class="">
-					<a href="https://durgeshmehar.github.io/">
-						<i class="fa-brands fa-github github"></i>
-					</a>
+            <h3 class="non-tech">Extra-curricular</h3>
 
-				</button>
+            <div class="item">
+              <h4>Technical Content Writer</h4>
+              <hr />
+              <div class="row card-row">
+                <div class="card">
+                  <div class="card-header">
+                    <a
+                      href="https://dblog.hashnode.dev/play-with-git-its-command"
+                      target="_blank"
+                    >
+                      <img src="Images/git.jpg" />
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <div class="tag"><h3>Git</h3></div>
+                    <a
+                      href="https://dblog.hashnode.dev/play-with-git-its-command"
+                      target="_blank"
+                    >
+                      <h3>Play with Git & Its Command</h3>
+                    </a>
+                    <p class="blog-intro intro-1">
+                      Introduction To Git Git serves as a version control system
+                      primarily responsible for tracking changes within a
+                      folder. It empowers users...
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="card-footer">
+                    <div class="profile">
+                      <div class="photo">
+                        <img src="Images/durgeshProfile.jpg" />
+                        <p>
+                          <a href="https://dblog.hashnode.dev/">
+                            Durgesh Blogs
+                          </a>
+                        </p>
+                        <svg
+                          class="mr-1 h-4 w-4 fill-current"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M540.9 56.77c-45.95-16.66-90.23-24.09-129.1-24.75-60.7.94-102.7 17.45-123.8 27.72-21.1-10.27-64.1-26.8-123.2-27.74-40-.05-84.4 8.35-129.7 24.77C14.18 64.33 0 84.41 0 106.7v302.9c0 14.66 6.875 28.06 18.89 36.8 11.81 8.531 26.64 10.98 40.73 6.781 118.9-36.34 209.3 19.05 214.3 22.19C277.8 477.6 281.2 480 287.1 480c6.52 0 10.12-2.373 14.07-4.578 10.78-6.688 98.3-57.66 214.3-22.27 14.11 4.25 28.86 1.75 40.75-6.812C569.1 437.6 576 424.2 576 409.6V106.7c0-22.28-14.2-42.35-35.1-49.93zM272 438.1c-24.95-12.03-71.01-29.37-130.5-29.37-27.83 0-58.5 3.812-91.19 13.77-4.406 1.344-9 .594-12.69-2.047C34.02 417.8 32 413.1 32 409.6V106.7c0-8.859 5.562-16.83 13.86-19.83C87.66 71.7 127.9 63.95 164.5 64c51.8.81 89.7 15.26 107.5 23.66V438.1zm272-28.5c0 4.375-2.016 8.234-5.594 10.84-3.766 2.703-8.297 3.422-12.69 2.125C424.1 391.6 341.3 420.4 304 438.3V87.66c17.8-8.4 55.7-22.85 107.4-23.66 35.31-.063 76.34 7.484 118.8 22.88 8.2 3 13.8 10.96 13.8 19.82v302.9z"
+                          ></path>
+                        </svg>
+                        <p>6min read</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header">
+                    <a
+                      href="https://dblog.hashnode.dev/mongodb-commands-a-beginners-guide-to-talking-to-your-database"
+                      target="_blank"
+                    >
+                      <img src="Images/mongodb.gif" />
+                    </a>
+                  </div>
+                  <div class="card-body">
+                    <div class="tag"><h3>Mongodb</h3></div>
+                    <a
+                      href="https://dblog.hashnode.dev/mongodb-commands-a-beginners-guide-to-talking-to-your-database"
+                      target="_blank"
+                    >
+                      <h3>MongoDB Commands: A Beginner's Guide</h3>
+                    </a>
+                    <p class="blog-intro intro-2">
+                      Introduction : MongoDB is a NoSQL database which means it
+                      stores data in object form (key & value pair)...
+                    </p>
+                  </div>
+                  <hr />
+                  <div class="card-footer">
+                    <div class="profile">
+                      <div class="photo">
+                        <img src="Images/durgeshProfile.jpg" />
+                        <p>
+                          <a href="https://dblog.hashnode.dev/">
+                            Durgesh Blogs
+                          </a>
+                        </p>
+                        <svg
+                          class="mr-1 h-4 w-4 fill-current"
+                          viewBox="0 0 576 512"
+                        >
+                          <path
+                            d="M540.9 56.77c-45.95-16.66-90.23-24.09-129.1-24.75-60.7.94-102.7 17.45-123.8 27.72-21.1-10.27-64.1-26.8-123.2-27.74-40-.05-84.4 8.35-129.7 24.77C14.18 64.33 0 84.41 0 106.7v302.9c0 14.66 6.875 28.06 18.89 36.8 11.81 8.531 26.64 10.98 40.73 6.781 118.9-36.34 209.3 19.05 214.3 22.19C277.8 477.6 281.2 480 287.1 480c6.52 0 10.12-2.373 14.07-4.578 10.78-6.688 98.3-57.66 214.3-22.27 14.11 4.25 28.86 1.75 40.75-6.812C569.1 437.6 576 424.2 576 409.6V106.7c0-22.28-14.2-42.35-35.1-49.93zM272 438.1c-24.95-12.03-71.01-29.37-130.5-29.37-27.83 0-58.5 3.812-91.19 13.77-4.406 1.344-9 .594-12.69-2.047C34.02 417.8 32 413.1 32 409.6V106.7c0-8.859 5.562-16.83 13.86-19.83C87.66 71.7 127.9 63.95 164.5 64c51.8.81 89.7 15.26 107.5 23.66V438.1zm272-28.5c0 4.375-2.016 8.234-5.594 10.84-3.766 2.703-8.297 3.422-12.69 2.125C424.1 391.6 341.3 420.4 304 438.3V87.66c17.8-8.4 55.7-22.85 107.4-23.66 35.31-.063 76.34 7.484 118.8 22.88 8.2 3 13.8 10.96 13.8 19.82v302.9z"
+                          ></path>
+                        </svg>
+                        <p>6min read</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <hr> -->
+        <div class="project" id="projects">
+          <h3>My Projects</h3>
+          <div class="project-card">
 
-			</div>
+            <div
+              class="card-item"
+              style="
+                background-color: rgb(255, 255, 255);
+                border-radius: 2%;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+              <a href="http://durgesheshop.vercel.app/" target="_blank">
+                <img src="Images/project/eshop.png" />
+              </a>
+              <h2>E-shop Shopping Website</h2>
+              <p>
+                E-commerce shopping website using React, Tailwind CSS, and Redux
+                for good user-friendly interface, responsive design and state
+                management.
+              </p>
+            </div>
 
-			<div class="education " id="education">
-				<h3>Education</h3>
-				<section class=" education-info">
-					<img src="Images/studying.png" alt="Durgesh" />
-					<div class="detail ">
-						<h4>10 th</h4>
-						<p class="percentage">Score: 91.80 %</p>
-						<h4>12 th</h4>
-						<p class="percentage">Score: 85.30 %</p>
-						<h4>Engineering (Pursing)</h4>
-						<p class="percentage">1st year(SGPA) : 9.59</p>
-					</div>
-				</section>
-			</div>
+            <div
+              class="card-item"
+              style="
+                background-color: rgb(255, 255, 255);
+                border-radius: 2%;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+              <a href="https://durgeshyoutube.netlify.app/" target="_blank">
+                <img src="Images/project/youtube.png" />
+              </a>
+              <h2>Youtube Player</h2>
+              <p>
+                Discover our GitHub-hosted YouTube Clone project, built with
+                React, React Routing, and Material UI. Experience seamless API
+                integration, including essential features like comments, video
+                player, suggestions, and search functionality.
+              </p>
+            </div>
 
+            <div
+              class="card-item"
+              style="
+                background-color: rgb(255, 255, 255);
+                border-radius: 2%;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+			<a href="http://durgeshrazorpay.netlify.com/" target="_blank">
+              <img src="Images/project/razorpay.png" />
+			</a>  
+              <h2>Razorpay Clone Website</h2>
+              <p>
+                E-commerce shopping website using React, Tailwind CSS, and Redux
+                for good user-friendly interface, responsive design and state
+                management.
+              </p>
+            </div>
 
-
-			<div class="skill " id="skill">
-				<h3>My Skills</h3>
-
-				<div class="detail">
-					<h3 class="tech">Technical</h3>
-					<div class="item ">
-						<h4>Language & Databases</h4>
-						<hr>
-
-						<div class="row  ">
-							<div class="col"><img src="Images/language/c.png" alt="">
-								<p class="caption">C</p>
-							</div>
-							<div class="col "><img src="Images/language/C++.png" alt="">
-								<p class="caption">C++</p>
-							</div>
-							<div class="col"><img src="Images/language/python.png" alt="">
-								<p class="caption">Python</p>
-							</div>
-							<div class="col"><img src="Images/language/java.png" alt="">
-								<p class="caption">Java</p>
-							</div>
-
-							<div class="col"><img src="Images/language/html.png" alt="">
-								<p class="caption">HTML</p>
-							</div>
-							<div class="col "><img src="Images/language/css.png" alt="">
-								<p class="caption">CSS</p>
-							</div>
-							<div class="col"><img src="Images/language/javaScript.png" alt="">
-								<p class="caption">JavaScript</p>
-							</div>
-							<div class="col"><img src="Images/language/nodejs.png" alt="">
-								<p class="caption">Node JS</p>
-							</div>
-							<div class="col"><img src="Images/language/mongodb.png" alt="">
-								<p class="caption">MongoDB</p>
-							</div>
-
-						</div>
-
-					</div>
-					<div class="item ">
-						<h4>Frameworks</h4>
-						<hr>
-						<div class="row  ">
-
-							<div class="col "><img src="Images/language/Bootstrap4.png" alt="">
-								<p class="caption">Bootstrap</p>
-							</div>
-							<div class="col"><img src="Images/language/express js.png" alt="">
-								<p class="caption">Express JS</p>
-							</div>
-							<div class="col"><img src="Images/language/react.png" alt="">
-								<p class="caption">React JS</p>
-							</div>
-						</div>
-
-					</div>
-
-					<div class="item ">
-						<h4>Technology</h4>
-						<hr>
-						<div class="row  ">
-
-							<div class="col "><img src="Images/language/gitAndGithub.png" alt="">
-								<p class="caption">Git & Github</p>
-							</div>
-							<div class="col "><img src="Images/language/postman.png" alt="">
-								<p class="caption">Postman</p>
-							</div>
-							<div class="col "><img src="Images/language/material-ui.png" alt="">
-								<p class="caption">Material UI</p>
-							</div>
-						</div>
-
-					</div>
-
-					<h3 class="non-tech ">Extra-curricular</h3>
-
-					<div class="item ">
-						<h4>Technical Content Writer </h4>
-						<hr>
-							<div class="row   card-row">
-								<!-- <a href="https://dblog.hashnode.dev/" target="_blanck">
-									<div class="col "><img src="Images/language/content writer.png" alt="">
-									</div>
-								</a> -->
-								<div class="card">
-									<div class="card-header">
-                                      <a href="https://dblog.hashnode.dev/play-with-git-its-command" target="_blank">
-										<img src="Images/git.jpg">
-									  </a>
-									</div>
-									<div class="card-body">
-										<div class="tag"><h3>Git</h3></div>
-										<a href="https://dblog.hashnode.dev/play-with-git-its-command" target="_blank">
-											<h3> Play with Git & Its Command </h3>
-										</a>
-										<p> Introduction To Git Git serves as a version control system primarily responsible for tracking changes within a folder. It empowers users...</p>
-										
-									</div>
-									<hr>
-									<div class="card-footer">
-										<div class="profile">
-                                           <div class="photo">
-											 <img src="Images/durgeshProfile.jpg" >
-											  <p> <a href="https://dblog.hashnode.dev/"> Durgesh Blogs  </a></p>
-											 <svg class="mr-1 h-4 w-4 fill-current" viewBox="0 0 576 512"><path d="M540.9 56.77c-45.95-16.66-90.23-24.09-129.1-24.75-60.7.94-102.7 17.45-123.8 27.72-21.1-10.27-64.1-26.8-123.2-27.74-40-.05-84.4 8.35-129.7 24.77C14.18 64.33 0 84.41 0 106.7v302.9c0 14.66 6.875 28.06 18.89 36.8 11.81 8.531 26.64 10.98 40.73 6.781 118.9-36.34 209.3 19.05 214.3 22.19C277.8 477.6 281.2 480 287.1 480c6.52 0 10.12-2.373 14.07-4.578 10.78-6.688 98.3-57.66 214.3-22.27 14.11 4.25 28.86 1.75 40.75-6.812C569.1 437.6 576 424.2 576 409.6V106.7c0-22.28-14.2-42.35-35.1-49.93zM272 438.1c-24.95-12.03-71.01-29.37-130.5-29.37-27.83 0-58.5 3.812-91.19 13.77-4.406 1.344-9 .594-12.69-2.047C34.02 417.8 32 413.1 32 409.6V106.7c0-8.859 5.562-16.83 13.86-19.83C87.66 71.7 127.9 63.95 164.5 64c51.8.81 89.7 15.26 107.5 23.66V438.1zm272-28.5c0 4.375-2.016 8.234-5.594 10.84-3.766 2.703-8.297 3.422-12.69 2.125C424.1 391.6 341.3 420.4 304 438.3V87.66c17.8-8.4 55.7-22.85 107.4-23.66 35.31-.063 76.34 7.484 118.8 22.88 8.2 3 13.8 10.96 13.8 19.82v302.9z"></path> </svg>
-									        <p> 6min read</p> 
-										   </div>
-										</div>
-									
-										
-									</div>
-								</div>
-								<div class="card">
-									<div class="card-header">
-										<a href="https://dblog.hashnode.dev/mongodb-commands-a-beginners-guide-to-talking-to-your-database" target="_blank">
-											<img src="Images/mongodb.gif">
-										</a>
-									</div>
-									<div class="card-body">
-										<div class="tag"><h3>Mongodb</h3></div>
-										<a href="https://dblog.hashnode.dev/mongodb-commands-a-beginners-guide-to-talking-to-your-database" target="_blank">
-
-											<h3> MongoDB Commands: A Beginner's Guide to Talking to Your Database</h3>
-										</a>
-									  <p> Introduction : MongoDB is a NoSQL database which means it stores data in object form (key & value pair)...</p>
-									</div>
-									<hr>
-									<div class="card-footer">
-										<div class="profile">
-											<div class="photo">
-											  <img src="Images/durgeshProfile.jpg" >
-											  <p> <a href="https://dblog.hashnode.dev/"> Durgesh Blogs  </a></p>
-											  <svg class="mr-1 h-4 w-4 fill-current" viewBox="0 0 576 512"><path d="M540.9 56.77c-45.95-16.66-90.23-24.09-129.1-24.75-60.7.94-102.7 17.45-123.8 27.72-21.1-10.27-64.1-26.8-123.2-27.74-40-.05-84.4 8.35-129.7 24.77C14.18 64.33 0 84.41 0 106.7v302.9c0 14.66 6.875 28.06 18.89 36.8 11.81 8.531 26.64 10.98 40.73 6.781 118.9-36.34 209.3 19.05 214.3 22.19C277.8 477.6 281.2 480 287.1 480c6.52 0 10.12-2.373 14.07-4.578 10.78-6.688 98.3-57.66 214.3-22.27 14.11 4.25 28.86 1.75 40.75-6.812C569.1 437.6 576 424.2 576 409.6V106.7c0-22.28-14.2-42.35-35.1-49.93zM272 438.1c-24.95-12.03-71.01-29.37-130.5-29.37-27.83 0-58.5 3.812-91.19 13.77-4.406 1.344-9 .594-12.69-2.047C34.02 417.8 32 413.1 32 409.6V106.7c0-8.859 5.562-16.83 13.86-19.83C87.66 71.7 127.9 63.95 164.5 64c51.8.81 89.7 15.26 107.5 23.66V438.1zm272-28.5c0 4.375-2.016 8.234-5.594 10.84-3.766 2.703-8.297 3.422-12.69 2.125C424.1 391.6 341.3 420.4 304 438.3V87.66c17.8-8.4 55.7-22.85 107.4-23.66 35.31-.063 76.34 7.484 118.8 22.88 8.2 3 13.8 10.96 13.8 19.82v302.9z"></path></svg>
-									        <p> 6min read</p>
-											</div>
-										 </div>
-
-									</div>
-								</div>
-							</div>
-
-					</div>
-				</div>
-
-			</div>
-			<!-- <hr> -->
-			<div class="project ">
-				<h3>My Projects</h3>
+            <div
+              class="card-item"
+              style="
+                background-color: rgb(255, 255, 255);
+                border-radius: 2%;
+                display: flex;
+                flex-direction: column;
+              "
+            >
+			<a href="https://durgeshflipkart.netlify.app/" target="_blank">
+              <img src="Images/project/flipkart.png" />
+			</a>  
+              <h2>Flipkart frontend clone website</h2>
+              <p>
+				Crafted a responsive Flipkart clone using HTML, CSS, and JavaScript, achieving a visually appealing design that mirrors the original website. 
                 
-				<div class="project-info">
+              </p>
+            </div>
+
+
+          </div>
+
+          <!-- <div class="project-info">
+
 					<img src="Images/project.png" alt="skills" class="project " />
 					<div class="detail ">	
 							<h4>
@@ -304,106 +463,136 @@
 							</h4>
 					</div>
 
-				</div>
-			</div>
-			<div class="certificate " id="certificate">
+				</div> -->
+        </div>
+        <div class="certificate" id="certificate">
+          <h3>Certifications</h3>
+          <div class="container">
+            <div class="certificate1">
+              <img
+                src="Images/flipkart.png"
+                alt="HackerRank-Certificate"
+                class=""
+              />
+            </div>
+            <div class="certificate2">
+              <img
+                src="Images/Sambhav Ceartificate.png"
+                alt="HackerRank-Certificate"
+                class=""
+              />
+            </div>
+            <div class="certificate3">
+              <img
+                src="Images/Hacker-certificate.jpg"
+                alt="HackerRank-Certificate"
+                class=""
+              />
+            </div>
+          </div>
+        </div>
 
-				<h3>Certifications</h3>
-				<div class="container">
-					<div class="certificate1 ">
-						<img src="Images/flipkart.png" alt="HackerRank-Certificate" class="">
-					</div>
-					<div class="certificate2">
-						<img src="Images/Sambhav Ceartificate.png" alt="HackerRank-Certificate" class="">
+        <div class="contact" id="contact">
+          <h3>Contacts</h3>
+          <div class="detail">
+            <span id="fa-phone-id"><p>Call Me</p></span>
+            <p>
+              <a area-label="Call Durgesh"> <i class="fa fa-phone"></i></a>
+              <a id="mobile-no">+91 9359230721 , +91 8446537613 </a>
+            </p>
 
-					</div>
-					<div class="certificate3">
-						<img src="Images/Hacker-certificate.jpg" alt="HackerRank-Certificate" class="">
-					</div>
-				</div>
+            <span id="fa-envelope-id"><p>Email to Me</p></span>
+            <p>
+              <a
+                area-label="Email Durgesh"
+                href="mailto:durgeshmehar2002@gmai.com"
+                target="_blank"
+              >
+                <i class="fa fa-envelope"></i
+              ></a>
+              <a href="mailto:durgeshmehar2002@gmai.com" target="_blank"
+                >DURGESHMEHAR2002@GMAIL.COM</a
+              >
+            </p>
+            <span id="fa-github-id"><p>View Profile On Github</p></span>
+            <p>
+              <a
+                area-label="View Durgesh on Github"
+                href="https://durgeshmehar.github.io/"
+                target="_blank"
+              >
+                <i class="fa fa-github"></i
+              ></a>
+              <a href="https://durgeshmehar.github.io/" target="_blank"
+                >GITHUB.COM/DURGESHMEHAR</a
+              >
+            </p>
+            <span id="fa-linkedin-id"><p>View Profile on LinkedIn</p></span>
+            <p>
+              <a
+                area-label="View Durgesh on Linkedin"
+                href="https://www.linkedin.com/in/durgesh-mehar-82955b230"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/durgesh-mehar-82955b230"
+                target="_blank"
+                >LINKEDIN/DURGESHMEHAR</a
+              >
+            </p>
+            <span id="fa-coding-id"><p>View profile on Codestudio</p></span>
+            <p>
+              <a
+                area-label="View profile on Codestudio"
+                href="https://www.codingninjas.com/codestudio/profile/7bfafe16-9b71-4957-9175-4b77489f7745"
+                target="_blank"
+              >
+                <i class="fa fa-coding"
+                  ><img src="Images/coding.png" class="coding" alt="" /></i
+              ></a>
+              <a
+                href="https://www.codingninjas.com/codestudio/profile/7bfafe16-9b71-4957-9175-4b77489f7745"
+                target="_blank"
+                >CODINGNINJAS/DURGESHMEHAR
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <hr > -->
+      <div class="bottom-container" id="bottom-container">
+        <h3 class="">LET'S BUILD SOMETHING</h3>
+        <h3 id="mar-bottom" class="">AMAZING TOGETHER</h3>
 
-			</div>
+        <p class="">
+          I Love to develop websites & I would love to design the best websites
+          for you.
+        </p>
 
-			<div class="contact" id="contact">
+        <div class="link">
+          <a href="https://www.linkedin.com/in/durgesh-mehar-82955b230"
+            ><i class="linkedin fa-brands fa-linkedin-in"></i
+          ></a>
+          &emsp;<a href="https://twitter.com/Durgeshmehar77"
+            ><i class="twitter fa-brands fa-square-twitter"></i></a
+          >&emsp;<a href="https://www.instagram.com/durgeshmehar77?r=nametag"
+            ><i class="insta fa-brands fa-instagram"></i></a
+          >&emsp;<a href="https://www.facebook.com/ku.durgesh"
+            ><i class="facebook fa-brands fa-square-facebook"></i
+          ></a>
+        </div>
+      </div>
+      <div class="footer">
+        <img src="Images/copyright.png" alt="" />
+        <p class="copy">Copyright 2023 Durgesh Mehar. All Rights Reserved.</p>
+      </div>
 
-				<h3>Contacts</h3>
-				<div class="detail">
-				
-				  <span id="fa-phone-id"><p>Call Me</p></span>
-				  <p>
-					<a area-label="Call Durgesh">
-					<i class="fa fa-phone" ></i></a>
-					<a id="mobile-no">+91 9359230721 , +91 8446537613 </a>
-				  </p>
-		
-				  
-				  <span id="fa-envelope-id"><p>Email to Me</p></span>
-				   <p>
-					<a  area-label="Email Durgesh" href="mailto:durgeshmehar2002@gmai.com" target="_blank">
-					<i class="fa fa-envelope"></i></a>
-					<a href="mailto:durgeshmehar2002@gmai.com" target="_blank">DURGESHMEHAR2002@GMAIL.COM</a>
-					
-				 </p>
-				 <span id="fa-github-id"><p>View Profile On Github</p></span>
-				 <p>
-					<a  area-label="View Durgesh on Github" href="https://durgeshmehar.github.io/" target="_blank">
-					<i class="fa fa-github"></i></a>
-					<a href="https://durgeshmehar.github.io/" target="_blank">GITHUB.COM/DURGESHMEHAR</a>
-				  
-				 </p>
-				 <span id="fa-linkedin-id"><p>View Profile on LinkedIn</p></span>
-				 <p>
-					<a  area-label="View Durgesh on Linkedin" href="https://www.linkedin.com/in/durgesh-mehar-82955b230" target="_blank">
-					<i class="fa fa-linkedin"></i></a>
-					<a href="https://www.linkedin.com/in/durgesh-mehar-82955b230" target="_blank">LINKEDIN/DURGESHMEHAR</a>
-					
-				 </p>
-				 <span id="fa-coding-id"><p>View profile on Codestudio</p></span>
-				 <p>
-					<a area-label="View profile on Codestudio" href="https://www.codingninjas.com/codestudio/profile/7bfafe16-9b71-4957-9175-4b77489f7745" target="_blank">
-					<i class="fa fa-coding"><img src="Images/coding.png" class="coding" alt=""></i></a>
-					<a href="https://www.codingninjas.com/codestudio/profile/7bfafe16-9b71-4957-9175-4b77489f7745" target="_blank">CODINGNINJAS/DURGESHMEHAR
-					</a>
-				 </p>
-				
-				</div>
-				
-			  </div>
-		
-			</div>
-		<!-- <hr > -->
-		<div class="bottom-container " id="bottom-container">
-
-
-
-			<h3 class="">LET'S BUILD SOMETHING </h3>
-			<h3 id="mar-bottom" class="">AMAZING TOGETHER</h3>
-
-			<p class="">
-				I Love to develop websites & I would love to design the best websites for you.
-			</p>
-
-			<div class="link ">
-				<a href="https://www.linkedin.com/in/durgesh-mehar-82955b230"><i
-						class="linkedin fa-brands fa-linkedin-in"></i></a>
-				&emsp;<a href="https://twitter.com/Durgeshmehar77"><i
-						class="twitter fa-brands fa-square-twitter"></i></a>&emsp;<a
-					href="https://www.instagram.com/durgeshmehar77?r=nametag"><i
-						class="insta fa-brands fa-instagram"></i></a>&emsp;<a
-					href="https://www.facebook.com/ku.durgesh"><i class="facebook fa-brands fa-square-facebook"></i></a>
-			</div>
-
-		</div>
-		<div class="footer">
-			<img src="Images/copyright.png" alt="">
-			<p class="copy">Copyright 2023 Durgesh Mehar. All Rights Reserved.</p>
-		</div>
-
-		<!-- jQuery -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-		<!-- javascript -->
-		<script src="javascript/index.js"> </script>
-	</div>
-</body>
-
+      <!-- jQuery -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <!-- javascript -->
+      <script src="javascript/index.js"></script>
+    </div>
+  </body>
 </html>

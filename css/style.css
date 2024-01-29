@@ -305,7 +305,7 @@ span.resume{
 	font-size: 1.4vw;
 	padding: 0;
 	display: inline;
-	color:var(--textColor);
+	color:var(--navColor);
 }
 
 .intro i.fa-brands{
@@ -378,7 +378,7 @@ hr {
     letter-spacing: 0.05;
     font-weight: 1000;
     margin:0vw auto;
-    color:#5cdddd;
+    color:var(--bigParaColor);
 }
 .detail .item h4{
        margin:0vw 0vw 0vw 2.5vw;
@@ -425,8 +425,20 @@ hr {
 .detail .item .card-row{
 	justify-content: space-evenly;
 }
-
+.card{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap !important;
+    align-content: space-between;
+}
 /* Developing blog card  ---------------------------------------------*/
+.skill .card .card-body a >h3{
+    margin-top:-2vh;
+}
+
+
+
 .skill .detail .item .card{
 	width: 20vw;
 	margin:0vw 1vw;
@@ -436,9 +448,7 @@ hr {
 .card-body ,.card-footer{
 	padding:1vw;
 }
-.card{
-	min-height: clamp( 35vh,45vw,45vw);
-}
+
 .skill .card h3{
 	font-size: 1.5vw;
 	margin: 0px 0px;
@@ -514,10 +524,14 @@ svg{
 	overflow: hidden;
 	margin:20px;
 }
-.certificate .container img:hover{
-	transform: scale(1.1);
-	transition: transform 1s ease;
-}
+.certificate .container img {
+    transition: -webkit-transform 1.5s ease;
+    transition: transform 1.5s ease;
+  }
+  
+  .certificate .container img:hover {
+    transform: scale(1.1);
+  }
 .project .detail ul {
     list-style-type: none;
     font-family: 'Alegreya', serif;
@@ -740,8 +754,59 @@ svg{
     display: none;
 }
 
-/*    %%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%% */
+.mobile-visible{
+    display: none !important;
+}
+.project-card{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:4vw 2vw;
+}
+
+.project-card .card-item img{
+    width: 100%;
+    height: 22vw;
+} 
+.project-card a{
+    text-decoration: none;
+}
+.project-card h2{
+    margin-top: 1.4vw;
+    font-size: x-large;
+}
+.project-card p{
+    padding:1vw 2vw;
+    font-size: large;
+}
+.project-card .card-item{
+    padding-bottom: 0.5vw;
+}
+
+/*    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
+
+@media screen and ( max-width: 1000px){
+
+    .project-card{
+        padding: 0 6vw;
+        grid-template-columns: auto;
+    }
+    .project-card .card-item img{
+        width: 100%;
+        height: 50vw;
+    } 
+    .project-card .card-item{
+        padding-bottom: 2vw;
+    }
+    .project-card h2{
+        font-size: large;
+    }
+}
+
 @media screen and ( max-width: 600px){
+    .mobile-visible{
+        display: inline-block;
+    }
+   
 	.area{
 		background-color: #5e7abf;
 		display: block;
@@ -765,11 +830,7 @@ svg{
 		width : 68vw;
 		margin: 0.6vw;
 	}
-	.middle-container img ,.middle-container .project img{
-		height: 25vw;
-		padding:2vw;
-		width: 25vw;
-	}
+
 	.middle-container .intro  span.resume{
 		font-size: 3vw;
 		padding:0;
@@ -786,11 +847,6 @@ svg{
 	}
     .middle-container{
         padding:4.2vh 4.2vw;
-    }
-    .project img {
-        height: 15vw;
-        margin-left: 5vw;
-        width: 5vw;
     }
     .middle-container img.coding {
         padding:0;
@@ -898,9 +954,7 @@ svg{
 		height: 33vw;
 		padding: 0vw;
 	}
-	/* .skill .detail .card .card-body{
-		min-height:  22vh;
-	} */
+
     .skill .detail .item .card {
       width: 33vw;
 	}
@@ -918,9 +972,7 @@ svg{
 	svg{
 		padding-top:0px;
 	}
-	.skill .card .card-body a >h3{
-		margin-top:-6vw
-	}
+
     
 	.certificate1, .certificate2, .certificate3 {
        margin:5px;
