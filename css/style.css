@@ -11,6 +11,18 @@ body {
     width:100vw;
 	background-color: var(--backgroundColor);
 }
+::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+::-moz-scrollbar {
+    display: none; /* Firefox */
+}
+
+::-ms-scrollbar {
+    display: none; /* Edge */
+}
+
 /*   ## Dark Mode Mechanism  ## */
 :root {
 	--makeInvert: invert(0);
@@ -106,7 +118,7 @@ body {
 }
 /*  ##  Navigation  ## */
 .navigation{
-	background: hsl(0 0% 100% /0.1 ) ;
+	background: hsl(0 0% 250% /0.1 ) ;
 	width: 95%;
 	margin-top: 10px;
 	margin-left: 2%;
@@ -168,13 +180,13 @@ body {
 }
 
 /* */
-.navigation ul li a:hover ,.navigation ul li#light i:hover {
-    background: linear-gradient(to right,#ce47b8,
-					#ff6b08, #2bb7c9, #91ad2a);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    background-clip: text;
-    cursor: pointer;
+
+.navigation ul li a:hover,.navigation ul li#light i:hover {
+    color: var(--navHead);
+    background-color: var(--navText);
+    border-radius: 35px;
+    padding: 0.7vw 2vw 0.7vw 1vw;
+    transition: all 0.5s ease-in;
 }
 
 .navigation li#light{
@@ -707,15 +719,9 @@ svg{
 .bottom-container .link .facebook{
     color:	#3b5998;
 }
-.bottom-container .link a .fa-brands:hover{
-    /* box-shadow:1px 1px  #00acee; */
-    box-shadow: 4px 3px 4px #488093;
-    font-size: 3vw;
-    padding:2px;
-    border:1.1px solid #48a9c9;
-    border-radius: 2px;
-    
-}
+.bottom-container .link a:hover i {
+    color: #2b9eeb; /* Change to your desired hover color */
+  }
 .bottom-container p{
     padding:4vw 2vw 2vw 2vw;
 }
@@ -771,12 +777,12 @@ svg{
     text-decoration: none;
 }
 .project-card h2{
-    margin-top: 1.4vw;
+    margin-top: 1.5vw;
     font-size: x-large;
 }
 .project-card p{
     padding:1vw 2vw;
-    font-size: large;
+    font-size: medium;
 }
 .project-card .card-item{
     padding-bottom: 0.5vw;
@@ -800,23 +806,62 @@ svg{
     .project-card h2{
         font-size: large;
     }
+
+    .skill .detail .item .row {
+        padding: 2vw;
+    }
+    
+    .skill .detail .item .card {
+        width: 54vw;
+        margin:2vw;
+        margin-top: 4vw;
+    }
+    
+	.skill .detail .item .card img {
+        padding: 2vw;
+		width: 54vw;
+		height: 40vw;
+		padding: 0vw;
+	}
+    
+	.skill .card h3{
+		font-size: 2.4vw;
+		letter-spacing: 0px;
+	}
+	.skill .detail .item .card p{
+		font-size: 2.4vw;
+	}
 }
 
 @media screen and ( max-width: 600px){
+
+    .skill .detail .item .card {
+        width: 60vw;
+        margin:2vw;
+        margin-top: 4vw;
+    }
+    
+	.skill .detail .item .card img {
+        padding: 2vw;
+		width: 60vw;
+		height: 40vw;
+		padding: 0vw;
+	}
     .mobile-visible{
         display: inline-block;
     }
    
-	.area{
+	/* .area{
 		background-color: #5e7abf;
 		display: block;
 		width: 100vw;
 		height: 9vw;
-	}
+	} */
     .top-container{
 		background-size: cover;
 		padding-top:20vw;
 		min-height: 70vw;
+        margin-top: 6.3vh;
 	}
 	.top-container h1{
 		font-size: 7.8vw;
@@ -857,11 +902,11 @@ svg{
     }
 	.detail h3.tech , .detail h3.non-tech{
 		font-weight: 600;
-		font-size:3.6vw;
+		font-size:4.2vw;
 	}
     .education h3, .skill h3 ,.project h3,.bottom-container h3,.certificate h3,.contact h3{
         font-size: 5vw;
-        margin-bottom: 4.5vw;
+        margin-bottom: 2.5vw;
         letter-spacing: 1px;
         padding:1vw;
     }
@@ -888,7 +933,7 @@ svg{
 
     .education .detail p, span ,.skill p ,.project .detail p ,.bottom-container p{
         margin-top: 0vh;
-        font-size:3.3vw;
+        font-size:3vw;
         font-weight: 500;
         letter-spacing: 0.3px;
     }
@@ -914,6 +959,12 @@ svg{
     }
     .middle-container li:nth-child() {
         font-size:3.3vw;
+    }
+
+    .middle-container img {
+        height: 22vw;
+        width: 22vw;
+        background: none;
     }
     .education .detail h4 ,.skill h4 {
         font-size:3.6vw;
@@ -948,23 +999,7 @@ svg{
     .contact .detail .contact-item a{
         font-size: 2.5vw; 
     }
-    
-	.skill .detail .item .card img {
-		width: 33vw;
-		height: 33vw;
-		padding: 0vw;
-	}
 
-    .skill .detail .item .card {
-      width: 33vw;
-	}
-	.skill .card h3{
-		font-size: 2.4vw;
-		letter-spacing: 0px;
-	}
-	.detail .item .card p{
-		font-size: 2.4vw;
-	}
 	.tag{
 		top:-7vw;
 		width: 12vw;
@@ -1059,23 +1094,25 @@ svg{
         color: #eceaf1;
         font-weight: 600;
     } 
-	.navigation  li#light{
+    .fa-sun ,.fa-moon{
+        font-size: 4vw;
+    }
+	.navigation li#light {
         display: block;
         visibility: visible;
         list-style: none;
-        padding:3px 5px ;
-        width: 9vw;
-        border-radius: 4vw; 
-
+        padding: 3px 5px;
+        width: 10vw;
+        border-radius: 4vw;
         outline: var(--navText);
-        position : fixed;
-        top:1.5vw;
-        right:4vw;
-		z-index: 345;
-		height: 4.5vw;
-		font-size: 2.8vw;
-		margin-top:10px;
-    } 
+        position: fixed;
+        top: 1.5vw;
+        right: 4vw;
+        z-index: 345;
+        height: 5.5vw;
+        font-size: 2.8vw;
+        margin-top: 10px;
+    }
     .navigation .nav-icon{
         display:inline;
     }
