@@ -1098,7 +1098,7 @@ svg{
         font-size: 4vw;
     }
 	.navigation li#light {
-        display: block;
+        display: flex;
         visibility: visible;
         list-style: none;
         padding: 3px 5px;
