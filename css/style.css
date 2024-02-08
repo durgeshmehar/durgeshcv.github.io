@@ -532,7 +532,7 @@ svg{
 	height: 35vw;
 	width : 50vw;
 }
-.certificate1 ,.certificate2,.certificate3{
+.certificate1 ,.certificate2,.certificate3,.certificate0{
 	overflow: hidden;
 	margin:20px;
 }
@@ -1009,7 +1009,7 @@ svg{
 	}
 
     
-	.certificate1, .certificate2, .certificate3 {
+	.certificate1, .certificate2, .certificate3 ,.certificate0{
        margin:5px;
 	}
     /* Previous was another media query */
