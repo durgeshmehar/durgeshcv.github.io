@@ -16,18 +16,19 @@
 
 // 2) Creating Dark Mode Feature
 
-visibilitySun();
+// visibilitySun();
+visibilityMoon();
 var clicks = 0;
 
 $(document).ready(function(){
 	$("#light").click(function () {
 		if (clicks === 0) {
-			callSun();
-			clicks=1;
-		}
+         callMoon();
+         clicks=1;
+      }
 		else if (clicks === 1) {
-			callMoon();
-			clicks=0;
+         callSun();
+         clicks=0;
 		}
 	}
 	);

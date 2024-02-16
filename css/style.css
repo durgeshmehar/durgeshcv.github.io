@@ -24,7 +24,7 @@ body {
 }
 
 /*   ## Dark Mode Mechanism  ## */
-:root {
+.dark-mode {
 	--makeInvert: invert(0);
     --backgroundColor: rgb(223, 222, 222);
     --cardColor: rgb(229, 230, 232);
@@ -44,7 +44,7 @@ body {
 	--itemColor: rgba(255, 255, 255, 0.81);  
 	--textColor: #007bff;
 }
-.dark-mode{
+:root{
     --backgroundColor: rgb(40,39,50);
     --navColor:#543153;
     --top-containerColor:rgb(53 51 73);
@@ -787,6 +787,13 @@ svg{
 .project-card .card-item{
     padding-bottom: 0.5vw;
 }
+
+.project-card .card-item:hover{
+    transform: scale(1.05);
+    transition: all 0.5s ease-in;
+}
+
+/* selecting different project */
 
 /*    %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%   MEDIA SCREEN FOR MOBILE PHONES   %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% */
 
